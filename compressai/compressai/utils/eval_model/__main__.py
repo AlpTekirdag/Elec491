@@ -87,7 +87,7 @@ def ws_psnr(img1,img2):
     ws_mse   = getGlobalWSMSEValue(img1,img2)
 
     try:
-        ws_psnr = 10. * np.log10( 1.  / ws_mse)
+        ws_psnr = 10. * np.log10( 1. * 1.  / ws_mse)
     except ZeroDivisionError:
         ws_psnr = np.inf
     print("WS-PSNR ",ws_psnr)
