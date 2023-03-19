@@ -45,7 +45,6 @@ IMG_EXTENSIONS = (
     ".webp",
 )
 
-
 def collect_images(rootpath: str) -> List[str]:
     image_files = []
 
@@ -159,6 +158,7 @@ def compute_metrics(
 
 def read_image(filepath: str) -> torch.Tensor:
     assert filepath.is_file()
+    print(filepath)
     img = Image.open(filepath).convert("RGB")
     return transforms.ToTensor()(img)
 
@@ -190,8 +190,10 @@ def inference(model, x, count):
     # Save output image ## ALP
 
     save_img = out_dec["x_hat"][0].cpu().numpy()
-    img = Image.fromarray(save_img, "RGB")
-    img.save('results/img'+str(count)+'.jpg')
+    save_img = (save_img*255).clip(0,255).round()
+    save_img = np.transpose(save_img,(1,2,0))
+    img = Image.fromarray(np.uint8(save_img))
+    img.save('results/saliency/img'+str(count)+'.jpg')
     # max_val = np.max(save_img,axis=0)
     # print("max val = "+ str(max_val))
     # cv2.imwrite(, save_img)  

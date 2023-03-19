@@ -1,37 +1,9 @@
-# Copyright (c) 2021-2022, InterDigital Communications, Inc
-# All rights reserved.
-
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted (subject to the limitations in the disclaimer
-# below) provided that the following conditions are met:
-
-# * Redistributions of source code must retain the above copyright notice,
-#   this list of conditions and the following disclaimer.
-# * Redistributions in binary form must reproduce the above copyright notice,
-#   this list of conditions and the following disclaimer in the documentation
-#   and/or other materials provided with the distribution.
-# * Neither the name of InterDigital Communications, Inc nor the names of its
-#   contributors may be used to endorse or promote products derived from this
-#   software without specific prior written permission.
-
-# NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED BY
-# THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
-# CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
-# NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
-# PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
-# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
-# OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
-# WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
-# OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
-# ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 from torch.hub import load_state_dict_from_url
 
 from compressai.models import (
     Cheng2020Anchor,
     Cheng2020Attention,
+    FactorizedPriorSaliency,
     FactorizedPrior,
     FactorizedPriorReLU,
     JointAutoregressiveHierarchicalPriors,
@@ -42,6 +14,7 @@ from compressai.models import (
 from .pretrained import load_pretrained
 
 __all__ = [
+    "bmshj2018_saliency",
     "bmshj2018_factorized",
     "bmshj2018_factorized_relu",
     "bmshj2018_hyperprior",
@@ -52,6 +25,7 @@ __all__ = [
 ]
 
 model_architectures = {
+    "bmshj2018-saliency": FactorizedPriorSaliency,
     "bmshj2018-factorized": FactorizedPrior,
     "bmshj2018_factorized_relu": FactorizedPriorReLU,
     "bmshj2018-hyperprior": ScaleHyperprior,
@@ -62,7 +36,15 @@ model_architectures = {
 }
 
 root_url = "https://compressai.s3.amazonaws.com/models/v1"
-model_urls = {
+## ALP
+model_urls = {"bmshj2018-saliency": {
+        "mse": {
+            1: f"{root_url}/bmshj2018-factorized-prior-1-446d5c7f.pth.tar",
+        },
+        "ms-ssim": {
+            1: f"{root_url}/bmshj2018-factorized-ms-ssim-1-9781d705.pth.tar",
+        },
+    },
     "bmshj2018-factorized": {
         "mse": {
             1: f"{root_url}/bmshj2018-factorized-prior-1-446d5c7f.pth.tar",
@@ -190,6 +172,16 @@ model_urls = {
 }
 
 cfgs = {
+    "bmshj2018-saliency": {
+        1: (128, 192),
+        2: (128, 192),
+        3: (128, 192),
+        4: (128, 192),
+        5: (128, 192),
+        6: (192, 320),
+        7: (192, 320),
+        8: (192, 320),
+    },
     "bmshj2018-factorized": {
         1: (128, 192),
         2: (128, 192),
@@ -285,6 +277,24 @@ def _load_model(
     model = model_architectures[architecture](*cfgs[architecture][quality], **kwargs)
     return model
 
+def bmshj2018_saliency(
+    quality, metric="mse", pretrained=False, progress=True, **kwargs
+):
+    """
+        quality (int): Quality levels (1: lowest, highest: 8)
+        metric (str): Optimized metric, choose from ('mse', 'ms-ssim')
+        pretrained (bool): If True, returns a pre-trained model
+        progress (bool): If True, displays a progress bar of the download to stderr
+    """
+    if metric not in ("mse", "ms-ssim"):
+        raise ValueError(f'Invalid metric "{metric}"')
+
+    if quality < 1 or quality > 8:
+        raise ValueError(f'Invalid quality "{quality}", should be between (1, 8)')
+
+    return _load_model(
+        "bmshj2018-saliency", metric, quality, pretrained, progress, **kwargs
+    )
 
 def bmshj2018_factorized(
     quality, metric="mse", pretrained=False, progress=True, **kwargs

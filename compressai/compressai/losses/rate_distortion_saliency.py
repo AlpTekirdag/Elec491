@@ -1,16 +1,12 @@
 import math
-
 import torch
 import torch.nn as nn
-
 from pytorch_msssim import ms_ssim
-
 from compressai.registry import register_criterion
 
 
-@register_criterion("RateDistortionLoss")
-class RateDistortionLoss(nn.Module):
-    """Custom rate distortion loss with a Lagrangian parameter."""
+@register_criterion("RateDistortionLossSaliency")
+class RateDistortionLossSaliency(nn.Module):
 
     def __init__(self, lmbda=0.01, metric="mse", return_type="all"):
         super().__init__()
@@ -24,9 +20,11 @@ class RateDistortionLoss(nn.Module):
         self.return_type = return_type
 
     def forward(self, output, target):
-        N, _, H, W = target.size()
+        N, C, H, W = target.size()
         out = {}
         num_pixels = N * H * W
+
+        target = target[:,:3,:,:] ## ALP
 
         out["bpp_loss"] = sum(
             (torch.log(likelihoods).sum() / (-math.log(2) * num_pixels))
