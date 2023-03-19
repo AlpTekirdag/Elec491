@@ -6,6 +6,7 @@ import json
 import math
 import sys
 import time
+import os
 
 ## ALP
 import numpy as np
@@ -49,7 +50,7 @@ def collect_images(rootpath: str) -> List[str]:
     image_files = []
 
     for ext in IMG_EXTENSIONS:
-        image_files.extend(Path(rootpath).rglob(f"*{ext}"))
+        image_files.extend((Path(rootpath)).rglob(f"*{ext}"))
     return sorted(image_files)
 
 ## ALP WS-PSNR start
@@ -149,6 +150,7 @@ def compute_metrics(
     org: torch.Tensor, rec: torch.Tensor, max_val: int = 255
 ) -> Dict[str, Any]:
     metrics: Dict[str, Any] = {}
+    org = org[:3,:,:]
     org = (org * max_val).clamp(0, max_val).round()
     rec = (rec * max_val).clamp(0, max_val).round()
     metrics["psnr-rgb"] = psnr(org, rec).item()
@@ -158,8 +160,24 @@ def compute_metrics(
 
 def read_image(filepath: str) -> torch.Tensor:
     assert filepath.is_file()
-    img = Image.open(filepath).convert("RGB")
-    
+    img_ori = Image.open(filepath).convert("RGB")
+    print(type(img_ori))
+    ## ALP
+    head_img = os.path.split(filepath)
+    head_sal = os.path.split(head_img[0])
+    sal_path = os.path.join(head_sal[0],"test_saliency",head_img[1])
+
+    img_ori = Image.open(filepath).convert("RGB")
+    sal = Image.open(sal_path).convert("L")
+
+    img_ori =np.asarray(img_ori)
+    h,w,c =img_ori.shape
+    sal_res = sal.resize((w, h))
+    sal_res = np.asarray(sal_res)
+    sal_res = np.expand_dims(sal_res, axis=2)
+    concat = np.concatenate((img_ori,sal_res),axis=2)
+    img = Image.fromarray(concat)
+    print(type(img))
     return transforms.ToTensor()(img)
 
 
@@ -201,8 +219,8 @@ def inference(model, x, count):
     return {
         "psnr-rgb": metrics["psnr-rgb"],
         "ms-ssim-rgb": metrics["ms-ssim-rgb"],
-        "ws-psnr":ws_psnr(x, out_dec["x_hat"]), ## ALP
-        "ws-ssim":ws_ssim(x*255, out_dec["x_hat"]*255), ## ALP
+        "ws-psnr":ws_psnr(x[:3,:,:], out_dec["x_hat"]), ## ALP
+        "ws-ssim":ws_ssim(x[:3,:,:]*255, out_dec["x_hat"]*255), ## ALP
         "bpp": bpp,
         "encoding_time": enc_time,
         "decoding_time": dec_time,
@@ -256,7 +274,7 @@ def load_checkpoint(arch: str, no_update: bool, checkpoint_path: str) -> nn.Modu
     return net.eval()
 
 
-def eval_model(
+def eval_saliency(
     model: nn.Module,
     outputdir: Path,
     inputdir: Path,
@@ -270,12 +288,16 @@ def eval_model(
     metrics = defaultdict(float)
     counter = 0
     for filepath in filepaths:
+        
         counter +=1
         x = read_image(filepath).to(device)
+       
         if not entropy_estimation:
             if args["half"]:
                 model = model.half()
+                print("debug model half")
                 x = x.half()
+                print("debug image half")
             rv = inference(model, x, counter)
         else:
             rv = inference_entropy_estimation(model, x, counter)
@@ -440,7 +462,6 @@ def main(argv):
         opts = (args.architecture, args.no_update)
         load_func = load_checkpoint
         log_fmt = "\rEvaluating {run:s}"
-
     results = defaultdict(list)
     for run in runs:
         if args.verbose:
@@ -456,7 +477,7 @@ def main(argv):
         if args.cuda and torch.cuda.is_available():
             model = model.to("cuda")
         args_dict = vars(args)
-        metrics = eval_model(
+        metrics = eval_saliency(
             model,
             args.output_directory,
             args.dataset,
