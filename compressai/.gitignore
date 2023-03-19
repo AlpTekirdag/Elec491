@@ -1,7 +1,9 @@
 datalar/
 results/
+checkpoints/
 compressai/__pycache__/
 compressai/models/__pycache__/
+compressai/*/__pycache__/
 compressai/datasets/__pycache__/
 *.rar
 *.pyc
