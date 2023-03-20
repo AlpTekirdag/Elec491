@@ -175,7 +175,6 @@ def inference(model, x, count):
     start = time.time()
     out_enc = model.compress(x_padded)
     enc_time = time.time() - start
-
     start = time.time()
     out_dec = model.decompress(out_enc["strings"], out_enc["shape"])
     dec_time = time.time() - start
@@ -193,7 +192,7 @@ def inference(model, x, count):
     save_img = (save_img*255).clip(0,255).round()
     save_img = np.transpose(save_img,(1,2,0))
     img = Image.fromarray(np.uint8(save_img))
-    img.save('results/saliency/img'+str(count)+'.jpg')
+    img.save('results/bmsh2018-factorized-trained/img'+str(count)+'.jpg')
     # max_val = np.max(save_img,axis=0)
     # print("max val = "+ str(max_val))
     # cv2.imwrite(, save_img)  

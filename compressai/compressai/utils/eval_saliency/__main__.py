@@ -150,7 +150,7 @@ def compute_metrics(
     org: torch.Tensor, rec: torch.Tensor, max_val: int = 255
 ) -> Dict[str, Any]:
     metrics: Dict[str, Any] = {}
-    org = org[:3,:,:]
+    org = org[:,:3,:,:]
     org = (org * max_val).clamp(0, max_val).round()
     rec = (rec * max_val).clamp(0, max_val).round()
     metrics["psnr-rgb"] = psnr(org, rec).item()
@@ -161,7 +161,6 @@ def compute_metrics(
 def read_image(filepath: str) -> torch.Tensor:
     assert filepath.is_file()
     img_ori = Image.open(filepath).convert("RGB")
-    print(type(img_ori))
     ## ALP
     head_img = os.path.split(filepath)
     head_sal = os.path.split(head_img[0])
@@ -177,8 +176,8 @@ def read_image(filepath: str) -> torch.Tensor:
     sal_res = np.expand_dims(sal_res, axis=2)
     concat = np.concatenate((img_ori,sal_res),axis=2)
     img = Image.fromarray(concat)
-    print(type(img))
-    return transforms.ToTensor()(img)
+    output = transforms.ToTensor()(img)
+    return output
 
 
 @torch.no_grad()
@@ -195,11 +194,10 @@ def inference(model, x, count):
     enc_time = time.time() - start
 
     start = time.time()
+
     out_dec = model.decompress(out_enc["strings"], out_enc["shape"])
     dec_time = time.time() - start
-
     out_dec["x_hat"] = F.pad(out_dec["x_hat"], unpad)
-
     # input images are 8bit RGB for now
     metrics = compute_metrics(x, out_dec["x_hat"], 255)
     num_pixels = x.size(0) * x.size(2) * x.size(3)
@@ -219,8 +217,8 @@ def inference(model, x, count):
     return {
         "psnr-rgb": metrics["psnr-rgb"],
         "ms-ssim-rgb": metrics["ms-ssim-rgb"],
-        "ws-psnr":ws_psnr(x[:3,:,:], out_dec["x_hat"]), ## ALP
-        "ws-ssim":ws_ssim(x[:3,:,:]*255, out_dec["x_hat"]*255), ## ALP
+        "ws-psnr":ws_psnr(x[:,:3,:,:], out_dec["x_hat"]), ## ALP
+        "ws-ssim":ws_ssim(x[:,:3,:,:]*255, out_dec["x_hat"]*255), ## ALP
         "bpp": bpp,
         "encoding_time": enc_time,
         "decoding_time": dec_time,
@@ -291,13 +289,10 @@ def eval_saliency(
         
         counter +=1
         x = read_image(filepath).to(device)
-       
         if not entropy_estimation:
             if args["half"]:
                 model = model.half()
-                print("debug model half")
                 x = x.half()
-                print("debug image half")
             rv = inference(model, x, counter)
         else:
             rv = inference_entropy_estimation(model, x, counter)
