@@ -2,7 +2,7 @@ import argparse
 import random
 import shutil
 import sys
-
+import os
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -124,9 +124,15 @@ def test_epoch(epoch, test_dataloader, model, criterion):
 
 
 def save_checkpoint(state, is_best, filename="checkpoint.pth.tar"):
-    torch.save(state, filename)
-    if is_best:
-        shutil.copyfile(filename, "checkpoint_best_loss.pth.tar")
+    if (filename =="checkpoint.pth.tar"):
+        torch.save(state, filename)
+        if is_best:
+            shutil.copyfile(filename, "checkpoint_best_loss.pth.tar")
+    else:
+        fileloc = os.pathjoin(filename,"checkpoint.pth.tar")
+        torch.save(state, fileloc)
+        if is_best:
+            shutil.copyfile(fileloc, os.path.join(filename,"checkpoint_best_loss.pth.tar"))
 
 
 def parse_args(argv):
@@ -195,6 +201,11 @@ def parse_args(argv):
     parser.add_argument(
         "--save", action="store_true", default=True, help="Save model to disk"
     )
+
+    parser.add_argument(
+        "--saveloc", type=str, required=True, help="Save model location to disk"
+    )
+
     parser.add_argument("--seed", type=int, help="Set random seed for reproducibility")
     parser.add_argument(
         "--clip_max_norm",
@@ -292,6 +303,7 @@ def main(argv):
                     "lr_scheduler": lr_scheduler.state_dict(),
                 },
                 is_best,
+                args.saveloc,
             )
 
 
