@@ -129,7 +129,7 @@ def save_checkpoint(state, is_best, filename="checkpoint.pth.tar"):
         if is_best:
             shutil.copyfile(filename, "checkpoint_best_loss.pth.tar")
     else:
-        fileloc = os.pathjoin(filename,"checkpoint.pth.tar")
+        fileloc = os.path.join(filename,"checkpoint.pth.tar")
         torch.save(state, fileloc)
         if is_best:
             shutil.copyfile(fileloc, os.path.join(filename,"checkpoint_best_loss.pth.tar"))

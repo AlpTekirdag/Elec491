@@ -23,7 +23,7 @@ class ImageFolderSaliency(Dataset):
         split (string): split mode ('train' or 'val')
     """
 
-    def __init__(self, root, transform=None, split="train"):
+    def __init__(self, root, transform=None, patch_size=(256,256),split="train"):
         if(split == "train"):
             splitroot = Path(root) / "Train"
             splitdir = Path(splitroot) / "train"
@@ -39,6 +39,7 @@ class ImageFolderSaliency(Dataset):
         self.samplesImg = sorted(f for f in splitdir.iterdir() if f.is_file())
         self.samplesSal = sorted(f for f in splitsal.iterdir() if f.is_file())
 
+        self.patch_size = patch_size
         self.transform = transform
 
     def __getitem__(self, index):
@@ -50,6 +51,7 @@ class ImageFolderSaliency(Dataset):
             img: `PIL.Image.Image` or transformed `PIL.Image.Image`.
         """
         img_ori = Image.open(self.samplesImg[index]).convert("RGB")
+        img_ori = img_ori.resize((1024, 2048))
         sal = Image.open(self.samplesSal[index]).convert("L")
         img_ori =np.asarray(img_ori)
         h,w,c =img_ori.shape

@@ -6,6 +6,7 @@ import json
 import math
 import sys
 import time
+import os
 
 ## ALP
 import numpy as np
@@ -94,6 +95,34 @@ def ws_psnr(img1,img2):
 
 ## WS-PSNR END
 
+## SAL-WS-PSNR
+def sal_ws_psnr(img1, img2, sal_map):
+
+    sal_map = sal_map.squeeze()
+    img1 = img1.squeeze()
+    img2 = img2.squeeze()
+    
+    sal_map = sal_map.cpu().numpy()
+    img1 = img1.cpu().numpy()
+    img2 = img2.cpu().numpy()
+    # translate CHW => HWC
+    img1 = img1.transpose(1, 2, 0)
+    img2 = img2.transpose(1, 2, 0)
+
+    img1 = img1.astype(np.float64)
+    img2 = img2.astype(np.float64)
+    sal_map = sal_map.astype(np.float64)
+    sal_map_3channel = np.stack([sal_map, sal_map, sal_map], axis=-1)
+    img_w = np.multiply(compute_map_ws(img1),sal_map_3channel)
+
+    mse = np.mean(np.multiply((img1 - img2)**2, img_w))/np.mean(img_w)
+    if mse == 0:
+        return float('inf')
+    sal_ws_psnr = 10. * np.log10(255. * 255. / mse)
+    print("SAL-WS-PSNR ",sal_ws_psnr)
+    return sal_ws_psnr
+##
+
 ## ALP WS-SSIM START
 def _ws_ssim(img1, img2):
     c1 = (0.01 * 255)**2
@@ -149,6 +178,7 @@ def compute_metrics(
     org: torch.Tensor, rec: torch.Tensor, max_val: int = 255
 ) -> Dict[str, Any]:
     metrics: Dict[str, Any] = {}
+    org = org[:,:3,:,:]
     org = (org * max_val).clamp(0, max_val).round()
     rec = (rec * max_val).clamp(0, max_val).round()
     metrics["psnr-rgb"] = psnr(org, rec).item()
@@ -158,14 +188,33 @@ def compute_metrics(
 
 def read_image(filepath: str) -> torch.Tensor:
     assert filepath.is_file()
-    img = Image.open(filepath).convert("RGB")
-    
-    return transforms.ToTensor()(img)
+    img_ori = Image.open(filepath).convert("RGB")
+    ## ALP
+    head_img = os.path.split(filepath)
+    head_sal = os.path.split(head_img[0])
+    sal_path = os.path.join(head_sal[0],"test_saliency",head_img[1])
+
+    img_ori = Image.open(filepath).convert("RGB")
+    sal = Image.open(sal_path).convert("L")
+
+    img_ori =np.asarray(img_ori)
+    h,w,c =img_ori.shape
+    sal_res = sal.resize((w, h))
+    sal_res = np.asarray(sal_res)
+    sal_res = np.expand_dims(sal_res, axis=2)
+    concat = np.concatenate((img_ori,sal_res),axis=2)
+    img = Image.fromarray(concat)
+    output = transforms.ToTensor()(img)
+    return output
 
 
 @torch.no_grad()
 def inference(model, x, count):
+
     x = x.unsqueeze(0)
+
+    sal = x[:,3,:,:]
+    x = x[:,:3,:,:]
 
     h, w = x.size(2), x.size(3)
     pad, unpad = compute_padding(h, w, min_div=2**6)  # pad to allow 6 strides of 2
@@ -192,16 +241,15 @@ def inference(model, x, count):
     save_img = (save_img*255).clip(0,255).round()
     save_img = np.transpose(save_img,(1,2,0))
     img = Image.fromarray(np.uint8(save_img))
-    img.save('results/bmsh2018-factorized-trained/img'+str(count)+'.jpg')
-    # max_val = np.max(save_img,axis=0)
-    # print("max val = "+ str(max_val))
-    # cv2.imwrite(, save_img)  
+    img.save('results/bmsh2018-factorized-resize/img'+str(count)+'.jpg')
+
 
     return {
         "psnr-rgb": metrics["psnr-rgb"],
         "ms-ssim-rgb": metrics["ms-ssim-rgb"],
-        "ws-psnr":ws_psnr(x, out_dec["x_hat"]), ## ALP
-        "ws-ssim":ws_ssim(x*255, out_dec["x_hat"]*255), ## ALP
+        "ws-psnr":ws_psnr(x[:,:3,:,:], out_dec["x_hat"]), ## ALP
+        "ws-ssim":ws_ssim(x[:,:3,:,:]*255, out_dec["x_hat"]*255), ## ALP
+        "sal-ws-psnr":sal_ws_psnr(x[:,:3,:,:]*255, out_dec["x_hat"]*255,sal*255), ## ALP
         "bpp": bpp,
         "encoding_time": enc_time,
         "decoding_time": dec_time,

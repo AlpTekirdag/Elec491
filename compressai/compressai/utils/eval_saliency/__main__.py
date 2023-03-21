@@ -94,6 +94,33 @@ def ws_psnr(img1,img2):
     return ws_psnr
 
 ## WS-PSNR END
+## SAL-WS-PSNR
+def sal_ws_psnr(img1, img2, sal_map):
+
+    sal_map = sal_map.squeeze()
+    img1 = img1.squeeze()
+    img2 = img2.squeeze()
+    
+    sal_map = sal_map.cpu().numpy()
+    img1 = img1.cpu().numpy()
+    img2 = img2.cpu().numpy()
+    # translate CHW => HWC
+    img1 = img1.transpose(1, 2, 0)
+    img2 = img2.transpose(1, 2, 0)
+
+    img1 = img1.astype(np.float64)
+    img2 = img2.astype(np.float64)
+    sal_map = sal_map.astype(np.float64)
+    sal_map_3channel = np.stack([sal_map, sal_map, sal_map], axis=-1)
+    img_w = np.multiply(compute_map_ws(img1),sal_map_3channel)
+
+    mse = np.mean(np.multiply((img1 - img2)**2, img_w))/np.mean(img_w)
+    if mse == 0:
+        return float('inf')
+    sal_ws_psnr = 10. * np.log10(255. * 255. / mse)
+    print("SAL-WS-PSNR ",sal_ws_psnr)
+    return sal_ws_psnr
+##
 
 ## ALP WS-SSIM START
 def _ws_ssim(img1, img2):
@@ -219,6 +246,7 @@ def inference(model, x, count):
         "ms-ssim-rgb": metrics["ms-ssim-rgb"],
         "ws-psnr":ws_psnr(x[:,:3,:,:], out_dec["x_hat"]), ## ALP
         "ws-ssim":ws_ssim(x[:,:3,:,:]*255, out_dec["x_hat"]*255), ## ALP
+        "sal-ws-psnr":sal_ws_psnr(x[:,:3,:,:]*255, out_dec["x_hat"]*255,x[:,3,:,:]*255), ## ALP
         "bpp": bpp,
         "encoding_time": enc_time,
         "decoding_time": dec_time,
