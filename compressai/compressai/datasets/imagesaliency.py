@@ -51,7 +51,7 @@ class ImageFolderSaliency(Dataset):
             img: `PIL.Image.Image` or transformed `PIL.Image.Image`.
         """
         img_ori = Image.open(self.samplesImg[index]).convert("RGB")
-        img_ori = img_ori.resize((1024, 2048))
+        img_ori = img_ori.resize((2048,1024)) # 1024,2048 ?
         sal = Image.open(self.samplesSal[index]).convert("L")
         img_ori =np.asarray(img_ori)
         h,w,c =img_ori.shape
