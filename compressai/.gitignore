@@ -16,3 +16,6 @@ compressai/transforms/__pycache__/
 *.rar
 *.pyc
 *.tar
+*/__pycache__
+*/*/__pycache__/*.pyc
+*.pyc
