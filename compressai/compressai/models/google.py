@@ -63,38 +63,31 @@ class FactorizedPriorSaliencyModulate(CompressionModel):
         self.entropy_bottleneck = EntropyBottleneck(M)
 
         self.ga_1 = conv(3,N)
-        self.mod_ga_1 = mySeq_Lin(N,N,50)
+        self.mod_ga_1 = conv(1,1)
         self.ga_2 = nn.Sequential(
             GDN(N),
             conv(N, N),
         )
-        self.mod_ga_2 = mySeq_Lin(N,N,50)
+        self.mod_ga_2 = conv(1,1)
         self.ga_3 = nn.Sequential(
             GDN(N),
             conv(N, N),
         )
-        self.mod_ga_3 = mySeq_Lin(N,N,50)
+        self.mod_ga_3 = conv(1,1)
         self.ga_4 = nn.Sequential(
             GDN(N),
             conv(N, M),
         )
         
-        self.gs_1 = nn.Sequential(
+        self.g_s = nn.Sequential(
             deconv(M, N),
             GDN(N, inverse=True),
-        )
-        self.mod_gs_1 = mySeq_Lin(N,N,50)
-        self.gs_2 = nn.Sequential(
             deconv(N, N),
             GDN(N, inverse=True),
-        )
-        self.mod_gs_2 = mySeq_Lin(N,N,50)
-        self.gs_3 = nn.Sequential(
             deconv(N, N),
             GDN(N, inverse=True),
+            deconv(N, 3),
         )
-        self.mod_gs_3 = mySeq_Lin(N,N,50)
-        self.gs_4 = deconv(N, 3)
             
 
         self.N = N
@@ -105,24 +98,24 @@ class FactorizedPriorSaliencyModulate(CompressionModel):
         return 2**4
 
     def forward(self, x):
-        sal = x[:,3,:,:]
+        sal = x[:,-1,:,:]
+        x = x[:,:3,:,:]
+
         x = self.ga_1(x)
-        sal_mul=self.mod_ga_1(sal)
-        x = x *sal_mul
+        sal_mul = self.mod_ga_1(sal)
+        x = x * sal_mul
         x = self.ga_2(x)
-        sal_mul=self.mod_ga_2(sal)
-        x = x *sal_mul
+        sal_mul = self.mod_ga_2(sal)
+        x = x * sal_mul
         x = self.ga_3(x)
-        sal_mul=self.mod_ga_3(sal)
-        x = x *sal_mul
+        sal_mul = self.mod_ga_3(sal)
+        x = x * sal_mul
         y = self.ga_4(x)
 
         y_hat, y_likelihoods = self.entropy_bottleneck(y)
 
-        y_hat = self.gs_1(y_hat)
-        y_hat = self.gs_2(y_hat)
-        y_hat = self.gs_3(y_hat)
-        x_hat = self.gs_4(y_hat)
+        y_hat = self.g_s(y_hat)
+       
 
 
         return {
@@ -142,7 +135,20 @@ class FactorizedPriorSaliencyModulate(CompressionModel):
         return net
 
     def compress(self, x):
-        y = self.g_a(x)
+        sal = x[:,-1,:,:]
+        x = x[:,:3,:,:]
+
+        x = self.ga_1(x)
+        sal_mul = self.mod_ga_1(sal)
+        x = x * sal_mul
+        x = self.ga_2(x)
+        sal_mul = self.mod_ga_2(sal)
+        x = x * sal_mul
+        x = self.ga_3(x)
+        sal_mul = self.mod_ga_3(sal)
+        x = x * sal_mul
+        y = self.ga_4(x)
+
         y_strings = self.entropy_bottleneck.compress(y)
         return {"strings": [y_strings], "shape": y.size()[-2:]}
 
@@ -196,7 +202,10 @@ class FactorizedPriorSaliency(CompressionModel):
     def forward(self, x):
         sal = x[:,-1,:,:]
         x = x[:,:3,:,:]
-        
+        print(sal.shape)
+        print(x.shape)
+        x = x * sal
+
         y = self.g_a(x)
         y_hat, y_likelihoods = self.entropy_bottleneck(y)
         x_hat = self.g_s(y_hat)

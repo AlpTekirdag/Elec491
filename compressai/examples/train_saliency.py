@@ -10,7 +10,7 @@ from torchvision import transforms
 
 from torch.utils.data import DataLoader
 
-#sys.path.append("/kuacc/users/atekirdag17/hpc_run/Elec491/compressai")
+sys.path.append("/kuacc/users/atekirdag17/hpc_run/Elec491/compressai")
 
 from compressai.optimizers import net_aux_optimizer
 from compressai.zoo import image_models
@@ -260,8 +260,8 @@ def main(argv):
         pin_memory=(device == "cuda"),
     )
 
-    net = image_models[args.model](quality=3, pretrained = True)
-    #net = image_models[args.model](quality=3, pretrained = False)
+    #net = image_models[args.model](quality=3, pretrained = True)
+    net = image_models[args.model](quality=3, pretrained = False)
     net = net.to(device)
 
     if args.cuda and torch.cuda.device_count() > 1:

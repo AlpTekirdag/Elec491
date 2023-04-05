@@ -1,5 +1,6 @@
 from .image import (
     bmshj2018_saliency,
+    bmshj2018_saliency_modulate,
     bmshj2018_factorized,
     bmshj2018_factorized_relu,
     bmshj2018_hyperprior,

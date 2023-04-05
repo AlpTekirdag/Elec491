@@ -29,13 +29,13 @@ class ImageFolderSaliency(Dataset):
 
     def __init__(self, root, transform=None, patch_size=(256,256),split="train"):
         if(split == "train"):
-            splitroot = Path(root) / "Salient2017"
-            splitdir = Path(splitroot) / "Images"
-            splitsal = Path(splitroot) / "Saliency"
+            splitroot = Path(root) / "Train"
+            splitdir = Path(splitroot) / "train"
+            splitsal = Path(splitroot) / "train_saliency"
         else:
-            splitroot = Path(root) / "Eval"
-            splitdir = Path(splitroot) / "Images"
-            splitsal = Path(splitroot) / "Saliency"
+            splitroot = Path(root) / "Test"
+            splitdir = Path(splitroot) / "test"
+            splitsal = Path(splitroot) / "test_saliency"
 
         if not splitdir.is_dir():
             raise RuntimeError(f'Invalid directory "{root}"')
