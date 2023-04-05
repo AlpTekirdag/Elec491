@@ -4,6 +4,7 @@ from compressai.models import (
     Cheng2020Anchor,
     Cheng2020Attention,
     FactorizedPriorSaliency,
+    FactorizedPriorSaliencyModulate,
     FactorizedPrior,
     FactorizedPriorReLU,
     JointAutoregressiveHierarchicalPriors,
@@ -15,6 +16,7 @@ from .pretrained import load_pretrained
 
 __all__ = [
     "bmshj2018_saliency",
+    "bmshj2018_saliency_modulate",
     "bmshj2018_factorized",
     "bmshj2018_factorized_relu",
     "bmshj2018_hyperprior",
@@ -26,6 +28,7 @@ __all__ = [
 
 model_architectures = {
     "bmshj2018-saliency": FactorizedPriorSaliency,
+    "bmshj2018-saliency-modulate": FactorizedPriorSaliencyModulate,
     "bmshj2018-factorized": FactorizedPrior,
     "bmshj2018_factorized_relu": FactorizedPriorReLU,
     "bmshj2018-hyperprior": ScaleHyperprior,
@@ -37,7 +40,15 @@ model_architectures = {
 
 root_url = "https://compressai.s3.amazonaws.com/models/v1"
 ## ALP
-model_urls = {"bmshj2018-saliency": {
+model_urls = {"bmshj2018-saliency-modulate": {
+        "mse": {
+            1: f"{root_url}/bmshj2018-factorized-prior-1-446d5c7f.pth.tar",
+        },
+        "ms-ssim": {
+            1: f"{root_url}/bmshj2018-factorized-ms-ssim-1-9781d705.pth.tar",
+        },
+    },
+    "bmshj2018-saliency": {
         "mse": {
             1: f"{root_url}/bmshj2018-factorized-prior-1-446d5c7f.pth.tar",
         },
@@ -172,6 +183,16 @@ model_urls = {"bmshj2018-saliency": {
 }
 
 cfgs = {
+    "bmshj2018-modulate": {
+        1: (128, 192),
+        2: (128, 192),
+        3: (128, 192),
+        4: (128, 192),
+        5: (128, 192),
+        6: (192, 320),
+        7: (192, 320),
+        8: (192, 320),
+    },
     "bmshj2018-saliency": {
         1: (128, 192),
         2: (128, 192),
@@ -276,6 +297,25 @@ def _load_model(
 
     model = model_architectures[architecture](*cfgs[architecture][quality], **kwargs)
     return model
+
+def bmshj2018_saliency_modulate(
+    quality, metric="mse", pretrained=False, progress=True, **kwargs
+):
+    """
+        quality (int): Quality levels (1: lowest, highest: 8)
+        metric (str): Optimized metric, choose from ('mse', 'ms-ssim')
+        pretrained (bool): If True, returns a pre-trained model
+        progress (bool): If True, displays a progress bar of the download to stderr
+    """
+    if metric not in ("mse", "ms-ssim"):
+        raise ValueError(f'Invalid metric "{metric}"')
+
+    if quality < 1 or quality > 8:
+        raise ValueError(f'Invalid quality "{quality}", should be between (1, 8)')
+
+    return _load_model(
+        "bmshj2018-saliency_modulate", metric, quality, pretrained, progress, **kwargs
+    )
 
 def bmshj2018_saliency(
     quality, metric="mse", pretrained=False, progress=True, **kwargs
