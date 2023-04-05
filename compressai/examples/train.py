@@ -3,6 +3,8 @@ import random
 import shutil
 import sys
 import os
+import warnings
+warnings.filterwarnings('ignore')
 
 import torch
 import torch.nn as nn
@@ -11,7 +13,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from torchvision import transforms
 
-sys.path.append("/kuacc/users/atekirdag17/hpc_run/Elec491/compressai")
+#sys.path.append("/kuacc/users/atekirdag17/hpc_run/Elec491/compressai")
 
 from compressai.datasets import ImageFolder
 from compressai.losses import RateDistortionLoss

@@ -10,12 +10,15 @@ from torchvision import transforms
 
 from torch.utils.data import DataLoader
 
-sys.path.append("/kuacc/users/atekirdag17/hpc_run/Elec491/compressai")
+#sys.path.append("/kuacc/users/atekirdag17/hpc_run/Elec491/compressai")
 
 from compressai.optimizers import net_aux_optimizer
 from compressai.zoo import image_models
 from compressai.datasets import ImageFolderSaliency
 from compressai.losses import RateDistortionLossSaliency
+
+import warnings
+warnings.filterwarnings('ignore')
 
 
 
@@ -59,6 +62,7 @@ def configure_optimizers(net, args):
 def train_one_epoch(
     model, criterion, train_dataloader, optimizer, aux_optimizer, epoch, clip_max_norm
 ):
+
     model.train()
     device = next(model.parameters()).device
 
@@ -68,6 +72,7 @@ def train_one_epoch(
         optimizer.zero_grad()
         aux_optimizer.zero_grad()
 
+        #out_net = model(d[:,:3,:,:])
         out_net = model(d)
 
         out_criterion = criterion(out_net, d)
@@ -85,8 +90,8 @@ def train_one_epoch(
                 f"Train epoch {epoch}: ["
                 f"{i*len(d)}/{len(train_dataloader.dataset)}"
                 f" ({100. * i / len(train_dataloader):.0f}%)]"
-                f'\tLoss: {out_criterion["loss"].item():.3f} |'
-                f'\tMSE loss: {out_criterion["mse_loss"].item():.3f} |'
+                f'\tLoss: {out_criterion["loss"].item():.4f} |'
+                f'\tMSE loss: {out_criterion["mse_loss"].item():.4f} |'
                 f'\tBpp loss: {out_criterion["bpp_loss"].item():.2f} |'
                 f"\tAux loss: {aux_loss.item():.2f}"
             )
@@ -104,6 +109,7 @@ def test_epoch(epoch, test_dataloader, model, criterion):
     with torch.no_grad():
         for d in test_dataloader:
             d = d.to(device)
+            #out_net = model(d[:,:3,:,:])
             out_net = model(d)
             out_criterion = criterion(out_net, d)
 
@@ -114,8 +120,8 @@ def test_epoch(epoch, test_dataloader, model, criterion):
 
     print(
         f"Test epoch {epoch}: Average losses:"
-        f"\tLoss: {loss.avg:.3f} |"
-        f"\tMSE loss: {mse_loss.avg:.3f} |"
+        f"\tLoss: {loss.avg:.4f} |"
+        f"\tMSE loss: {mse_loss.avg:.4f} |"
         f"\tBpp loss: {bpp_loss.avg:.2f} |"
         f"\tAux loss: {aux_loss.avg:.2f}\n"
     )
@@ -254,7 +260,8 @@ def main(argv):
         pin_memory=(device == "cuda"),
     )
 
-    net = image_models[args.model](quality=3)
+    net = image_models[args.model](quality=3, pretrained = True)
+    #net = image_models[args.model](quality=3, pretrained = False)
     net = net.to(device)
 
     if args.cuda and torch.cuda.device_count() > 1:

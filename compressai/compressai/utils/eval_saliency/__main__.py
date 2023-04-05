@@ -101,7 +101,7 @@ def sal_ws_psnr(img1, img2, sal_map):
     img1 = img1.squeeze()
     img2 = img2.squeeze()
     
-    sal_map = sal_map.cpu().numpy()
+    sal_map = sal_map.cpu().numpy()/255.
     img1 = img1.cpu().numpy()
     img2 = img2.cpu().numpy()
     # translate CHW => HWC
@@ -120,6 +120,34 @@ def sal_ws_psnr(img1, img2, sal_map):
     sal_ws_psnr = 10. * np.log10(255. * 255. / mse)
     print("SAL-WS-PSNR ",sal_ws_psnr)
     return sal_ws_psnr
+##
+
+## SAL-PSNR
+def sal_psnr(img1, img2, sal_map):
+
+    sal_map = sal_map.squeeze()
+    img1 = img1.squeeze()
+    img2 = img2.squeeze()
+    
+    sal_map = sal_map.cpu().numpy()/255.
+    img1 = img1.cpu().numpy()
+    img2 = img2.cpu().numpy()
+    # translate CHW => HWC
+    img1 = img1.transpose(1, 2, 0)
+    img2 = img2.transpose(1, 2, 0)
+
+    img1 = img1.astype(np.float64)
+    img2 = img2.astype(np.float64)
+    sal_map = sal_map.astype(np.float64)
+    sal_map_3channel = np.stack([sal_map, sal_map, sal_map], axis=-1)
+    img_w = sal_map_3channel
+
+    mse = np.mean(np.multiply((img1 - img2)**2, img_w))/np.mean(img_w)
+    if mse == 0:
+        return float('inf')
+    sal_psnr = 10. * np.log10(255. * 255. / mse)
+    print("SAL-PSNR ",sal_psnr)
+    return sal_psnr
 ##
 
 ## ALP WS-SSIM START
@@ -191,19 +219,24 @@ def read_image(filepath: str) -> torch.Tensor:
     ## ALP
     head_img = os.path.split(filepath)
     head_sal = os.path.split(head_img[0])
-    sal_path = os.path.join(head_sal[0],"test_saliency",head_img[1])
+    sal_path = os.path.join(head_sal[0],"Saliency",head_img[1].split(".")[0]+".jpg")
 
     img_ori = Image.open(filepath).convert("RGB")
     sal = Image.open(sal_path).convert("L")
+
+    img_tensor = transforms.ToTensor()(img_ori)
 
     img_ori =np.asarray(img_ori)
     h,w,c =img_ori.shape
     sal_res = sal.resize((w, h))
     sal_res = np.asarray(sal_res)
-    sal_res = np.expand_dims(sal_res, axis=2)
+    """sal_res = np.expand_dims(sal_res, axis=2)
     concat = np.concatenate((img_ori,sal_res),axis=2)
     img = Image.fromarray(concat)
-    output = transforms.ToTensor()(img)
+    output = transforms.ToTensor()(img)"""
+    sal_res = torch.from_numpy(sal_res)
+    sal_res = sal_res.unsqueeze(0)
+    output = torch.cat((img_tensor, sal_res), dim=0)
     return output
 
 
@@ -217,6 +250,9 @@ def inference(model, x, count):
     x_padded = F.pad(x, pad, mode="constant", value=0)
 
     start = time.time()
+    #print(x_padded[:,:3,:,:].min(),x_padded[:,:3,:,:].max())
+    #print(x_padded[:,-1,:,:].min(),x_padded[:,-1,:,:].max())
+    #out_enc = model.compress(x_padded[:,:3,:,:])
     out_enc = model.compress(x_padded)
     enc_time = time.time() - start
 
@@ -229,15 +265,17 @@ def inference(model, x, count):
     metrics = compute_metrics(x, out_dec["x_hat"], 255)
     num_pixels = x.size(0) * x.size(2) * x.size(3)
     bpp = sum(len(s[0]) for s in out_enc["strings"]) * 8.0 / num_pixels
-
+    print("bbp ",bpp)
+    print("PSNR ",metrics["psnr-rgb"])
     # Save output image ## ALP
 
     save_img = out_dec["x_hat"][0].cpu().numpy()
     save_img = (save_img*255).clip(0,255).round()
     save_img = np.transpose(save_img,(1,2,0))
     img = Image.fromarray(np.uint8(save_img))
-    img.save('results/saliency/img'+str(count)+'.jpg')
-    # max_val = np.max(save_img,axis=0)
+    os.makedirs("results/saliency_latentmask1p0",exist_ok=True)
+    img.save('results/saliency_latentmask1p0/img'+str(count)+'.png')
+    # max_val = np.max(save_img,axis=0)y
     # print("max val = "+ str(max_val))
     # cv2.imwrite(, save_img)  
 
@@ -246,7 +284,8 @@ def inference(model, x, count):
         "ms-ssim-rgb": metrics["ms-ssim-rgb"],
         "ws-psnr":ws_psnr(x[:,:3,:,:], out_dec["x_hat"]), ## ALP
         "ws-ssim":ws_ssim(x[:,:3,:,:]*255, out_dec["x_hat"]*255), ## ALP
-        "sal-ws-psnr":sal_ws_psnr(x[:,:3,:,:]*255, out_dec["x_hat"]*255,x[:,3,:,:]*255), ## ALP
+        "sal-ws-psnr":sal_ws_psnr(x[:,:3,:,:]*255, out_dec["x_hat"]*255,x[:,3,:,:]), ## ALP
+        "sal-psnr":sal_psnr(x[:,:3,:,:]*255, out_dec["x_hat"]*255,x[:,3,:,:]),
         "bpp": bpp,
         "encoding_time": enc_time,
         "decoding_time": dec_time,
@@ -316,6 +355,7 @@ def eval_saliency(
     for filepath in filepaths:
         
         counter +=1
+        print(counter)
         x = read_image(filepath).to(device)
         if not entropy_estimation:
             if args["half"]:
