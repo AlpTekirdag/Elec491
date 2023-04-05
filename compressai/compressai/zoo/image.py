@@ -183,7 +183,7 @@ model_urls = {"bmshj2018-saliency-modulate": {
 }
 
 cfgs = {
-    "bmshj2018-modulate": {
+    "bmshj2018-saliency-modulate": {
         1: (128, 192),
         2: (128, 192),
         3: (128, 192),
@@ -314,7 +314,7 @@ def bmshj2018_saliency_modulate(
         raise ValueError(f'Invalid quality "{quality}", should be between (1, 8)')
 
     return _load_model(
-        "bmshj2018-saliency_modulate", metric, quality, pretrained, progress, **kwargs
+        "bmshj2018-saliency-modulate", metric, quality, pretrained, progress, **kwargs
     )
 
 def bmshj2018_saliency(
