@@ -128,8 +128,8 @@ class FactorizedPriorSaliencyModulate(CompressionModel):
     @classmethod
     def from_state_dict(cls, state_dict):
         """Return a new model instance from `state_dict`."""
-        N = state_dict["g_a.0.weight"].size(0)
-        M = state_dict["g_a.6.weight"].size(0)
+        N = state_dict["ga_1.weight"].size(0)
+        M = state_dict["ga_4.1.weight"].size(0)
         net = cls(N, M)
         net.load_state_dict(state_dict)
         return net
@@ -201,10 +201,8 @@ class FactorizedPriorSaliency(CompressionModel):
         return 2**4
 
     def forward(self, x):
-        sal = x[:, 3 ,:,:]
         x = x[:,:3,:,:]
-        sal = sal.unsqueeze(1)
-        x = x * sal
+        
 
         y = self.g_a(x)
         y_hat, y_likelihoods = self.entropy_bottleneck(y)
@@ -227,6 +225,10 @@ class FactorizedPriorSaliency(CompressionModel):
         return net
 
     def compress(self, x):
+        #sal = x[:, 3 ,:,:]
+        x = x[:,:3,:,:]
+        # sal = sal.unsqueeze(1)
+        # x = x * sal
         y = self.g_a(x)
         y_strings = self.entropy_bottleneck.compress(y)
         return {"strings": [y_strings], "shape": y.size()[-2:]}

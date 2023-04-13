@@ -1,0 +1,1818 @@
+Setting stack size to unlimited...
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 2061311
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 20971520
+open files                      (-n) 51200
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+Learning rate: 0.0001
+Train epoch 0: [0/418 (0%)]	Loss: 161.8499 |	MSE loss: 0.2427 |	Bpp loss: 4.06 |	Aux loss: 7918.51
+Train epoch 0: [80/418 (19%)]	Loss: 21.2702 |	MSE loss: 0.0265 |	Bpp loss: 4.05 |	Aux loss: 7914.64
+Train epoch 0: [160/418 (38%)]	Loss: 14.9453 |	MSE loss: 0.0168 |	Bpp loss: 4.04 |	Aux loss: 7910.78
+Train epoch 0: [240/418 (57%)]	Loss: 15.4865 |	MSE loss: 0.0176 |	Bpp loss: 4.03 |	Aux loss: 7906.53
+Train epoch 0: [320/418 (75%)]	Loss: 10.3852 |	MSE loss: 0.0098 |	Bpp loss: 4.02 |	Aux loss: 7901.50
+Train epoch 0: [400/418 (94%)]	Loss: 10.5559 |	MSE loss: 0.0101 |	Bpp loss: 4.01 |	Aux loss: 7897.30
+Test epoch 0: Average losses:	Loss: 16.6676 |	MSE loss: 0.0195 |	Bpp loss: 4.01 |	Aux loss: 7896.48
+
+Learning rate: 0.0001
+Train epoch 1: [0/418 (0%)]	Loss: 10.9767 |	MSE loss: 0.0107 |	Bpp loss: 4.01 |	Aux loss: 7896.17
+Train epoch 1: [80/418 (19%)]	Loss: 12.9448 |	MSE loss: 0.0138 |	Bpp loss: 4.00 |	Aux loss: 7891.99
+Train epoch 1: [160/418 (38%)]	Loss: 12.1663 |	MSE loss: 0.0126 |	Bpp loss: 3.99 |	Aux loss: 7888.24
+Train epoch 1: [240/418 (57%)]	Loss: 12.1091 |	MSE loss: 0.0125 |	Bpp loss: 3.98 |	Aux loss: 7884.35
+Train epoch 1: [320/418 (75%)]	Loss: 8.7315 |	MSE loss: 0.0073 |	Bpp loss: 3.97 |	Aux loss: 7879.51
+Train epoch 1: [400/418 (94%)]	Loss: 9.3006 |	MSE loss: 0.0082 |	Bpp loss: 3.96 |	Aux loss: 7874.78
+Test epoch 1: Average losses:	Loss: 11.4252 |	MSE loss: 0.0115 |	Bpp loss: 3.96 |	Aux loss: 7873.92
+
+Learning rate: 0.0001
+Train epoch 2: [0/418 (0%)]	Loss: 8.2121 |	MSE loss: 0.0065 |	Bpp loss: 3.96 |	Aux loss: 7873.58
+Train epoch 2: [80/418 (19%)]	Loss: 7.7620 |	MSE loss: 0.0059 |	Bpp loss: 3.95 |	Aux loss: 7869.47
+Train epoch 2: [160/418 (38%)]	Loss: 7.2311 |	MSE loss: 0.0051 |	Bpp loss: 3.94 |	Aux loss: 7864.50
+Train epoch 2: [240/418 (57%)]	Loss: 6.2471 |	MSE loss: 0.0036 |	Bpp loss: 3.93 |	Aux loss: 7860.03
+Train epoch 2: [320/418 (75%)]	Loss: 6.7315 |	MSE loss: 0.0043 |	Bpp loss: 3.92 |	Aux loss: 7855.38
+Train epoch 2: [400/418 (94%)]	Loss: 7.1989 |	MSE loss: 0.0051 |	Bpp loss: 3.91 |	Aux loss: 7849.95
+Test epoch 2: Average losses:	Loss: 9.6472 |	MSE loss: 0.0088 |	Bpp loss: 3.90 |	Aux loss: 7849.01
+
+Learning rate: 0.0001
+Train epoch 3: [0/418 (0%)]	Loss: 7.8206 |	MSE loss: 0.0060 |	Bpp loss: 3.90 |	Aux loss: 7848.68
+Train epoch 3: [80/418 (19%)]	Loss: 7.1401 |	MSE loss: 0.0050 |	Bpp loss: 3.90 |	Aux loss: 7845.43
+Train epoch 3: [160/418 (38%)]	Loss: 6.5973 |	MSE loss: 0.0042 |	Bpp loss: 3.89 |	Aux loss: 7842.24
+Train epoch 3: [240/418 (57%)]	Loss: 7.8220 |	MSE loss: 0.0061 |	Bpp loss: 3.89 |	Aux loss: 7839.45
+Train epoch 3: [320/418 (75%)]	Loss: 6.4209 |	MSE loss: 0.0039 |	Bpp loss: 3.88 |	Aux loss: 7836.26
+Train epoch 3: [400/418 (94%)]	Loss: 6.4444 |	MSE loss: 0.0040 |	Bpp loss: 3.87 |	Aux loss: 7831.65
+Test epoch 3: Average losses:	Loss: 8.1177 |	MSE loss: 0.0065 |	Bpp loss: 3.87 |	Aux loss: 7830.68
+
+Learning rate: 0.0001
+Train epoch 4: [0/418 (0%)]	Loss: 7.5416 |	MSE loss: 0.0056 |	Bpp loss: 3.87 |	Aux loss: 7830.34
+Train epoch 4: [80/418 (19%)]	Loss: 8.2889 |	MSE loss: 0.0068 |	Bpp loss: 3.86 |	Aux loss: 7826.89
+Train epoch 4: [160/418 (38%)]	Loss: 5.8576 |	MSE loss: 0.0031 |	Bpp loss: 3.86 |	Aux loss: 7824.42
+Train epoch 4: [240/418 (57%)]	Loss: 6.8719 |	MSE loss: 0.0046 |	Bpp loss: 3.85 |	Aux loss: 7822.10
+Train epoch 4: [320/418 (75%)]	Loss: 9.7432 |	MSE loss: 0.0091 |	Bpp loss: 3.85 |	Aux loss: 7819.73
+Train epoch 4: [400/418 (94%)]	Loss: 6.7368 |	MSE loss: 0.0044 |	Bpp loss: 3.85 |	Aux loss: 7817.44
+Test epoch 4: Average losses:	Loss: 6.6735 |	MSE loss: 0.0044 |	Bpp loss: 3.84 |	Aux loss: 7816.91
+
+Learning rate: 0.0001
+Train epoch 5: [0/418 (0%)]	Loss: 6.1630 |	MSE loss: 0.0036 |	Bpp loss: 3.84 |	Aux loss: 7816.73
+Train epoch 5: [80/418 (19%)]	Loss: 6.0125 |	MSE loss: 0.0033 |	Bpp loss: 3.84 |	Aux loss: 7813.87
+Train epoch 5: [160/418 (38%)]	Loss: 6.9964 |	MSE loss: 0.0049 |	Bpp loss: 3.83 |	Aux loss: 7809.53
+Train epoch 5: [240/418 (57%)]	Loss: 7.2220 |	MSE loss: 0.0052 |	Bpp loss: 3.82 |	Aux loss: 7805.20
+Train epoch 5: [320/418 (75%)]	Loss: 5.7080 |	MSE loss: 0.0029 |	Bpp loss: 3.81 |	Aux loss: 7801.27
+Train epoch 5: [400/418 (94%)]	Loss: 6.2822 |	MSE loss: 0.0038 |	Bpp loss: 3.81 |	Aux loss: 7796.98
+Test epoch 5: Average losses:	Loss: 6.5552 |	MSE loss: 0.0042 |	Bpp loss: 3.80 |	Aux loss: 7796.11
+
+Learning rate: 0.0001
+Train epoch 6: [0/418 (0%)]	Loss: 5.9409 |	MSE loss: 0.0033 |	Bpp loss: 3.80 |	Aux loss: 7795.79
+Train epoch 6: [80/418 (19%)]	Loss: 6.5178 |	MSE loss: 0.0042 |	Bpp loss: 3.80 |	Aux loss: 7791.45
+Train epoch 6: [160/418 (38%)]	Loss: 6.5174 |	MSE loss: 0.0042 |	Bpp loss: 3.79 |	Aux loss: 7787.51
+Train epoch 6: [240/418 (57%)]	Loss: 7.5046 |	MSE loss: 0.0057 |	Bpp loss: 3.78 |	Aux loss: 7784.31
+Train epoch 6: [320/418 (75%)]	Loss: 6.6465 |	MSE loss: 0.0044 |	Bpp loss: 3.78 |	Aux loss: 7781.60
+Train epoch 6: [400/418 (94%)]	Loss: 6.3962 |	MSE loss: 0.0040 |	Bpp loss: 3.77 |	Aux loss: 7778.74
+Test epoch 6: Average losses:	Loss: 7.0652 |	MSE loss: 0.0051 |	Bpp loss: 3.77 |	Aux loss: 7778.11
+
+Learning rate: 0.0001
+Train epoch 7: [0/418 (0%)]	Loss: 6.3551 |	MSE loss: 0.0040 |	Bpp loss: 3.77 |	Aux loss: 7777.92
+Train epoch 7: [80/418 (19%)]	Loss: 6.1083 |	MSE loss: 0.0036 |	Bpp loss: 3.77 |	Aux loss: 7775.25
+Train epoch 7: [160/418 (38%)]	Loss: 7.0681 |	MSE loss: 0.0051 |	Bpp loss: 3.76 |	Aux loss: 7772.73
+Train epoch 7: [240/418 (57%)]	Loss: 5.5987 |	MSE loss: 0.0028 |	Bpp loss: 3.76 |	Aux loss: 7769.90
+Train epoch 7: [320/418 (75%)]	Loss: 6.7109 |	MSE loss: 0.0046 |	Bpp loss: 3.75 |	Aux loss: 7765.84
+Train epoch 7: [400/418 (94%)]	Loss: 5.5373 |	MSE loss: 0.0028 |	Bpp loss: 3.74 |	Aux loss: 7761.20
+Test epoch 7: Average losses:	Loss: 8.0704 |	MSE loss: 0.0067 |	Bpp loss: 3.74 |	Aux loss: 7760.37
+
+Learning rate: 0.0001
+Train epoch 8: [0/418 (0%)]	Loss: 6.7038 |	MSE loss: 0.0046 |	Bpp loss: 3.74 |	Aux loss: 7760.09
+Train epoch 8: [80/418 (19%)]	Loss: 6.2469 |	MSE loss: 0.0039 |	Bpp loss: 3.73 |	Aux loss: 7756.85
+Train epoch 8: [160/418 (38%)]	Loss: 6.5271 |	MSE loss: 0.0043 |	Bpp loss: 3.73 |	Aux loss: 7752.85
+Train epoch 8: [240/418 (57%)]	Loss: 5.5341 |	MSE loss: 0.0028 |	Bpp loss: 3.72 |	Aux loss: 7749.06
+Train epoch 8: [320/418 (75%)]	Loss: 4.8607 |	MSE loss: 0.0018 |	Bpp loss: 3.71 |	Aux loss: 7744.82
+Train epoch 8: [400/418 (94%)]	Loss: 7.3832 |	MSE loss: 0.0057 |	Bpp loss: 3.70 |	Aux loss: 7739.35
+Test epoch 8: Average losses:	Loss: 8.3768 |	MSE loss: 0.0072 |	Bpp loss: 3.70 |	Aux loss: 7738.36
+
+Learning rate: 0.0001
+Train epoch 9: [0/418 (0%)]	Loss: 6.5117 |	MSE loss: 0.0043 |	Bpp loss: 3.70 |	Aux loss: 7738.02
+Train epoch 9: [80/418 (19%)]	Loss: 6.1121 |	MSE loss: 0.0037 |	Bpp loss: 3.69 |	Aux loss: 7734.45
+Train epoch 9: [160/418 (38%)]	Loss: 5.5120 |	MSE loss: 0.0028 |	Bpp loss: 3.69 |	Aux loss: 7731.59
+Train epoch 9: [240/418 (57%)]	Loss: 5.6485 |	MSE loss: 0.0030 |	Bpp loss: 3.68 |	Aux loss: 7728.75
+Train epoch 9: [320/418 (75%)]	Loss: 6.2950 |	MSE loss: 0.0040 |	Bpp loss: 3.68 |	Aux loss: 7725.68
+Train epoch 9: [400/418 (94%)]	Loss: 5.7025 |	MSE loss: 0.0031 |	Bpp loss: 3.67 |	Aux loss: 7722.56
+Test epoch 9: Average losses:	Loss: 6.4799 |	MSE loss: 0.0043 |	Bpp loss: 3.67 |	Aux loss: 7721.88
+
+Learning rate: 0.0001
+Train epoch 10: [0/418 (0%)]	Loss: 5.4713 |	MSE loss: 0.0028 |	Bpp loss: 3.67 |	Aux loss: 7721.62
+Train epoch 10: [80/418 (19%)]	Loss: 5.7835 |	MSE loss: 0.0033 |	Bpp loss: 3.66 |	Aux loss: 7718.53
+Train epoch 10: [160/418 (38%)]	Loss: 6.3267 |	MSE loss: 0.0041 |	Bpp loss: 3.66 |	Aux loss: 7715.37
+Train epoch 10: [240/418 (57%)]	Loss: 5.1097 |	MSE loss: 0.0022 |	Bpp loss: 3.65 |	Aux loss: 7711.82
+Train epoch 10: [320/418 (75%)]	Loss: 5.8658 |	MSE loss: 0.0034 |	Bpp loss: 3.64 |	Aux loss: 7705.74
+Train epoch 10: [400/418 (94%)]	Loss: 5.2747 |	MSE loss: 0.0025 |	Bpp loss: 3.63 |	Aux loss: 7699.48
+Test epoch 10: Average losses:	Loss: 5.7197 |	MSE loss: 0.0032 |	Bpp loss: 3.63 |	Aux loss: 7698.35
+
+Learning rate: 0.0001
+Train epoch 11: [0/418 (0%)]	Loss: 4.9680 |	MSE loss: 0.0021 |	Bpp loss: 3.63 |	Aux loss: 7697.92
+Train epoch 11: [80/418 (19%)]	Loss: 5.1435 |	MSE loss: 0.0023 |	Bpp loss: 3.62 |	Aux loss: 7693.33
+Train epoch 11: [160/418 (38%)]	Loss: 5.5164 |	MSE loss: 0.0029 |	Bpp loss: 3.61 |	Aux loss: 7688.61
+Train epoch 11: [240/418 (57%)]	Loss: 5.3324 |	MSE loss: 0.0027 |	Bpp loss: 3.60 |	Aux loss: 7682.71
+Train epoch 11: [320/418 (75%)]	Loss: 5.7174 |	MSE loss: 0.0033 |	Bpp loss: 3.59 |	Aux loss: 7676.96
+Train epoch 11: [400/418 (94%)]	Loss: 5.2994 |	MSE loss: 0.0026 |	Bpp loss: 3.58 |	Aux loss: 7671.95
+Test epoch 11: Average losses:	Loss: 5.6321 |	MSE loss: 0.0032 |	Bpp loss: 3.58 |	Aux loss: 7670.90
+
+Learning rate: 0.0001
+Train epoch 12: [0/418 (0%)]	Loss: 5.6702 |	MSE loss: 0.0032 |	Bpp loss: 3.58 |	Aux loss: 7670.51
+Train epoch 12: [80/418 (19%)]	Loss: 5.8806 |	MSE loss: 0.0036 |	Bpp loss: 3.57 |	Aux loss: 7665.71
+Train epoch 12: [160/418 (38%)]	Loss: 5.4506 |	MSE loss: 0.0029 |	Bpp loss: 3.56 |	Aux loss: 7661.37
+Train epoch 12: [240/418 (57%)]	Loss: 4.9229 |	MSE loss: 0.0021 |	Bpp loss: 3.56 |	Aux loss: 7657.31
+Train epoch 12: [320/418 (75%)]	Loss: 5.4914 |	MSE loss: 0.0030 |	Bpp loss: 3.55 |	Aux loss: 7652.80
+Train epoch 12: [400/418 (94%)]	Loss: 5.3353 |	MSE loss: 0.0028 |	Bpp loss: 3.54 |	Aux loss: 7648.17
+Test epoch 12: Average losses:	Loss: 5.3211 |	MSE loss: 0.0027 |	Bpp loss: 3.54 |	Aux loss: 7647.18
+
+Learning rate: 0.0001
+Train epoch 13: [0/418 (0%)]	Loss: 4.9648 |	MSE loss: 0.0022 |	Bpp loss: 3.54 |	Aux loss: 7646.80
+Train epoch 13: [80/418 (19%)]	Loss: 4.8499 |	MSE loss: 0.0020 |	Bpp loss: 3.53 |	Aux loss: 7641.89
+Train epoch 13: [160/418 (38%)]	Loss: 5.5133 |	MSE loss: 0.0031 |	Bpp loss: 3.52 |	Aux loss: 7637.17
+Train epoch 13: [240/418 (57%)]	Loss: 5.2301 |	MSE loss: 0.0026 |	Bpp loss: 3.52 |	Aux loss: 7632.68
+Train epoch 13: [320/418 (75%)]	Loss: 5.5854 |	MSE loss: 0.0032 |	Bpp loss: 3.51 |	Aux loss: 7628.28
+Train epoch 13: [400/418 (94%)]	Loss: 5.2580 |	MSE loss: 0.0027 |	Bpp loss: 3.50 |	Aux loss: 7623.62
+Test epoch 13: Average losses:	Loss: 5.1626 |	MSE loss: 0.0026 |	Bpp loss: 3.50 |	Aux loss: 7622.44
+
+Learning rate: 0.0001
+Train epoch 14: [0/418 (0%)]	Loss: 5.4400 |	MSE loss: 0.0030 |	Bpp loss: 3.50 |	Aux loss: 7621.91
+Train epoch 14: [80/418 (19%)]	Loss: 5.2672 |	MSE loss: 0.0027 |	Bpp loss: 3.49 |	Aux loss: 7615.87
+Train epoch 14: [160/418 (38%)]	Loss: 5.3284 |	MSE loss: 0.0028 |	Bpp loss: 3.48 |	Aux loss: 7610.87
+Train epoch 14: [240/418 (57%)]	Loss: 5.6135 |	MSE loss: 0.0033 |	Bpp loss: 3.47 |	Aux loss: 7605.28
+Train epoch 14: [320/418 (75%)]	Loss: 4.7821 |	MSE loss: 0.0020 |	Bpp loss: 3.46 |	Aux loss: 7600.20
+Train epoch 14: [400/418 (94%)]	Loss: 4.6100 |	MSE loss: 0.0018 |	Bpp loss: 3.45 |	Aux loss: 7594.56
+Test epoch 14: Average losses:	Loss: 5.2080 |	MSE loss: 0.0027 |	Bpp loss: 3.45 |	Aux loss: 7593.40
+
+Learning rate: 0.0001
+Train epoch 15: [0/418 (0%)]	Loss: 5.1093 |	MSE loss: 0.0026 |	Bpp loss: 3.45 |	Aux loss: 7592.96
+Train epoch 15: [80/418 (19%)]	Loss: 4.7490 |	MSE loss: 0.0020 |	Bpp loss: 3.44 |	Aux loss: 7587.87
+Train epoch 15: [160/418 (38%)]	Loss: 4.6890 |	MSE loss: 0.0019 |	Bpp loss: 3.43 |	Aux loss: 7583.02
+Train epoch 15: [240/418 (57%)]	Loss: 5.6157 |	MSE loss: 0.0034 |	Bpp loss: 3.43 |	Aux loss: 7578.36
+Train epoch 15: [320/418 (75%)]	Loss: 4.9167 |	MSE loss: 0.0023 |	Bpp loss: 3.42 |	Aux loss: 7573.60
+Train epoch 15: [400/418 (94%)]	Loss: 5.3851 |	MSE loss: 0.0030 |	Bpp loss: 3.41 |	Aux loss: 7568.56
+Test epoch 15: Average losses:	Loss: 5.0322 |	MSE loss: 0.0025 |	Bpp loss: 3.41 |	Aux loss: 7567.40
+
+Learning rate: 0.0001
+Train epoch 16: [0/418 (0%)]	Loss: 4.9433 |	MSE loss: 0.0024 |	Bpp loss: 3.41 |	Aux loss: 7566.98
+Train epoch 16: [80/418 (19%)]	Loss: 5.3087 |	MSE loss: 0.0029 |	Bpp loss: 3.40 |	Aux loss: 7562.13
+Train epoch 16: [160/418 (38%)]	Loss: 4.4925 |	MSE loss: 0.0017 |	Bpp loss: 3.39 |	Aux loss: 7556.88
+Train epoch 16: [240/418 (57%)]	Loss: 4.5133 |	MSE loss: 0.0017 |	Bpp loss: 3.38 |	Aux loss: 7551.40
+Train epoch 16: [320/418 (75%)]	Loss: 4.9879 |	MSE loss: 0.0025 |	Bpp loss: 3.37 |	Aux loss: 7544.51
+Train epoch 16: [400/418 (94%)]	Loss: 4.9963 |	MSE loss: 0.0025 |	Bpp loss: 3.36 |	Aux loss: 7537.73
+Test epoch 16: Average losses:	Loss: 5.1443 |	MSE loss: 0.0027 |	Bpp loss: 3.36 |	Aux loss: 7536.48
+
+Learning rate: 0.0001
+Train epoch 17: [0/418 (0%)]	Loss: 5.4582 |	MSE loss: 0.0032 |	Bpp loss: 3.36 |	Aux loss: 7536.05
+Train epoch 17: [80/418 (19%)]	Loss: 4.7341 |	MSE loss: 0.0021 |	Bpp loss: 3.35 |	Aux loss: 7531.01
+Train epoch 17: [160/418 (38%)]	Loss: 4.4822 |	MSE loss: 0.0018 |	Bpp loss: 3.34 |	Aux loss: 7524.58
+Train epoch 17: [240/418 (57%)]	Loss: 4.7082 |	MSE loss: 0.0021 |	Bpp loss: 3.33 |	Aux loss: 7516.58
+Train epoch 17: [320/418 (75%)]	Loss: 4.8778 |	MSE loss: 0.0024 |	Bpp loss: 3.32 |	Aux loss: 7510.36
+Train epoch 17: [400/418 (94%)]	Loss: 4.7395 |	MSE loss: 0.0022 |	Bpp loss: 3.31 |	Aux loss: 7505.02
+Test epoch 17: Average losses:	Loss: 4.7596 |	MSE loss: 0.0022 |	Bpp loss: 3.31 |	Aux loss: 7503.87
+
+Learning rate: 0.0001
+Train epoch 18: [0/418 (0%)]	Loss: 4.8199 |	MSE loss: 0.0023 |	Bpp loss: 3.31 |	Aux loss: 7503.45
+Train epoch 18: [80/418 (19%)]	Loss: 5.2140 |	MSE loss: 0.0029 |	Bpp loss: 3.30 |	Aux loss: 7498.08
+Train epoch 18: [160/418 (38%)]	Loss: 4.6640 |	MSE loss: 0.0021 |	Bpp loss: 3.29 |	Aux loss: 7493.01
+Train epoch 18: [240/418 (57%)]	Loss: 4.3474 |	MSE loss: 0.0016 |	Bpp loss: 3.28 |	Aux loss: 7487.69
+Train epoch 18: [320/418 (75%)]	Loss: 4.9258 |	MSE loss: 0.0025 |	Bpp loss: 3.27 |	Aux loss: 7482.32
+Train epoch 18: [400/418 (94%)]	Loss: 4.3191 |	MSE loss: 0.0016 |	Bpp loss: 3.27 |	Aux loss: 7477.06
+Test epoch 18: Average losses:	Loss: 4.9058 |	MSE loss: 0.0025 |	Bpp loss: 3.27 |	Aux loss: 7475.85
+
+Learning rate: 0.0001
+Train epoch 19: [0/418 (0%)]	Loss: 5.0027 |	MSE loss: 0.0027 |	Bpp loss: 3.27 |	Aux loss: 7475.38
+Train epoch 19: [80/418 (19%)]	Loss: 4.6563 |	MSE loss: 0.0022 |	Bpp loss: 3.26 |	Aux loss: 7469.09
+Train epoch 19: [160/418 (38%)]	Loss: 4.7203 |	MSE loss: 0.0023 |	Bpp loss: 3.25 |	Aux loss: 7463.06
+Train epoch 19: [240/418 (57%)]	Loss: 4.3928 |	MSE loss: 0.0018 |	Bpp loss: 3.24 |	Aux loss: 7458.44
+Train epoch 19: [320/418 (75%)]	Loss: 4.6156 |	MSE loss: 0.0021 |	Bpp loss: 3.23 |	Aux loss: 7454.43
+Train epoch 19: [400/418 (94%)]	Loss: 4.1135 |	MSE loss: 0.0014 |	Bpp loss: 3.23 |	Aux loss: 7450.59
+Test epoch 19: Average losses:	Loss: 4.6967 |	MSE loss: 0.0023 |	Bpp loss: 3.23 |	Aux loss: 7449.72
+
+Learning rate: 0.0001
+Train epoch 20: [0/418 (0%)]	Loss: 4.7973 |	MSE loss: 0.0024 |	Bpp loss: 3.23 |	Aux loss: 7449.45
+Train epoch 20: [80/418 (19%)]	Loss: 4.1333 |	MSE loss: 0.0014 |	Bpp loss: 3.22 |	Aux loss: 7445.93
+Train epoch 20: [160/418 (38%)]	Loss: 5.3718 |	MSE loss: 0.0033 |	Bpp loss: 3.22 |	Aux loss: 7441.88
+Train epoch 20: [240/418 (57%)]	Loss: 5.0340 |	MSE loss: 0.0028 |	Bpp loss: 3.22 |	Aux loss: 7438.04
+Train epoch 20: [320/418 (75%)]	Loss: 4.7324 |	MSE loss: 0.0023 |	Bpp loss: 3.21 |	Aux loss: 7434.42
+Train epoch 20: [400/418 (94%)]	Loss: 4.3993 |	MSE loss: 0.0018 |	Bpp loss: 3.20 |	Aux loss: 7430.80
+Test epoch 20: Average losses:	Loss: 4.9046 |	MSE loss: 0.0026 |	Bpp loss: 3.20 |	Aux loss: 7429.97
+
+Learning rate: 0.0001
+Train epoch 21: [0/418 (0%)]	Loss: 5.1760 |	MSE loss: 0.0030 |	Bpp loss: 3.21 |	Aux loss: 7429.73
+Train epoch 21: [80/418 (19%)]	Loss: 4.5548 |	MSE loss: 0.0021 |	Bpp loss: 3.20 |	Aux loss: 7425.60
+Train epoch 21: [160/418 (38%)]	Loss: 4.7915 |	MSE loss: 0.0025 |	Bpp loss: 3.19 |	Aux loss: 7421.20
+Train epoch 21: [240/418 (57%)]	Loss: 5.0446 |	MSE loss: 0.0029 |	Bpp loss: 3.19 |	Aux loss: 7417.16
+Train epoch 21: [320/418 (75%)]	Loss: 4.3307 |	MSE loss: 0.0018 |	Bpp loss: 3.18 |	Aux loss: 7413.45
+Train epoch 21: [400/418 (94%)]	Loss: 4.5964 |	MSE loss: 0.0022 |	Bpp loss: 3.18 |	Aux loss: 7409.31
+Test epoch 21: Average losses:	Loss: 4.4637 |	MSE loss: 0.0020 |	Bpp loss: 3.17 |	Aux loss: 7408.31
+
+Learning rate: 0.0001
+Train epoch 22: [0/418 (0%)]	Loss: 4.1692 |	MSE loss: 0.0015 |	Bpp loss: 3.17 |	Aux loss: 7407.95
+Train epoch 22: [80/418 (19%)]	Loss: 4.8561 |	MSE loss: 0.0026 |	Bpp loss: 3.17 |	Aux loss: 7403.00
+Train epoch 22: [160/418 (38%)]	Loss: 4.3270 |	MSE loss: 0.0018 |	Bpp loss: 3.16 |	Aux loss: 7398.62
+Train epoch 22: [240/418 (57%)]	Loss: 4.5965 |	MSE loss: 0.0022 |	Bpp loss: 3.16 |	Aux loss: 7394.70
+Train epoch 22: [320/418 (75%)]	Loss: 4.9417 |	MSE loss: 0.0028 |	Bpp loss: 3.15 |	Aux loss: 7390.75
+Train epoch 22: [400/418 (94%)]	Loss: 4.2099 |	MSE loss: 0.0016 |	Bpp loss: 3.15 |	Aux loss: 7386.72
+Test epoch 22: Average losses:	Loss: 4.5458 |	MSE loss: 0.0022 |	Bpp loss: 3.15 |	Aux loss: 7385.78
+
+Learning rate: 0.0001
+Train epoch 23: [0/418 (0%)]	Loss: 4.2072 |	MSE loss: 0.0016 |	Bpp loss: 3.14 |	Aux loss: 7385.45
+Train epoch 23: [80/418 (19%)]	Loss: 4.6480 |	MSE loss: 0.0023 |	Bpp loss: 3.14 |	Aux loss: 7381.41
+Train epoch 23: [160/418 (38%)]	Loss: 4.5227 |	MSE loss: 0.0021 |	Bpp loss: 3.14 |	Aux loss: 7377.28
+Train epoch 23: [240/418 (57%)]	Loss: 5.1698 |	MSE loss: 0.0031 |	Bpp loss: 3.13 |	Aux loss: 7372.79
+Train epoch 23: [320/418 (75%)]	Loss: 4.5800 |	MSE loss: 0.0022 |	Bpp loss: 3.12 |	Aux loss: 7368.55
+Train epoch 23: [400/418 (94%)]	Loss: 4.6014 |	MSE loss: 0.0023 |	Bpp loss: 3.12 |	Aux loss: 7364.10
+Test epoch 23: Average losses:	Loss: 4.8429 |	MSE loss: 0.0027 |	Bpp loss: 3.12 |	Aux loss: 7363.10
+
+Learning rate: 0.0001
+Train epoch 24: [0/418 (0%)]	Loss: 4.9620 |	MSE loss: 0.0028 |	Bpp loss: 3.12 |	Aux loss: 7362.78
+Train epoch 24: [80/418 (19%)]	Loss: 4.0992 |	MSE loss: 0.0015 |	Bpp loss: 3.11 |	Aux loss: 7358.43
+Train epoch 24: [160/418 (38%)]	Loss: 4.2698 |	MSE loss: 0.0018 |	Bpp loss: 3.11 |	Aux loss: 7354.01
+Train epoch 24: [240/418 (57%)]	Loss: 4.4831 |	MSE loss: 0.0021 |	Bpp loss: 3.10 |	Aux loss: 7349.39
+Train epoch 24: [320/418 (75%)]	Loss: 4.6251 |	MSE loss: 0.0023 |	Bpp loss: 3.10 |	Aux loss: 7344.84
+Train epoch 24: [400/418 (94%)]	Loss: 4.2287 |	MSE loss: 0.0017 |	Bpp loss: 3.09 |	Aux loss: 7340.49
+Test epoch 24: Average losses:	Loss: 4.6266 |	MSE loss: 0.0024 |	Bpp loss: 3.09 |	Aux loss: 7339.46
+
+Learning rate: 0.0001
+Train epoch 25: [0/418 (0%)]	Loss: 4.5713 |	MSE loss: 0.0023 |	Bpp loss: 3.09 |	Aux loss: 7339.06
+Train epoch 25: [80/418 (19%)]	Loss: 5.3978 |	MSE loss: 0.0036 |	Bpp loss: 3.08 |	Aux loss: 7334.18
+Train epoch 25: [160/418 (38%)]	Loss: 4.5166 |	MSE loss: 0.0022 |	Bpp loss: 3.07 |	Aux loss: 7328.91
+Train epoch 25: [240/418 (57%)]	Loss: 4.8378 |	MSE loss: 0.0027 |	Bpp loss: 3.07 |	Aux loss: 7323.33
+Train epoch 25: [320/418 (75%)]	Loss: 4.4709 |	MSE loss: 0.0022 |	Bpp loss: 3.06 |	Aux loss: 7318.58
+Train epoch 25: [400/418 (94%)]	Loss: 4.3553 |	MSE loss: 0.0020 |	Bpp loss: 3.06 |	Aux loss: 7314.19
+Test epoch 25: Average losses:	Loss: 4.2117 |	MSE loss: 0.0018 |	Bpp loss: 3.06 |	Aux loss: 7313.21
+
+Learning rate: 0.0001
+Train epoch 26: [0/418 (0%)]	Loss: 4.2975 |	MSE loss: 0.0019 |	Bpp loss: 3.06 |	Aux loss: 7312.86
+Train epoch 26: [80/418 (19%)]	Loss: 4.4646 |	MSE loss: 0.0022 |	Bpp loss: 3.05 |	Aux loss: 7308.17
+Train epoch 26: [160/418 (38%)]	Loss: 4.0192 |	MSE loss: 0.0015 |	Bpp loss: 3.04 |	Aux loss: 7303.42
+Train epoch 26: [240/418 (57%)]	Loss: 4.4807 |	MSE loss: 0.0022 |	Bpp loss: 3.04 |	Aux loss: 7298.25
+Train epoch 26: [320/418 (75%)]	Loss: 4.2981 |	MSE loss: 0.0019 |	Bpp loss: 3.03 |	Aux loss: 7293.43
+Train epoch 26: [400/418 (94%)]	Loss: 5.0072 |	MSE loss: 0.0030 |	Bpp loss: 3.03 |	Aux loss: 7288.82
+Test epoch 26: Average losses:	Loss: 4.5276 |	MSE loss: 0.0023 |	Bpp loss: 3.02 |	Aux loss: 7287.71
+
+Learning rate: 0.0001
+Train epoch 27: [0/418 (0%)]	Loss: 4.2898 |	MSE loss: 0.0019 |	Bpp loss: 3.02 |	Aux loss: 7287.33
+Train epoch 27: [80/418 (19%)]	Loss: 4.2078 |	MSE loss: 0.0018 |	Bpp loss: 3.02 |	Aux loss: 7282.72
+Train epoch 27: [160/418 (38%)]	Loss: 4.6611 |	MSE loss: 0.0025 |	Bpp loss: 3.01 |	Aux loss: 7277.56
+Train epoch 27: [240/418 (57%)]	Loss: 4.6385 |	MSE loss: 0.0025 |	Bpp loss: 3.01 |	Aux loss: 7272.49
+Train epoch 27: [320/418 (75%)]	Loss: 3.9777 |	MSE loss: 0.0015 |	Bpp loss: 3.00 |	Aux loss: 7267.25
+Train epoch 27: [400/418 (94%)]	Loss: 4.1665 |	MSE loss: 0.0018 |	Bpp loss: 2.99 |	Aux loss: 7261.65
+Test epoch 27: Average losses:	Loss: 4.1468 |	MSE loss: 0.0018 |	Bpp loss: 2.99 |	Aux loss: 7260.49
+
+Learning rate: 0.0001
+Train epoch 28: [0/418 (0%)]	Loss: 4.0698 |	MSE loss: 0.0017 |	Bpp loss: 2.99 |	Aux loss: 7260.06
+Train epoch 28: [80/418 (19%)]	Loss: 4.6635 |	MSE loss: 0.0026 |	Bpp loss: 2.99 |	Aux loss: 7254.66
+Train epoch 28: [160/418 (38%)]	Loss: 4.3981 |	MSE loss: 0.0022 |	Bpp loss: 2.98 |	Aux loss: 7249.16
+Train epoch 28: [240/418 (57%)]	Loss: 4.0184 |	MSE loss: 0.0016 |	Bpp loss: 2.97 |	Aux loss: 7243.65
+Train epoch 28: [320/418 (75%)]	Loss: 3.9987 |	MSE loss: 0.0016 |	Bpp loss: 2.96 |	Aux loss: 7238.29
+Train epoch 28: [400/418 (94%)]	Loss: 4.0723 |	MSE loss: 0.0017 |	Bpp loss: 2.96 |	Aux loss: 7233.04
+Test epoch 28: Average losses:	Loss: 4.1647 |	MSE loss: 0.0019 |	Bpp loss: 2.96 |	Aux loss: 7231.91
+
+Learning rate: 0.0001
+Train epoch 29: [0/418 (0%)]	Loss: 3.9258 |	MSE loss: 0.0015 |	Bpp loss: 2.96 |	Aux loss: 7231.51
+Train epoch 29: [80/418 (19%)]	Loss: 4.1831 |	MSE loss: 0.0019 |	Bpp loss: 2.95 |	Aux loss: 7226.02
+Train epoch 29: [160/418 (38%)]	Loss: 3.9970 |	MSE loss: 0.0016 |	Bpp loss: 2.94 |	Aux loss: 7220.32
+Train epoch 29: [240/418 (57%)]	Loss: 4.3086 |	MSE loss: 0.0021 |	Bpp loss: 2.94 |	Aux loss: 7214.87
+Train epoch 29: [320/418 (75%)]	Loss: 4.0687 |	MSE loss: 0.0017 |	Bpp loss: 2.93 |	Aux loss: 7209.17
+Train epoch 29: [400/418 (94%)]	Loss: 4.4990 |	MSE loss: 0.0024 |	Bpp loss: 2.92 |	Aux loss: 7203.88
+Test epoch 29: Average losses:	Loss: 4.3912 |	MSE loss: 0.0023 |	Bpp loss: 2.92 |	Aux loss: 7202.63
+
+Learning rate: 0.0001
+Train epoch 30: [0/418 (0%)]	Loss: 4.1691 |	MSE loss: 0.0019 |	Bpp loss: 2.92 |	Aux loss: 7202.16
+Train epoch 30: [80/418 (19%)]	Loss: 4.0902 |	MSE loss: 0.0018 |	Bpp loss: 2.92 |	Aux loss: 7196.39
+Train epoch 30: [160/418 (38%)]	Loss: 4.0546 |	MSE loss: 0.0018 |	Bpp loss: 2.91 |	Aux loss: 7190.32
+Train epoch 30: [240/418 (57%)]	Loss: 3.7398 |	MSE loss: 0.0013 |	Bpp loss: 2.90 |	Aux loss: 7183.90
+Train epoch 30: [320/418 (75%)]	Loss: 4.0927 |	MSE loss: 0.0019 |	Bpp loss: 2.89 |	Aux loss: 7175.91
+Train epoch 30: [400/418 (94%)]	Loss: 4.2651 |	MSE loss: 0.0021 |	Bpp loss: 2.88 |	Aux loss: 7167.43
+Test epoch 30: Average losses:	Loss: 3.9758 |	MSE loss: 0.0017 |	Bpp loss: 2.88 |	Aux loss: 7165.62
+
+Learning rate: 0.0001
+Train epoch 31: [0/418 (0%)]	Loss: 4.0496 |	MSE loss: 0.0018 |	Bpp loss: 2.88 |	Aux loss: 7164.92
+Train epoch 31: [80/418 (19%)]	Loss: 3.7367 |	MSE loss: 0.0013 |	Bpp loss: 2.86 |	Aux loss: 7157.07
+Train epoch 31: [160/418 (38%)]	Loss: 3.7331 |	MSE loss: 0.0013 |	Bpp loss: 2.86 |	Aux loss: 7149.00
+Train epoch 31: [240/418 (57%)]	Loss: 4.0926 |	MSE loss: 0.0019 |	Bpp loss: 2.85 |	Aux loss: 7140.34
+Train epoch 31: [320/418 (75%)]	Loss: 4.0149 |	MSE loss: 0.0018 |	Bpp loss: 2.84 |	Aux loss: 7131.29
+Train epoch 31: [400/418 (94%)]	Loss: 3.8682 |	MSE loss: 0.0016 |	Bpp loss: 2.82 |	Aux loss: 7120.88
+Test epoch 31: Average losses:	Loss: 3.9968 |	MSE loss: 0.0018 |	Bpp loss: 2.82 |	Aux loss: 7118.70
+
+Learning rate: 0.0001
+Train epoch 32: [0/418 (0%)]	Loss: 3.9122 |	MSE loss: 0.0017 |	Bpp loss: 2.82 |	Aux loss: 7117.86
+Train epoch 32: [80/418 (19%)]	Loss: 3.8561 |	MSE loss: 0.0016 |	Bpp loss: 2.81 |	Aux loss: 7109.28
+Train epoch 32: [160/418 (38%)]	Loss: 3.8725 |	MSE loss: 0.0016 |	Bpp loss: 2.80 |	Aux loss: 7099.84
+Train epoch 32: [240/418 (57%)]	Loss: 3.8571 |	MSE loss: 0.0016 |	Bpp loss: 2.79 |	Aux loss: 7088.84
+Train epoch 32: [320/418 (75%)]	Loss: 3.7185 |	MSE loss: 0.0014 |	Bpp loss: 2.78 |	Aux loss: 7078.29
+Train epoch 32: [400/418 (94%)]	Loss: 3.6838 |	MSE loss: 0.0014 |	Bpp loss: 2.76 |	Aux loss: 7071.20
+Test epoch 32: Average losses:	Loss: 3.8577 |	MSE loss: 0.0017 |	Bpp loss: 2.77 |	Aux loss: 7069.92
+
+Learning rate: 0.0001
+Train epoch 33: [0/418 (0%)]	Loss: 3.9007 |	MSE loss: 0.0017 |	Bpp loss: 2.77 |	Aux loss: 7069.46
+Train epoch 33: [80/418 (19%)]	Loss: 3.9376 |	MSE loss: 0.0018 |	Bpp loss: 2.76 |	Aux loss: 7063.65
+Train epoch 33: [160/418 (38%)]	Loss: 3.7709 |	MSE loss: 0.0016 |	Bpp loss: 2.75 |	Aux loss: 7057.71
+Train epoch 33: [240/418 (57%)]	Loss: 3.5672 |	MSE loss: 0.0013 |	Bpp loss: 2.75 |	Aux loss: 7052.21
+Train epoch 33: [320/418 (75%)]	Loss: 4.0532 |	MSE loss: 0.0020 |	Bpp loss: 2.74 |	Aux loss: 7046.94
+Train epoch 33: [400/418 (94%)]	Loss: 3.9534 |	MSE loss: 0.0019 |	Bpp loss: 2.74 |	Aux loss: 7041.68
+Test epoch 33: Average losses:	Loss: 3.8516 |	MSE loss: 0.0017 |	Bpp loss: 2.73 |	Aux loss: 7040.51
+
+Learning rate: 0.0001
+Train epoch 34: [0/418 (0%)]	Loss: 3.6658 |	MSE loss: 0.0014 |	Bpp loss: 2.73 |	Aux loss: 7040.11
+Train epoch 34: [80/418 (19%)]	Loss: 3.7716 |	MSE loss: 0.0016 |	Bpp loss: 2.73 |	Aux loss: 7034.96
+Train epoch 34: [160/418 (38%)]	Loss: 4.3577 |	MSE loss: 0.0025 |	Bpp loss: 2.73 |	Aux loss: 7028.69
+Train epoch 34: [240/418 (57%)]	Loss: 3.4015 |	MSE loss: 0.0011 |	Bpp loss: 2.71 |	Aux loss: 7022.80
+Train epoch 34: [320/418 (75%)]	Loss: 4.0152 |	MSE loss: 0.0020 |	Bpp loss: 2.71 |	Aux loss: 7017.03
+Train epoch 34: [400/418 (94%)]	Loss: 3.9229 |	MSE loss: 0.0019 |	Bpp loss: 2.71 |	Aux loss: 7010.42
+Test epoch 34: Average losses:	Loss: 4.1629 |	MSE loss: 0.0022 |	Bpp loss: 2.70 |	Aux loss: 7008.80
+
+Learning rate: 0.0001
+Train epoch 35: [0/418 (0%)]	Loss: 3.9123 |	MSE loss: 0.0019 |	Bpp loss: 2.70 |	Aux loss: 7008.17
+Train epoch 35: [80/418 (19%)]	Loss: 3.8493 |	MSE loss: 0.0018 |	Bpp loss: 2.70 |	Aux loss: 7000.21
+Train epoch 35: [160/418 (38%)]	Loss: 3.9105 |	MSE loss: 0.0019 |	Bpp loss: 2.69 |	Aux loss: 6991.17
+Train epoch 35: [240/418 (57%)]	Loss: 3.7851 |	MSE loss: 0.0017 |	Bpp loss: 2.68 |	Aux loss: 6982.89
+Train epoch 35: [320/418 (75%)]	Loss: 3.3589 |	MSE loss: 0.0011 |	Bpp loss: 2.66 |	Aux loss: 6974.42
+Train epoch 35: [400/418 (94%)]	Loss: 3.6785 |	MSE loss: 0.0016 |	Bpp loss: 2.66 |	Aux loss: 6964.85
+Test epoch 35: Average losses:	Loss: 3.6599 |	MSE loss: 0.0015 |	Bpp loss: 2.66 |	Aux loss: 6962.78
+
+Learning rate: 0.0001
+Train epoch 36: [0/418 (0%)]	Loss: 3.5046 |	MSE loss: 0.0013 |	Bpp loss: 2.65 |	Aux loss: 6961.95
+Train epoch 36: [80/418 (19%)]	Loss: 3.7642 |	MSE loss: 0.0017 |	Bpp loss: 2.64 |	Aux loss: 6952.10
+Train epoch 36: [160/418 (38%)]	Loss: 3.6196 |	MSE loss: 0.0015 |	Bpp loss: 2.64 |	Aux loss: 6942.43
+Train epoch 36: [240/418 (57%)]	Loss: 3.3555 |	MSE loss: 0.0011 |	Bpp loss: 2.62 |	Aux loss: 6933.31
+Train epoch 36: [320/418 (75%)]	Loss: 3.5181 |	MSE loss: 0.0014 |	Bpp loss: 2.62 |	Aux loss: 6924.21
+Train epoch 36: [400/418 (94%)]	Loss: 3.5837 |	MSE loss: 0.0015 |	Bpp loss: 2.61 |	Aux loss: 6914.72
+Test epoch 36: Average losses:	Loss: 3.6269 |	MSE loss: 0.0016 |	Bpp loss: 2.61 |	Aux loss: 6912.82
+
+Learning rate: 0.0001
+Train epoch 37: [0/418 (0%)]	Loss: 3.6139 |	MSE loss: 0.0015 |	Bpp loss: 2.61 |	Aux loss: 6912.11
+Train epoch 37: [80/418 (19%)]	Loss: 3.6666 |	MSE loss: 0.0016 |	Bpp loss: 2.60 |	Aux loss: 6903.51
+Train epoch 37: [160/418 (38%)]	Loss: 3.6833 |	MSE loss: 0.0017 |	Bpp loss: 2.59 |	Aux loss: 6896.69
+Train epoch 37: [240/418 (57%)]	Loss: 3.5782 |	MSE loss: 0.0015 |	Bpp loss: 2.59 |	Aux loss: 6890.72
+Train epoch 37: [320/418 (75%)]	Loss: 3.6646 |	MSE loss: 0.0017 |	Bpp loss: 2.58 |	Aux loss: 6885.21
+Train epoch 37: [400/418 (94%)]	Loss: 3.5403 |	MSE loss: 0.0015 |	Bpp loss: 2.57 |	Aux loss: 6879.48
+Test epoch 37: Average losses:	Loss: 3.6994 |	MSE loss: 0.0017 |	Bpp loss: 2.58 |	Aux loss: 6878.12
+
+Learning rate: 0.0001
+Train epoch 38: [0/418 (0%)]	Loss: 3.7050 |	MSE loss: 0.0017 |	Bpp loss: 2.57 |	Aux loss: 6877.64
+Train epoch 38: [80/418 (19%)]	Loss: 3.5902 |	MSE loss: 0.0016 |	Bpp loss: 2.57 |	Aux loss: 6871.91
+Train epoch 38: [160/418 (38%)]	Loss: 3.3249 |	MSE loss: 0.0012 |	Bpp loss: 2.56 |	Aux loss: 6866.27
+Train epoch 38: [240/418 (57%)]	Loss: 3.5273 |	MSE loss: 0.0015 |	Bpp loss: 2.56 |	Aux loss: 6860.70
+Train epoch 38: [320/418 (75%)]	Loss: 3.4533 |	MSE loss: 0.0014 |	Bpp loss: 2.56 |	Aux loss: 6854.66
+Train epoch 38: [400/418 (94%)]	Loss: 3.2586 |	MSE loss: 0.0011 |	Bpp loss: 2.54 |	Aux loss: 6848.49
+Test epoch 38: Average losses:	Loss: 3.5503 |	MSE loss: 0.0015 |	Bpp loss: 2.55 |	Aux loss: 6846.99
+
+Learning rate: 0.0001
+Train epoch 39: [0/418 (0%)]	Loss: 3.4968 |	MSE loss: 0.0015 |	Bpp loss: 2.55 |	Aux loss: 6846.42
+Train epoch 39: [80/418 (19%)]	Loss: 3.7487 |	MSE loss: 0.0018 |	Bpp loss: 2.55 |	Aux loss: 6839.32
+Train epoch 39: [160/418 (38%)]	Loss: 3.4050 |	MSE loss: 0.0013 |	Bpp loss: 2.54 |	Aux loss: 6832.71
+Train epoch 39: [240/418 (57%)]	Loss: 3.4556 |	MSE loss: 0.0014 |	Bpp loss: 2.53 |	Aux loss: 6826.08
+Train epoch 39: [320/418 (75%)]	Loss: 3.6456 |	MSE loss: 0.0017 |	Bpp loss: 2.52 |	Aux loss: 6819.92
+Train epoch 39: [400/418 (94%)]	Loss: 3.5949 |	MSE loss: 0.0016 |	Bpp loss: 2.53 |	Aux loss: 6813.25
+Test epoch 39: Average losses:	Loss: 3.5802 |	MSE loss: 0.0016 |	Bpp loss: 2.52 |	Aux loss: 6811.75
+
+Learning rate: 0.0001
+Train epoch 40: [0/418 (0%)]	Loss: 3.3065 |	MSE loss: 0.0012 |	Bpp loss: 2.52 |	Aux loss: 6811.19
+Train epoch 40: [80/418 (19%)]	Loss: 3.0940 |	MSE loss: 0.0009 |	Bpp loss: 2.51 |	Aux loss: 6802.55
+Train epoch 40: [160/418 (38%)]	Loss: 3.2038 |	MSE loss: 0.0011 |	Bpp loss: 2.50 |	Aux loss: 6791.12
+Train epoch 40: [240/418 (57%)]	Loss: 3.4076 |	MSE loss: 0.0014 |	Bpp loss: 2.49 |	Aux loss: 6779.36
+Train epoch 40: [320/418 (75%)]	Loss: 3.2611 |	MSE loss: 0.0012 |	Bpp loss: 2.48 |	Aux loss: 6768.35
+Train epoch 40: [400/418 (94%)]	Loss: 3.6474 |	MSE loss: 0.0018 |	Bpp loss: 2.47 |	Aux loss: 6756.35
+Test epoch 40: Average losses:	Loss: 3.5218 |	MSE loss: 0.0016 |	Bpp loss: 2.46 |	Aux loss: 6753.49
+
+Learning rate: 0.0001
+Train epoch 41: [0/418 (0%)]	Loss: 3.2255 |	MSE loss: 0.0012 |	Bpp loss: 2.46 |	Aux loss: 6752.38
+Train epoch 41: [80/418 (19%)]	Loss: 3.6059 |	MSE loss: 0.0018 |	Bpp loss: 2.46 |	Aux loss: 6742.17
+Train epoch 41: [160/418 (38%)]	Loss: 3.5160 |	MSE loss: 0.0017 |	Bpp loss: 2.44 |	Aux loss: 6733.44
+Train epoch 41: [240/418 (57%)]	Loss: 3.0977 |	MSE loss: 0.0010 |	Bpp loss: 2.44 |	Aux loss: 6726.45
+Train epoch 41: [320/418 (75%)]	Loss: 3.1535 |	MSE loss: 0.0011 |	Bpp loss: 2.43 |	Aux loss: 6719.26
+Train epoch 41: [400/418 (94%)]	Loss: 3.8063 |	MSE loss: 0.0021 |	Bpp loss: 2.43 |	Aux loss: 6712.64
+Test epoch 41: Average losses:	Loss: 3.5214 |	MSE loss: 0.0017 |	Bpp loss: 2.43 |	Aux loss: 6711.21
+
+Learning rate: 0.0001
+Train epoch 42: [0/418 (0%)]	Loss: 3.4333 |	MSE loss: 0.0015 |	Bpp loss: 2.43 |	Aux loss: 6710.69
+Train epoch 42: [80/418 (19%)]	Loss: 3.3757 |	MSE loss: 0.0015 |	Bpp loss: 2.43 |	Aux loss: 6704.02
+Train epoch 42: [160/418 (38%)]	Loss: 3.2162 |	MSE loss: 0.0012 |	Bpp loss: 2.42 |	Aux loss: 6696.91
+Train epoch 42: [240/418 (57%)]	Loss: 3.2699 |	MSE loss: 0.0013 |	Bpp loss: 2.41 |	Aux loss: 6690.11
+Train epoch 42: [320/418 (75%)]	Loss: 3.2579 |	MSE loss: 0.0013 |	Bpp loss: 2.40 |	Aux loss: 6683.18
+Train epoch 42: [400/418 (94%)]	Loss: 3.1904 |	MSE loss: 0.0012 |	Bpp loss: 2.40 |	Aux loss: 6676.25
+Test epoch 42: Average losses:	Loss: 3.3051 |	MSE loss: 0.0014 |	Bpp loss: 2.40 |	Aux loss: 6674.57
+
+Learning rate: 0.0001
+Train epoch 43: [0/418 (0%)]	Loss: 3.1038 |	MSE loss: 0.0011 |	Bpp loss: 2.40 |	Aux loss: 6673.85
+Train epoch 43: [80/418 (19%)]	Loss: 3.1891 |	MSE loss: 0.0012 |	Bpp loss: 2.39 |	Aux loss: 6661.63
+Train epoch 43: [160/418 (38%)]	Loss: 3.0873 |	MSE loss: 0.0011 |	Bpp loss: 2.37 |	Aux loss: 6647.90
+Train epoch 43: [240/418 (57%)]	Loss: 2.9886 |	MSE loss: 0.0010 |	Bpp loss: 2.36 |	Aux loss: 6634.55
+Train epoch 43: [320/418 (75%)]	Loss: 3.0543 |	MSE loss: 0.0011 |	Bpp loss: 2.35 |	Aux loss: 6621.78
+Train epoch 43: [400/418 (94%)]	Loss: 3.2964 |	MSE loss: 0.0015 |	Bpp loss: 2.34 |	Aux loss: 6609.40
+Test epoch 43: Average losses:	Loss: 3.2154 |	MSE loss: 0.0013 |	Bpp loss: 2.34 |	Aux loss: 6606.58
+
+Learning rate: 0.0001
+Train epoch 44: [0/418 (0%)]	Loss: 3.2743 |	MSE loss: 0.0014 |	Bpp loss: 2.34 |	Aux loss: 6605.31
+Train epoch 44: [80/418 (19%)]	Loss: 3.0661 |	MSE loss: 0.0011 |	Bpp loss: 2.33 |	Aux loss: 6591.10
+Train epoch 44: [160/418 (38%)]	Loss: 2.9756 |	MSE loss: 0.0010 |	Bpp loss: 2.31 |	Aux loss: 6572.07
+Train epoch 44: [240/418 (57%)]	Loss: 3.2413 |	MSE loss: 0.0014 |	Bpp loss: 2.30 |	Aux loss: 6549.88
+Train epoch 44: [320/418 (75%)]	Loss: 2.9243 |	MSE loss: 0.0010 |	Bpp loss: 2.28 |	Aux loss: 6532.23
+Train epoch 44: [400/418 (94%)]	Loss: 3.1308 |	MSE loss: 0.0013 |	Bpp loss: 2.27 |	Aux loss: 6514.68
+Test epoch 44: Average losses:	Loss: 3.2596 |	MSE loss: 0.0015 |	Bpp loss: 2.26 |	Aux loss: 6511.85
+
+Learning rate: 0.0001
+Train epoch 45: [0/418 (0%)]	Loss: 2.9626 |	MSE loss: 0.0011 |	Bpp loss: 2.26 |	Aux loss: 6510.77
+Train epoch 45: [80/418 (19%)]	Loss: 3.0953 |	MSE loss: 0.0013 |	Bpp loss: 2.25 |	Aux loss: 6500.98
+Train epoch 45: [160/418 (38%)]	Loss: 2.9029 |	MSE loss: 0.0010 |	Bpp loss: 2.25 |	Aux loss: 6492.71
+Train epoch 45: [240/418 (57%)]	Loss: 2.9027 |	MSE loss: 0.0010 |	Bpp loss: 2.24 |	Aux loss: 6483.68
+Train epoch 45: [320/418 (75%)]	Loss: 2.7846 |	MSE loss: 0.0008 |	Bpp loss: 2.23 |	Aux loss: 6474.12
+Train epoch 45: [400/418 (94%)]	Loss: 3.2581 |	MSE loss: 0.0016 |	Bpp loss: 2.24 |	Aux loss: 6464.60
+Test epoch 45: Average losses:	Loss: 3.0770 |	MSE loss: 0.0013 |	Bpp loss: 2.23 |	Aux loss: 6462.09
+
+Learning rate: 0.0001
+Train epoch 46: [0/418 (0%)]	Loss: 3.0274 |	MSE loss: 0.0012 |	Bpp loss: 2.23 |	Aux loss: 6461.06
+Train epoch 46: [80/418 (19%)]	Loss: 2.7793 |	MSE loss: 0.0009 |	Bpp loss: 2.21 |	Aux loss: 6447.93
+Train epoch 46: [160/418 (38%)]	Loss: 3.0876 |	MSE loss: 0.0013 |	Bpp loss: 2.22 |	Aux loss: 6435.90
+Train epoch 46: [240/418 (57%)]	Loss: 2.9353 |	MSE loss: 0.0011 |	Bpp loss: 2.20 |	Aux loss: 6425.18
+Train epoch 46: [320/418 (75%)]	Loss: 3.1563 |	MSE loss: 0.0015 |	Bpp loss: 2.21 |	Aux loss: 6414.61
+Train epoch 46: [400/418 (94%)]	Loss: 2.7034 |	MSE loss: 0.0008 |	Bpp loss: 2.18 |	Aux loss: 6402.06
+Test epoch 46: Average losses:	Loss: 2.9850 |	MSE loss: 0.0012 |	Bpp loss: 2.18 |	Aux loss: 6398.83
+
+Learning rate: 0.0001
+Train epoch 47: [0/418 (0%)]	Loss: 2.8556 |	MSE loss: 0.0010 |	Bpp loss: 2.18 |	Aux loss: 6397.57
+Train epoch 47: [80/418 (19%)]	Loss: 2.8180 |	MSE loss: 0.0010 |	Bpp loss: 2.17 |	Aux loss: 6380.43
+Train epoch 47: [160/418 (38%)]	Loss: 3.0331 |	MSE loss: 0.0013 |	Bpp loss: 2.18 |	Aux loss: 6367.75
+Train epoch 47: [240/418 (57%)]	Loss: 2.8021 |	MSE loss: 0.0010 |	Bpp loss: 2.16 |	Aux loss: 6356.67
+Train epoch 47: [320/418 (75%)]	Loss: 2.6187 |	MSE loss: 0.0008 |	Bpp loss: 2.13 |	Aux loss: 6344.73
+Train epoch 47: [400/418 (94%)]	Loss: 2.7568 |	MSE loss: 0.0010 |	Bpp loss: 2.13 |	Aux loss: 6332.18
+Test epoch 47: Average losses:	Loss: 2.9402 |	MSE loss: 0.0012 |	Bpp loss: 2.13 |	Aux loss: 6329.43
+
+Learning rate: 0.0001
+Train epoch 48: [0/418 (0%)]	Loss: 3.0263 |	MSE loss: 0.0014 |	Bpp loss: 2.14 |	Aux loss: 6328.36
+Train epoch 48: [80/418 (19%)]	Loss: 2.6710 |	MSE loss: 0.0008 |	Bpp loss: 2.12 |	Aux loss: 6317.29
+Train epoch 48: [160/418 (38%)]	Loss: 2.9739 |	MSE loss: 0.0013 |	Bpp loss: 2.13 |	Aux loss: 6307.03
+Train epoch 48: [240/418 (57%)]	Loss: 3.2375 |	MSE loss: 0.0017 |	Bpp loss: 2.13 |	Aux loss: 6296.73
+Train epoch 48: [320/418 (75%)]	Loss: 2.8504 |	MSE loss: 0.0011 |	Bpp loss: 2.11 |	Aux loss: 6285.71
+Train epoch 48: [400/418 (94%)]	Loss: 2.7174 |	MSE loss: 0.0010 |	Bpp loss: 2.10 |	Aux loss: 6272.98
+Test epoch 48: Average losses:	Loss: 2.9011 |	MSE loss: 0.0012 |	Bpp loss: 2.09 |	Aux loss: 6270.04
+
+Learning rate: 0.0001
+Train epoch 49: [0/418 (0%)]	Loss: 2.6299 |	MSE loss: 0.0008 |	Bpp loss: 2.08 |	Aux loss: 6268.86
+Train epoch 49: [80/418 (19%)]	Loss: 2.6353 |	MSE loss: 0.0009 |	Bpp loss: 2.08 |	Aux loss: 6255.09
+Train epoch 49: [160/418 (38%)]	Loss: 2.6549 |	MSE loss: 0.0009 |	Bpp loss: 2.08 |	Aux loss: 6240.21
+Train epoch 49: [240/418 (57%)]	Loss: 2.5600 |	MSE loss: 0.0008 |	Bpp loss: 2.05 |	Aux loss: 6221.39
+Train epoch 49: [320/418 (75%)]	Loss: 2.7728 |	MSE loss: 0.0011 |	Bpp loss: 2.06 |	Aux loss: 6205.40
+Train epoch 49: [400/418 (94%)]	Loss: 2.5105 |	MSE loss: 0.0007 |	Bpp loss: 2.03 |	Aux loss: 6192.12
+Test epoch 49: Average losses:	Loss: 2.8901 |	MSE loss: 0.0013 |	Bpp loss: 2.04 |	Aux loss: 6189.57
+
+Learning rate: 0.0001
+Train epoch 50: [0/418 (0%)]	Loss: 2.8232 |	MSE loss: 0.0012 |	Bpp loss: 2.04 |	Aux loss: 6188.64
+Train epoch 50: [80/418 (19%)]	Loss: 3.1134 |	MSE loss: 0.0016 |	Bpp loss: 2.05 |	Aux loss: 6175.67
+Train epoch 50: [160/418 (38%)]	Loss: 2.6403 |	MSE loss: 0.0010 |	Bpp loss: 2.02 |	Aux loss: 6161.85
+Train epoch 50: [240/418 (57%)]	Loss: 2.6131 |	MSE loss: 0.0009 |	Bpp loss: 2.01 |	Aux loss: 6149.49
+Train epoch 50: [320/418 (75%)]	Loss: 2.8171 |	MSE loss: 0.0012 |	Bpp loss: 2.02 |	Aux loss: 6138.51
+Train epoch 50: [400/418 (94%)]	Loss: 2.5838 |	MSE loss: 0.0009 |	Bpp loss: 1.99 |	Aux loss: 6126.28
+Test epoch 50: Average losses:	Loss: 2.9319 |	MSE loss: 0.0014 |	Bpp loss: 2.00 |	Aux loss: 6123.83
+
+Learning rate: 0.0001
+Train epoch 51: [0/418 (0%)]	Loss: 2.9793 |	MSE loss: 0.0015 |	Bpp loss: 2.00 |	Aux loss: 6122.94
+Train epoch 51: [80/418 (19%)]	Loss: 3.2091 |	MSE loss: 0.0019 |	Bpp loss: 2.00 |	Aux loss: 6113.81
+Train epoch 51: [160/418 (38%)]	Loss: 2.4063 |	MSE loss: 0.0007 |	Bpp loss: 1.97 |	Aux loss: 6106.17
+Train epoch 51: [240/418 (57%)]	Loss: 2.8218 |	MSE loss: 0.0013 |	Bpp loss: 2.00 |	Aux loss: 6099.29
+Train epoch 51: [320/418 (75%)]	Loss: 2.8465 |	MSE loss: 0.0013 |	Bpp loss: 1.98 |	Aux loss: 6092.52
+Train epoch 51: [400/418 (94%)]	Loss: 2.6908 |	MSE loss: 0.0011 |	Bpp loss: 1.99 |	Aux loss: 6085.37
+Test epoch 51: Average losses:	Loss: 2.7872 |	MSE loss: 0.0013 |	Bpp loss: 1.97 |	Aux loss: 6083.90
+
+Learning rate: 0.0001
+Train epoch 52: [0/418 (0%)]	Loss: 2.6882 |	MSE loss: 0.0011 |	Bpp loss: 1.98 |	Aux loss: 6083.44
+Train epoch 52: [80/418 (19%)]	Loss: 2.7060 |	MSE loss: 0.0011 |	Bpp loss: 1.97 |	Aux loss: 6076.61
+Train epoch 52: [160/418 (38%)]	Loss: 2.9691 |	MSE loss: 0.0015 |	Bpp loss: 1.98 |	Aux loss: 6069.51
+Train epoch 52: [240/418 (57%)]	Loss: 2.7162 |	MSE loss: 0.0012 |	Bpp loss: 1.97 |	Aux loss: 6062.55
+Train epoch 52: [320/418 (75%)]	Loss: 2.6560 |	MSE loss: 0.0011 |	Bpp loss: 1.96 |	Aux loss: 6055.55
+Train epoch 52: [400/418 (94%)]	Loss: 2.6973 |	MSE loss: 0.0011 |	Bpp loss: 1.96 |	Aux loss: 6049.03
+Test epoch 52: Average losses:	Loss: 2.8878 |	MSE loss: 0.0014 |	Bpp loss: 1.95 |	Aux loss: 6047.55
+
+Learning rate: 0.0001
+Train epoch 53: [0/418 (0%)]	Loss: 2.8674 |	MSE loss: 0.0014 |	Bpp loss: 1.97 |	Aux loss: 6047.07
+Train epoch 53: [80/418 (19%)]	Loss: 2.5342 |	MSE loss: 0.0009 |	Bpp loss: 1.95 |	Aux loss: 6040.41
+Train epoch 53: [160/418 (38%)]	Loss: 2.7456 |	MSE loss: 0.0012 |	Bpp loss: 1.96 |	Aux loss: 6033.62
+Train epoch 53: [240/418 (57%)]	Loss: 3.0436 |	MSE loss: 0.0017 |	Bpp loss: 1.96 |	Aux loss: 6026.69
+Train epoch 53: [320/418 (75%)]	Loss: 2.4558 |	MSE loss: 0.0008 |	Bpp loss: 1.94 |	Aux loss: 6019.79
+Train epoch 53: [400/418 (94%)]	Loss: 2.5807 |	MSE loss: 0.0010 |	Bpp loss: 1.95 |	Aux loss: 6012.82
+Test epoch 53: Average losses:	Loss: 2.8429 |	MSE loss: 0.0014 |	Bpp loss: 1.93 |	Aux loss: 6011.32
+
+Learning rate: 0.0001
+Train epoch 54: [0/418 (0%)]	Loss: 2.7395 |	MSE loss: 0.0012 |	Bpp loss: 1.93 |	Aux loss: 6010.80
+Train epoch 54: [80/418 (19%)]	Loss: 2.7122 |	MSE loss: 0.0012 |	Bpp loss: 1.94 |	Aux loss: 6004.34
+Train epoch 54: [160/418 (38%)]	Loss: 2.5206 |	MSE loss: 0.0009 |	Bpp loss: 1.94 |	Aux loss: 5997.64
+Train epoch 54: [240/418 (57%)]	Loss: 2.4788 |	MSE loss: 0.0009 |	Bpp loss: 1.92 |	Aux loss: 5990.25
+Train epoch 54: [320/418 (75%)]	Loss: 2.6497 |	MSE loss: 0.0011 |	Bpp loss: 1.93 |	Aux loss: 5982.29
+Train epoch 54: [400/418 (94%)]	Loss: 2.6572 |	MSE loss: 0.0011 |	Bpp loss: 1.92 |	Aux loss: 5974.10
+Test epoch 54: Average losses:	Loss: 2.6713 |	MSE loss: 0.0012 |	Bpp loss: 1.92 |	Aux loss: 5972.45
+
+Learning rate: 0.0001
+Train epoch 55: [0/418 (0%)]	Loss: 2.6469 |	MSE loss: 0.0011 |	Bpp loss: 1.92 |	Aux loss: 5971.86
+Train epoch 55: [80/418 (19%)]	Loss: 2.6486 |	MSE loss: 0.0011 |	Bpp loss: 1.93 |	Aux loss: 5963.73
+Train epoch 55: [160/418 (38%)]	Loss: 2.5211 |	MSE loss: 0.0009 |	Bpp loss: 1.91 |	Aux loss: 5955.87
+Train epoch 55: [240/418 (57%)]	Loss: 2.5612 |	MSE loss: 0.0010 |	Bpp loss: 1.90 |	Aux loss: 5946.80
+Train epoch 55: [320/418 (75%)]	Loss: 2.8620 |	MSE loss: 0.0015 |	Bpp loss: 1.91 |	Aux loss: 5937.73
+Train epoch 55: [400/418 (94%)]	Loss: 2.4648 |	MSE loss: 0.0009 |	Bpp loss: 1.89 |	Aux loss: 5928.95
+Test epoch 55: Average losses:	Loss: 2.6926 |	MSE loss: 0.0012 |	Bpp loss: 1.89 |	Aux loss: 5926.24
+
+Learning rate: 0.0001
+Train epoch 56: [0/418 (0%)]	Loss: 2.4011 |	MSE loss: 0.0008 |	Bpp loss: 1.89 |	Aux loss: 5925.08
+Train epoch 56: [80/418 (19%)]	Loss: 2.4736 |	MSE loss: 0.0009 |	Bpp loss: 1.88 |	Aux loss: 5913.34
+Train epoch 56: [160/418 (38%)]	Loss: 2.5756 |	MSE loss: 0.0010 |	Bpp loss: 1.90 |	Aux loss: 5901.87
+Train epoch 56: [240/418 (57%)]	Loss: 2.4343 |	MSE loss: 0.0009 |	Bpp loss: 1.85 |	Aux loss: 5883.61
+Train epoch 56: [320/418 (75%)]	Loss: 2.9941 |	MSE loss: 0.0017 |	Bpp loss: 1.89 |	Aux loss: 5868.43
+Train epoch 56: [400/418 (94%)]	Loss: 2.4711 |	MSE loss: 0.0010 |	Bpp loss: 1.85 |	Aux loss: 5851.08
+Test epoch 56: Average losses:	Loss: 2.6040 |	MSE loss: 0.0012 |	Bpp loss: 1.84 |	Aux loss: 5847.62
+
+Learning rate: 0.0001
+Train epoch 57: [0/418 (0%)]	Loss: 2.4126 |	MSE loss: 0.0009 |	Bpp loss: 1.85 |	Aux loss: 5846.27
+Train epoch 57: [80/418 (19%)]	Loss: 2.4276 |	MSE loss: 0.0009 |	Bpp loss: 1.86 |	Aux loss: 5832.94
+Train epoch 57: [160/418 (38%)]	Loss: 2.6918 |	MSE loss: 0.0013 |	Bpp loss: 1.85 |	Aux loss: 5820.93
+Train epoch 57: [240/418 (57%)]	Loss: 2.4405 |	MSE loss: 0.0010 |	Bpp loss: 1.82 |	Aux loss: 5808.77
+Train epoch 57: [320/418 (75%)]	Loss: 2.4996 |	MSE loss: 0.0010 |	Bpp loss: 1.83 |	Aux loss: 5795.43
+Train epoch 57: [400/418 (94%)]	Loss: 2.2721 |	MSE loss: 0.0007 |	Bpp loss: 1.80 |	Aux loss: 5781.72
+Test epoch 57: Average losses:	Loss: 2.6020 |	MSE loss: 0.0012 |	Bpp loss: 1.81 |	Aux loss: 5778.72
+
+Learning rate: 0.0001
+Train epoch 58: [0/418 (0%)]	Loss: 2.5529 |	MSE loss: 0.0011 |	Bpp loss: 1.83 |	Aux loss: 5777.58
+Train epoch 58: [80/418 (19%)]	Loss: 2.3939 |	MSE loss: 0.0009 |	Bpp loss: 1.81 |	Aux loss: 5762.74
+Train epoch 58: [160/418 (38%)]	Loss: 2.2334 |	MSE loss: 0.0007 |	Bpp loss: 1.79 |	Aux loss: 5744.54
+Train epoch 58: [240/418 (57%)]	Loss: 2.3521 |	MSE loss: 0.0009 |	Bpp loss: 1.79 |	Aux loss: 5729.18
+Train epoch 58: [320/418 (75%)]	Loss: 2.1902 |	MSE loss: 0.0007 |	Bpp loss: 1.77 |	Aux loss: 5715.51
+Train epoch 58: [400/418 (94%)]	Loss: 2.3657 |	MSE loss: 0.0009 |	Bpp loss: 1.78 |	Aux loss: 5699.48
+Test epoch 58: Average losses:	Loss: 2.4993 |	MSE loss: 0.0011 |	Bpp loss: 1.77 |	Aux loss: 5696.42
+
+Learning rate: 0.0001
+Train epoch 59: [0/418 (0%)]	Loss: 2.4608 |	MSE loss: 0.0011 |	Bpp loss: 1.78 |	Aux loss: 5695.22
+Train epoch 59: [80/418 (19%)]	Loss: 2.4652 |	MSE loss: 0.0011 |	Bpp loss: 1.78 |	Aux loss: 5683.79
+Train epoch 59: [160/418 (38%)]	Loss: 2.3942 |	MSE loss: 0.0010 |	Bpp loss: 1.76 |	Aux loss: 5674.74
+Train epoch 59: [240/418 (57%)]	Loss: 2.5891 |	MSE loss: 0.0013 |	Bpp loss: 1.77 |	Aux loss: 5664.74
+Train epoch 59: [320/418 (75%)]	Loss: 2.4202 |	MSE loss: 0.0010 |	Bpp loss: 1.76 |	Aux loss: 5656.60
+Train epoch 59: [400/418 (94%)]	Loss: 2.4997 |	MSE loss: 0.0011 |	Bpp loss: 1.76 |	Aux loss: 5648.54
+Test epoch 59: Average losses:	Loss: 2.4478 |	MSE loss: 0.0011 |	Bpp loss: 1.74 |	Aux loss: 5646.65
+
+Learning rate: 0.0001
+Train epoch 60: [0/418 (0%)]	Loss: 2.0768 |	MSE loss: 0.0005 |	Bpp loss: 1.72 |	Aux loss: 5645.89
+Train epoch 60: [80/418 (19%)]	Loss: 2.1984 |	MSE loss: 0.0007 |	Bpp loss: 1.72 |	Aux loss: 5637.20
+Train epoch 60: [160/418 (38%)]	Loss: 2.4698 |	MSE loss: 0.0011 |	Bpp loss: 1.75 |	Aux loss: 5628.83
+Train epoch 60: [240/418 (57%)]	Loss: 2.2928 |	MSE loss: 0.0009 |	Bpp loss: 1.74 |	Aux loss: 5620.01
+Train epoch 60: [320/418 (75%)]	Loss: 2.3610 |	MSE loss: 0.0010 |	Bpp loss: 1.73 |	Aux loss: 5612.06
+Train epoch 60: [400/418 (94%)]	Loss: 2.2687 |	MSE loss: 0.0008 |	Bpp loss: 1.73 |	Aux loss: 5603.42
+Test epoch 60: Average losses:	Loss: 2.5249 |	MSE loss: 0.0012 |	Bpp loss: 1.72 |	Aux loss: 5601.21
+
+Learning rate: 0.0001
+Train epoch 61: [0/418 (0%)]	Loss: 2.4578 |	MSE loss: 0.0011 |	Bpp loss: 1.74 |	Aux loss: 5600.38
+Train epoch 61: [80/418 (19%)]	Loss: 2.3948 |	MSE loss: 0.0010 |	Bpp loss: 1.73 |	Aux loss: 5589.81
+Train epoch 61: [160/418 (38%)]	Loss: 2.5601 |	MSE loss: 0.0013 |	Bpp loss: 1.73 |	Aux loss: 5580.96
+Train epoch 61: [240/418 (57%)]	Loss: 2.2812 |	MSE loss: 0.0009 |	Bpp loss: 1.72 |	Aux loss: 5571.60
+Train epoch 61: [320/418 (75%)]	Loss: 2.4209 |	MSE loss: 0.0011 |	Bpp loss: 1.72 |	Aux loss: 5562.98
+Train epoch 61: [400/418 (94%)]	Loss: 2.2472 |	MSE loss: 0.0009 |	Bpp loss: 1.69 |	Aux loss: 5555.16
+Test epoch 61: Average losses:	Loss: 2.6354 |	MSE loss: 0.0014 |	Bpp loss: 1.70 |	Aux loss: 5553.36
+
+Learning rate: 0.0001
+Train epoch 62: [0/418 (0%)]	Loss: 2.4012 |	MSE loss: 0.0011 |	Bpp loss: 1.71 |	Aux loss: 5552.75
+Train epoch 62: [80/418 (19%)]	Loss: 2.4279 |	MSE loss: 0.0011 |	Bpp loss: 1.71 |	Aux loss: 5542.57
+Train epoch 62: [160/418 (38%)]	Loss: 2.4456 |	MSE loss: 0.0011 |	Bpp loss: 1.70 |	Aux loss: 5533.71
+Train epoch 62: [240/418 (57%)]	Loss: 2.4737 |	MSE loss: 0.0012 |	Bpp loss: 1.70 |	Aux loss: 5525.70
+Train epoch 62: [320/418 (75%)]	Loss: 2.4631 |	MSE loss: 0.0012 |	Bpp loss: 1.70 |	Aux loss: 5517.05
+Train epoch 62: [400/418 (94%)]	Loss: 2.3349 |	MSE loss: 0.0010 |	Bpp loss: 1.70 |	Aux loss: 5508.75
+Test epoch 62: Average losses:	Loss: 2.6429 |	MSE loss: 0.0015 |	Bpp loss: 1.68 |	Aux loss: 5506.80
+
+Learning rate: 0.0001
+Train epoch 63: [0/418 (0%)]	Loss: 2.2511 |	MSE loss: 0.0009 |	Bpp loss: 1.66 |	Aux loss: 5506.11
+Train epoch 63: [80/418 (19%)]	Loss: 2.1620 |	MSE loss: 0.0007 |	Bpp loss: 1.68 |	Aux loss: 5497.78
+Train epoch 63: [160/418 (38%)]	Loss: 2.2287 |	MSE loss: 0.0008 |	Bpp loss: 1.68 |	Aux loss: 5489.71
+Train epoch 63: [240/418 (57%)]	Loss: 2.3031 |	MSE loss: 0.0010 |	Bpp loss: 1.68 |	Aux loss: 5479.75
+Train epoch 63: [320/418 (75%)]	Loss: 2.1811 |	MSE loss: 0.0008 |	Bpp loss: 1.67 |	Aux loss: 5468.75
+Train epoch 63: [400/418 (94%)]	Loss: 2.1950 |	MSE loss: 0.0008 |	Bpp loss: 1.67 |	Aux loss: 5459.28
+Test epoch 63: Average losses:	Loss: 2.4787 |	MSE loss: 0.0013 |	Bpp loss: 1.65 |	Aux loss: 5457.42
+
+Learning rate: 0.0001
+Train epoch 64: [0/418 (0%)]	Loss: 2.2193 |	MSE loss: 0.0009 |	Bpp loss: 1.65 |	Aux loss: 5456.75
+Train epoch 64: [80/418 (19%)]	Loss: 2.3404 |	MSE loss: 0.0010 |	Bpp loss: 1.66 |	Aux loss: 5448.83
+Train epoch 64: [160/418 (38%)]	Loss: 2.1077 |	MSE loss: 0.0007 |	Bpp loss: 1.65 |	Aux loss: 5440.78
+Train epoch 64: [240/418 (57%)]	Loss: 2.3064 |	MSE loss: 0.0010 |	Bpp loss: 1.65 |	Aux loss: 5430.83
+Train epoch 64: [320/418 (75%)]	Loss: 2.2848 |	MSE loss: 0.0010 |	Bpp loss: 1.64 |	Aux loss: 5420.81
+Train epoch 64: [400/418 (94%)]	Loss: 2.1956 |	MSE loss: 0.0008 |	Bpp loss: 1.65 |	Aux loss: 5410.48
+Test epoch 64: Average losses:	Loss: 2.3933 |	MSE loss: 0.0012 |	Bpp loss: 1.64 |	Aux loss: 5408.09
+
+Learning rate: 0.0001
+Train epoch 65: [0/418 (0%)]	Loss: 2.5248 |	MSE loss: 0.0013 |	Bpp loss: 1.67 |	Aux loss: 5407.27
+Train epoch 65: [80/418 (19%)]	Loss: 2.2206 |	MSE loss: 0.0009 |	Bpp loss: 1.64 |	Aux loss: 5395.69
+Train epoch 65: [160/418 (38%)]	Loss: 2.2966 |	MSE loss: 0.0010 |	Bpp loss: 1.64 |	Aux loss: 5385.37
+Train epoch 65: [240/418 (57%)]	Loss: 2.2662 |	MSE loss: 0.0010 |	Bpp loss: 1.64 |	Aux loss: 5373.89
+Train epoch 65: [320/418 (75%)]	Loss: 1.8968 |	MSE loss: 0.0005 |	Bpp loss: 1.59 |	Aux loss: 5359.08
+Train epoch 65: [400/418 (94%)]	Loss: 2.2096 |	MSE loss: 0.0009 |	Bpp loss: 1.62 |	Aux loss: 5344.42
+Test epoch 65: Average losses:	Loss: 2.3098 |	MSE loss: 0.0011 |	Bpp loss: 1.61 |	Aux loss: 5341.51
+
+Learning rate: 0.0001
+Train epoch 66: [0/418 (0%)]	Loss: 2.3422 |	MSE loss: 0.0011 |	Bpp loss: 1.64 |	Aux loss: 5340.43
+Train epoch 66: [80/418 (19%)]	Loss: 1.9724 |	MSE loss: 0.0006 |	Bpp loss: 1.59 |	Aux loss: 5326.54
+Train epoch 66: [160/418 (38%)]	Loss: 2.2883 |	MSE loss: 0.0010 |	Bpp loss: 1.62 |	Aux loss: 5310.78
+Train epoch 66: [240/418 (57%)]	Loss: 2.0710 |	MSE loss: 0.0007 |	Bpp loss: 1.60 |	Aux loss: 5293.13
+Train epoch 66: [320/418 (75%)]	Loss: 2.1888 |	MSE loss: 0.0009 |	Bpp loss: 1.60 |	Aux loss: 5277.63
+Train epoch 66: [400/418 (94%)]	Loss: 2.1675 |	MSE loss: 0.0009 |	Bpp loss: 1.58 |	Aux loss: 5263.28
+Test epoch 66: Average losses:	Loss: 2.3762 |	MSE loss: 0.0012 |	Bpp loss: 1.57 |	Aux loss: 5260.29
+
+Learning rate: 0.0001
+Train epoch 67: [0/418 (0%)]	Loss: 2.0562 |	MSE loss: 0.0008 |	Bpp loss: 1.57 |	Aux loss: 5259.12
+Train epoch 67: [80/418 (19%)]	Loss: 2.0294 |	MSE loss: 0.0007 |	Bpp loss: 1.57 |	Aux loss: 5245.42
+Train epoch 67: [160/418 (38%)]	Loss: 2.1727 |	MSE loss: 0.0009 |	Bpp loss: 1.58 |	Aux loss: 5228.34
+Train epoch 67: [240/418 (57%)]	Loss: 2.2168 |	MSE loss: 0.0010 |	Bpp loss: 1.58 |	Aux loss: 5212.34
+Train epoch 67: [320/418 (75%)]	Loss: 2.0462 |	MSE loss: 0.0008 |	Bpp loss: 1.53 |	Aux loss: 5195.58
+Train epoch 67: [400/418 (94%)]	Loss: 2.2984 |	MSE loss: 0.0011 |	Bpp loss: 1.57 |	Aux loss: 5179.13
+Test epoch 67: Average losses:	Loss: 2.1967 |	MSE loss: 0.0010 |	Bpp loss: 1.54 |	Aux loss: 5176.02
+
+Learning rate: 0.0001
+Train epoch 68: [0/418 (0%)]	Loss: 2.2726 |	MSE loss: 0.0011 |	Bpp loss: 1.57 |	Aux loss: 5174.88
+Train epoch 68: [80/418 (19%)]	Loss: 2.4828 |	MSE loss: 0.0014 |	Bpp loss: 1.58 |	Aux loss: 5160.14
+Train epoch 68: [160/418 (38%)]	Loss: 2.2449 |	MSE loss: 0.0010 |	Bpp loss: 1.56 |	Aux loss: 5141.92
+Train epoch 68: [240/418 (57%)]	Loss: 1.8450 |	MSE loss: 0.0005 |	Bpp loss: 1.49 |	Aux loss: 5121.59
+Train epoch 68: [320/418 (75%)]	Loss: 2.0380 |	MSE loss: 0.0008 |	Bpp loss: 1.52 |	Aux loss: 5103.73
+Train epoch 68: [400/418 (94%)]	Loss: 2.1531 |	MSE loss: 0.0010 |	Bpp loss: 1.52 |	Aux loss: 5088.34
+Test epoch 68: Average losses:	Loss: 2.2694 |	MSE loss: 0.0012 |	Bpp loss: 1.50 |	Aux loss: 5085.17
+
+Learning rate: 0.0001
+Train epoch 69: [0/418 (0%)]	Loss: 2.2236 |	MSE loss: 0.0011 |	Bpp loss: 1.52 |	Aux loss: 5083.96
+Train epoch 69: [80/418 (19%)]	Loss: 2.1106 |	MSE loss: 0.0009 |	Bpp loss: 1.52 |	Aux loss: 5069.47
+Train epoch 69: [160/418 (38%)]	Loss: 2.0276 |	MSE loss: 0.0008 |	Bpp loss: 1.50 |	Aux loss: 5054.72
+Train epoch 69: [240/418 (57%)]	Loss: 2.0727 |	MSE loss: 0.0009 |	Bpp loss: 1.50 |	Aux loss: 5038.08
+Train epoch 69: [320/418 (75%)]	Loss: 2.2551 |	MSE loss: 0.0012 |	Bpp loss: 1.49 |	Aux loss: 5021.72
+Train epoch 69: [400/418 (94%)]	Loss: 1.9151 |	MSE loss: 0.0007 |	Bpp loss: 1.46 |	Aux loss: 5009.46
+Test epoch 69: Average losses:	Loss: 2.3219 |	MSE loss: 0.0013 |	Bpp loss: 1.46 |	Aux loss: 5006.86
+
+Learning rate: 0.0001
+Train epoch 70: [0/418 (0%)]	Loss: 2.2372 |	MSE loss: 0.0011 |	Bpp loss: 1.50 |	Aux loss: 5005.98
+Train epoch 70: [80/418 (19%)]	Loss: 2.1201 |	MSE loss: 0.0009 |	Bpp loss: 1.50 |	Aux loss: 4992.52
+Train epoch 70: [160/418 (38%)]	Loss: 2.2461 |	MSE loss: 0.0012 |	Bpp loss: 1.49 |	Aux loss: 4971.63
+Train epoch 70: [240/418 (57%)]	Loss: 2.0315 |	MSE loss: 0.0009 |	Bpp loss: 1.47 |	Aux loss: 4951.90
+Train epoch 70: [320/418 (75%)]	Loss: 2.2502 |	MSE loss: 0.0012 |	Bpp loss: 1.45 |	Aux loss: 4935.92
+Train epoch 70: [400/418 (94%)]	Loss: 1.9619 |	MSE loss: 0.0008 |	Bpp loss: 1.44 |	Aux loss: 4924.29
+Test epoch 70: Average losses:	Loss: 2.1522 |	MSE loss: 0.0011 |	Bpp loss: 1.43 |	Aux loss: 4921.87
+
+Learning rate: 0.0001
+Train epoch 71: [0/418 (0%)]	Loss: 2.0110 |	MSE loss: 0.0009 |	Bpp loss: 1.45 |	Aux loss: 4921.08
+Train epoch 71: [80/418 (19%)]	Loss: 2.0719 |	MSE loss: 0.0010 |	Bpp loss: 1.44 |	Aux loss: 4906.94
+Train epoch 71: [160/418 (38%)]	Loss: 1.8476 |	MSE loss: 0.0007 |	Bpp loss: 1.42 |	Aux loss: 4894.87
+Train epoch 71: [240/418 (57%)]	Loss: 2.3932 |	MSE loss: 0.0015 |	Bpp loss: 1.45 |	Aux loss: 4883.97
+Train epoch 71: [320/418 (75%)]	Loss: 1.9768 |	MSE loss: 0.0009 |	Bpp loss: 1.42 |	Aux loss: 4872.18
+Train epoch 71: [400/418 (94%)]	Loss: 1.9816 |	MSE loss: 0.0008 |	Bpp loss: 1.44 |	Aux loss: 4862.34
+Test epoch 71: Average losses:	Loss: 2.1830 |	MSE loss: 0.0012 |	Bpp loss: 1.41 |	Aux loss: 4860.10
+
+Learning rate: 0.0001
+Train epoch 72: [0/418 (0%)]	Loss: 2.1349 |	MSE loss: 0.0010 |	Bpp loss: 1.46 |	Aux loss: 4859.28
+Train epoch 72: [80/418 (19%)]	Loss: 1.9726 |	MSE loss: 0.0008 |	Bpp loss: 1.42 |	Aux loss: 4848.16
+Train epoch 72: [160/418 (38%)]	Loss: 1.8646 |	MSE loss: 0.0007 |	Bpp loss: 1.40 |	Aux loss: 4837.25
+Train epoch 72: [240/418 (57%)]	Loss: 2.0252 |	MSE loss: 0.0009 |	Bpp loss: 1.41 |	Aux loss: 4826.18
+Train epoch 72: [320/418 (75%)]	Loss: 2.2104 |	MSE loss: 0.0012 |	Bpp loss: 1.44 |	Aux loss: 4816.16
+Train epoch 72: [400/418 (94%)]	Loss: 1.8677 |	MSE loss: 0.0007 |	Bpp loss: 1.41 |	Aux loss: 4805.58
+Test epoch 72: Average losses:	Loss: 2.0400 |	MSE loss: 0.0010 |	Bpp loss: 1.39 |	Aux loss: 4803.23
+
+Learning rate: 0.0001
+Train epoch 73: [0/418 (0%)]	Loss: 1.9145 |	MSE loss: 0.0008 |	Bpp loss: 1.41 |	Aux loss: 4802.41
+Train epoch 73: [80/418 (19%)]	Loss: 2.0111 |	MSE loss: 0.0009 |	Bpp loss: 1.42 |	Aux loss: 4792.38
+Train epoch 73: [160/418 (38%)]	Loss: 2.0725 |	MSE loss: 0.0010 |	Bpp loss: 1.41 |	Aux loss: 4782.87
+Train epoch 73: [240/418 (57%)]	Loss: 1.9628 |	MSE loss: 0.0008 |	Bpp loss: 1.42 |	Aux loss: 4773.18
+Train epoch 73: [320/418 (75%)]	Loss: 2.0394 |	MSE loss: 0.0010 |	Bpp loss: 1.41 |	Aux loss: 4763.09
+Train epoch 73: [400/418 (94%)]	Loss: 2.1267 |	MSE loss: 0.0011 |	Bpp loss: 1.41 |	Aux loss: 4753.19
+Test epoch 73: Average losses:	Loss: 2.2299 |	MSE loss: 0.0013 |	Bpp loss: 1.37 |	Aux loss: 4750.68
+
+Learning rate: 0.0001
+Train epoch 74: [0/418 (0%)]	Loss: 2.1851 |	MSE loss: 0.0012 |	Bpp loss: 1.41 |	Aux loss: 4749.79
+Train epoch 74: [80/418 (19%)]	Loss: 1.9756 |	MSE loss: 0.0009 |	Bpp loss: 1.40 |	Aux loss: 4736.85
+Train epoch 74: [160/418 (38%)]	Loss: 1.8391 |	MSE loss: 0.0007 |	Bpp loss: 1.39 |	Aux loss: 4720.02
+Train epoch 74: [240/418 (57%)]	Loss: 2.1153 |	MSE loss: 0.0011 |	Bpp loss: 1.39 |	Aux loss: 4700.59
+Train epoch 74: [320/418 (75%)]	Loss: 1.7602 |	MSE loss: 0.0006 |	Bpp loss: 1.35 |	Aux loss: 4681.90
+Train epoch 74: [400/418 (94%)]	Loss: 2.0044 |	MSE loss: 0.0010 |	Bpp loss: 1.39 |	Aux loss: 4662.86
+Test epoch 74: Average losses:	Loss: 2.0927 |	MSE loss: 0.0012 |	Bpp loss: 1.34 |	Aux loss: 4658.65
+
+Learning rate: 0.0001
+Train epoch 75: [0/418 (0%)]	Loss: 2.0709 |	MSE loss: 0.0011 |	Bpp loss: 1.38 |	Aux loss: 4657.09
+Train epoch 75: [80/418 (19%)]	Loss: 2.1288 |	MSE loss: 0.0012 |	Bpp loss: 1.38 |	Aux loss: 4636.23
+Train epoch 75: [160/418 (38%)]	Loss: 2.0054 |	MSE loss: 0.0010 |	Bpp loss: 1.36 |	Aux loss: 4617.51
+Train epoch 75: [240/418 (57%)]	Loss: 1.8938 |	MSE loss: 0.0008 |	Bpp loss: 1.36 |	Aux loss: 4600.74
+Train epoch 75: [320/418 (75%)]	Loss: 1.8329 |	MSE loss: 0.0008 |	Bpp loss: 1.33 |	Aux loss: 4584.40
+Train epoch 75: [400/418 (94%)]	Loss: 1.9815 |	MSE loss: 0.0010 |	Bpp loss: 1.34 |	Aux loss: 4565.55
+Test epoch 75: Average losses:	Loss: 1.9460 |	MSE loss: 0.0010 |	Bpp loss: 1.31 |	Aux loss: 4561.44
+
+Learning rate: 0.0001
+Train epoch 76: [0/418 (0%)]	Loss: 1.8121 |	MSE loss: 0.0007 |	Bpp loss: 1.33 |	Aux loss: 4559.90
+Train epoch 76: [80/418 (19%)]	Loss: 1.6720 |	MSE loss: 0.0006 |	Bpp loss: 1.30 |	Aux loss: 4543.05
+Train epoch 76: [160/418 (38%)]	Loss: 1.8373 |	MSE loss: 0.0008 |	Bpp loss: 1.33 |	Aux loss: 4526.16
+Train epoch 76: [240/418 (57%)]	Loss: 1.8371 |	MSE loss: 0.0008 |	Bpp loss: 1.32 |	Aux loss: 4509.01
+Train epoch 76: [320/418 (75%)]	Loss: 1.8330 |	MSE loss: 0.0008 |	Bpp loss: 1.34 |	Aux loss: 4492.47
+Train epoch 76: [400/418 (94%)]	Loss: 1.7011 |	MSE loss: 0.0006 |	Bpp loss: 1.31 |	Aux loss: 4475.74
+Test epoch 76: Average losses:	Loss: 1.9769 |	MSE loss: 0.0011 |	Bpp loss: 1.28 |	Aux loss: 4472.09
+
+Learning rate: 0.0001
+Train epoch 77: [0/418 (0%)]	Loss: 1.8381 |	MSE loss: 0.0008 |	Bpp loss: 1.31 |	Aux loss: 4470.72
+Train epoch 77: [80/418 (19%)]	Loss: 2.0153 |	MSE loss: 0.0011 |	Bpp loss: 1.31 |	Aux loss: 4456.31
+Train epoch 77: [160/418 (38%)]	Loss: 1.8578 |	MSE loss: 0.0008 |	Bpp loss: 1.31 |	Aux loss: 4443.45
+Train epoch 77: [240/418 (57%)]	Loss: 1.6368 |	MSE loss: 0.0006 |	Bpp loss: 1.26 |	Aux loss: 4430.31
+Train epoch 77: [320/418 (75%)]	Loss: 1.7749 |	MSE loss: 0.0008 |	Bpp loss: 1.28 |	Aux loss: 4413.16
+Train epoch 77: [400/418 (94%)]	Loss: 2.0891 |	MSE loss: 0.0012 |	Bpp loss: 1.31 |	Aux loss: 4393.55
+Test epoch 77: Average losses:	Loss: 1.9907 |	MSE loss: 0.0011 |	Bpp loss: 1.25 |	Aux loss: 4389.52
+
+Learning rate: 0.0001
+Train epoch 78: [0/418 (0%)]	Loss: 2.0343 |	MSE loss: 0.0011 |	Bpp loss: 1.31 |	Aux loss: 4388.02
+Train epoch 78: [80/418 (19%)]	Loss: 1.8294 |	MSE loss: 0.0009 |	Bpp loss: 1.28 |	Aux loss: 4370.07
+Train epoch 78: [160/418 (38%)]	Loss: 1.7303 |	MSE loss: 0.0007 |	Bpp loss: 1.24 |	Aux loss: 4353.77
+Train epoch 78: [240/418 (57%)]	Loss: 1.9043 |	MSE loss: 0.0010 |	Bpp loss: 1.28 |	Aux loss: 4337.73
+Train epoch 78: [320/418 (75%)]	Loss: 1.9105 |	MSE loss: 0.0010 |	Bpp loss: 1.27 |	Aux loss: 4317.42
+Train epoch 78: [400/418 (94%)]	Loss: 1.7918 |	MSE loss: 0.0008 |	Bpp loss: 1.26 |	Aux loss: 4298.87
+Test epoch 78: Average losses:	Loss: 1.8903 |	MSE loss: 0.0010 |	Bpp loss: 1.22 |	Aux loss: 4294.74
+
+Learning rate: 0.0001
+Train epoch 79: [0/418 (0%)]	Loss: 1.6214 |	MSE loss: 0.0006 |	Bpp loss: 1.23 |	Aux loss: 4293.14
+Train epoch 79: [80/418 (19%)]	Loss: 2.0086 |	MSE loss: 0.0011 |	Bpp loss: 1.29 |	Aux loss: 4275.62
+Train epoch 79: [160/418 (38%)]	Loss: 1.9182 |	MSE loss: 0.0010 |	Bpp loss: 1.26 |	Aux loss: 4258.51
+Train epoch 79: [240/418 (57%)]	Loss: 1.7591 |	MSE loss: 0.0008 |	Bpp loss: 1.23 |	Aux loss: 4241.79
+Train epoch 79: [320/418 (75%)]	Loss: 1.5708 |	MSE loss: 0.0006 |	Bpp loss: 1.21 |	Aux loss: 4223.72
+Train epoch 79: [400/418 (94%)]	Loss: 1.6420 |	MSE loss: 0.0007 |	Bpp loss: 1.21 |	Aux loss: 4205.43
+Test epoch 79: Average losses:	Loss: 1.8807 |	MSE loss: 0.0011 |	Bpp loss: 1.19 |	Aux loss: 4201.48
+
+Learning rate: 0.0001
+Train epoch 80: [0/418 (0%)]	Loss: 1.6656 |	MSE loss: 0.0007 |	Bpp loss: 1.22 |	Aux loss: 4199.91
+Train epoch 80: [80/418 (19%)]	Loss: 1.6322 |	MSE loss: 0.0006 |	Bpp loss: 1.22 |	Aux loss: 4182.54
+Train epoch 80: [160/418 (38%)]	Loss: 1.8256 |	MSE loss: 0.0009 |	Bpp loss: 1.25 |	Aux loss: 4165.45
+Train epoch 80: [240/418 (57%)]	Loss: 1.7760 |	MSE loss: 0.0009 |	Bpp loss: 1.22 |	Aux loss: 4141.78
+Train epoch 80: [320/418 (75%)]	Loss: 1.6680 |	MSE loss: 0.0007 |	Bpp loss: 1.20 |	Aux loss: 4118.30
+Train epoch 80: [400/418 (94%)]	Loss: 1.8010 |	MSE loss: 0.0009 |	Bpp loss: 1.21 |	Aux loss: 4097.80
+Test epoch 80: Average losses:	Loss: 1.7835 |	MSE loss: 0.0010 |	Bpp loss: 1.16 |	Aux loss: 4093.73
+
+Learning rate: 0.0001
+Train epoch 81: [0/418 (0%)]	Loss: 1.7177 |	MSE loss: 0.0008 |	Bpp loss: 1.20 |	Aux loss: 4092.12
+Train epoch 81: [80/418 (19%)]	Loss: 1.6290 |	MSE loss: 0.0007 |	Bpp loss: 1.19 |	Aux loss: 4073.18
+Train epoch 81: [160/418 (38%)]	Loss: 1.6133 |	MSE loss: 0.0007 |	Bpp loss: 1.18 |	Aux loss: 4053.77
+Train epoch 81: [240/418 (57%)]	Loss: 1.6029 |	MSE loss: 0.0007 |	Bpp loss: 1.17 |	Aux loss: 4036.42
+Train epoch 81: [320/418 (75%)]	Loss: 1.7175 |	MSE loss: 0.0008 |	Bpp loss: 1.20 |	Aux loss: 4023.10
+Train epoch 81: [400/418 (94%)]	Loss: 1.8096 |	MSE loss: 0.0009 |	Bpp loss: 1.21 |	Aux loss: 4004.20
+Test epoch 81: Average losses:	Loss: 1.7875 |	MSE loss: 0.0010 |	Bpp loss: 1.14 |	Aux loss: 3999.47
+
+Learning rate: 0.0001
+Train epoch 82: [0/418 (0%)]	Loss: 1.5552 |	MSE loss: 0.0006 |	Bpp loss: 1.16 |	Aux loss: 3997.45
+Train epoch 82: [80/418 (19%)]	Loss: 1.5656 |	MSE loss: 0.0006 |	Bpp loss: 1.16 |	Aux loss: 3977.56
+Train epoch 82: [160/418 (38%)]	Loss: 1.6872 |	MSE loss: 0.0008 |	Bpp loss: 1.18 |	Aux loss: 3959.76
+Train epoch 82: [240/418 (57%)]	Loss: 1.6991 |	MSE loss: 0.0008 |	Bpp loss: 1.19 |	Aux loss: 3942.46
+Train epoch 82: [320/418 (75%)]	Loss: 1.5902 |	MSE loss: 0.0007 |	Bpp loss: 1.15 |	Aux loss: 3924.46
+Train epoch 82: [400/418 (94%)]	Loss: 1.5310 |	MSE loss: 0.0006 |	Bpp loss: 1.12 |	Aux loss: 3907.75
+Test epoch 82: Average losses:	Loss: 1.7860 |	MSE loss: 0.0010 |	Bpp loss: 1.11 |	Aux loss: 3904.41
+
+Learning rate: 0.0001
+Train epoch 83: [0/418 (0%)]	Loss: 1.6361 |	MSE loss: 0.0008 |	Bpp loss: 1.14 |	Aux loss: 3903.20
+Train epoch 83: [80/418 (19%)]	Loss: 1.7737 |	MSE loss: 0.0009 |	Bpp loss: 1.17 |	Aux loss: 3888.12
+Train epoch 83: [160/418 (38%)]	Loss: 1.6485 |	MSE loss: 0.0008 |	Bpp loss: 1.15 |	Aux loss: 3868.73
+Train epoch 83: [240/418 (57%)]	Loss: 1.6417 |	MSE loss: 0.0008 |	Bpp loss: 1.12 |	Aux loss: 3850.38
+Train epoch 83: [320/418 (75%)]	Loss: 1.5266 |	MSE loss: 0.0006 |	Bpp loss: 1.11 |	Aux loss: 3832.76
+Train epoch 83: [400/418 (94%)]	Loss: 1.5687 |	MSE loss: 0.0007 |	Bpp loss: 1.12 |	Aux loss: 3814.80
+Test epoch 83: Average losses:	Loss: 1.9276 |	MSE loss: 0.0013 |	Bpp loss: 1.09 |	Aux loss: 3810.90
+
+Learning rate: 0.0001
+Train epoch 84: [0/418 (0%)]	Loss: 1.9178 |	MSE loss: 0.0012 |	Bpp loss: 1.13 |	Aux loss: 3809.62
+Train epoch 84: [80/418 (19%)]	Loss: 1.5607 |	MSE loss: 0.0007 |	Bpp loss: 1.12 |	Aux loss: 3793.62
+Train epoch 84: [160/418 (38%)]	Loss: 1.6911 |	MSE loss: 0.0009 |	Bpp loss: 1.14 |	Aux loss: 3779.17
+Train epoch 84: [240/418 (57%)]	Loss: 1.9404 |	MSE loss: 0.0012 |	Bpp loss: 1.16 |	Aux loss: 3765.72
+Train epoch 84: [320/418 (75%)]	Loss: 1.6696 |	MSE loss: 0.0008 |	Bpp loss: 1.12 |	Aux loss: 3749.88
+Train epoch 84: [400/418 (94%)]	Loss: 1.4390 |	MSE loss: 0.0005 |	Bpp loss: 1.09 |	Aux loss: 3731.96
+Test epoch 84: Average losses:	Loss: 1.6904 |	MSE loss: 0.0010 |	Bpp loss: 1.07 |	Aux loss: 3728.12
+
+Learning rate: 0.0001
+Train epoch 85: [0/418 (0%)]	Loss: 1.4797 |	MSE loss: 0.0006 |	Bpp loss: 1.09 |	Aux loss: 3726.69
+Train epoch 85: [80/418 (19%)]	Loss: 1.7119 |	MSE loss: 0.0009 |	Bpp loss: 1.13 |	Aux loss: 3708.05
+Train epoch 85: [160/418 (38%)]	Loss: 1.7067 |	MSE loss: 0.0009 |	Bpp loss: 1.13 |	Aux loss: 3677.27
+Train epoch 85: [240/418 (57%)]	Loss: 1.5977 |	MSE loss: 0.0008 |	Bpp loss: 1.10 |	Aux loss: 3650.44
+Train epoch 85: [320/418 (75%)]	Loss: 1.9925 |	MSE loss: 0.0013 |	Bpp loss: 1.11 |	Aux loss: 3628.16
+Train epoch 85: [400/418 (94%)]	Loss: 1.5118 |	MSE loss: 0.0007 |	Bpp loss: 1.08 |	Aux loss: 3611.72
+Test epoch 85: Average losses:	Loss: 1.6815 |	MSE loss: 0.0010 |	Bpp loss: 1.03 |	Aux loss: 3608.26
+
+Learning rate: 0.0001
+Train epoch 86: [0/418 (0%)]	Loss: 1.6303 |	MSE loss: 0.0008 |	Bpp loss: 1.10 |	Aux loss: 3607.06
+Train epoch 86: [80/418 (19%)]	Loss: 1.5055 |	MSE loss: 0.0006 |	Bpp loss: 1.09 |	Aux loss: 3590.86
+Train epoch 86: [160/418 (38%)]	Loss: 1.5785 |	MSE loss: 0.0008 |	Bpp loss: 1.08 |	Aux loss: 3571.76
+Train epoch 86: [240/418 (57%)]	Loss: 1.4971 |	MSE loss: 0.0007 |	Bpp loss: 1.07 |	Aux loss: 3553.03
+Train epoch 86: [320/418 (75%)]	Loss: 1.6171 |	MSE loss: 0.0008 |	Bpp loss: 1.08 |	Aux loss: 3538.95
+Train epoch 86: [400/418 (94%)]	Loss: 1.7713 |	MSE loss: 0.0010 |	Bpp loss: 1.09 |	Aux loss: 3527.10
+Test epoch 86: Average losses:	Loss: 1.7565 |	MSE loss: 0.0011 |	Bpp loss: 1.01 |	Aux loss: 3524.33
+
+Learning rate: 0.0001
+Train epoch 87: [0/418 (0%)]	Loss: 1.5387 |	MSE loss: 0.0007 |	Bpp loss: 1.05 |	Aux loss: 3523.50
+Train epoch 87: [80/418 (19%)]	Loss: 1.6472 |	MSE loss: 0.0009 |	Bpp loss: 1.08 |	Aux loss: 3511.77
+Train epoch 87: [160/418 (38%)]	Loss: 1.5559 |	MSE loss: 0.0007 |	Bpp loss: 1.08 |	Aux loss: 3500.81
+Train epoch 87: [240/418 (57%)]	Loss: 1.7057 |	MSE loss: 0.0010 |	Bpp loss: 1.07 |	Aux loss: 3489.59
+Train epoch 87: [320/418 (75%)]	Loss: 1.5922 |	MSE loss: 0.0008 |	Bpp loss: 1.08 |	Aux loss: 3477.51
+Train epoch 87: [400/418 (94%)]	Loss: 1.5168 |	MSE loss: 0.0007 |	Bpp loss: 1.07 |	Aux loss: 3465.35
+Test epoch 87: Average losses:	Loss: 1.6210 |	MSE loss: 0.0010 |	Bpp loss: 1.00 |	Aux loss: 3462.69
+
+Learning rate: 0.0001
+Train epoch 88: [0/418 (0%)]	Loss: 1.5495 |	MSE loss: 0.0007 |	Bpp loss: 1.07 |	Aux loss: 3461.87
+Train epoch 88: [80/418 (19%)]	Loss: 1.6149 |	MSE loss: 0.0009 |	Bpp loss: 1.06 |	Aux loss: 3449.78
+Train epoch 88: [160/418 (38%)]	Loss: 1.4987 |	MSE loss: 0.0007 |	Bpp loss: 1.02 |	Aux loss: 3437.79
+Train epoch 88: [240/418 (57%)]	Loss: 1.6462 |	MSE loss: 0.0009 |	Bpp loss: 1.08 |	Aux loss: 3425.68
+Train epoch 88: [320/418 (75%)]	Loss: 1.3864 |	MSE loss: 0.0006 |	Bpp loss: 1.02 |	Aux loss: 3412.84
+Train epoch 88: [400/418 (94%)]	Loss: 1.4930 |	MSE loss: 0.0007 |	Bpp loss: 1.03 |	Aux loss: 3399.39
+Test epoch 88: Average losses:	Loss: 1.6394 |	MSE loss: 0.0010 |	Bpp loss: 0.99 |	Aux loss: 3396.53
+
+Learning rate: 0.0001
+Train epoch 89: [0/418 (0%)]	Loss: 1.5017 |	MSE loss: 0.0007 |	Bpp loss: 1.03 |	Aux loss: 3395.57
+Train epoch 89: [80/418 (19%)]	Loss: 1.4725 |	MSE loss: 0.0007 |	Bpp loss: 1.04 |	Aux loss: 3383.44
+Train epoch 89: [160/418 (38%)]	Loss: 1.4551 |	MSE loss: 0.0007 |	Bpp loss: 1.02 |	Aux loss: 3371.41
+Train epoch 89: [240/418 (57%)]	Loss: 1.6307 |	MSE loss: 0.0009 |	Bpp loss: 1.06 |	Aux loss: 3359.17
+Train epoch 89: [320/418 (75%)]	Loss: 1.4519 |	MSE loss: 0.0006 |	Bpp loss: 1.03 |	Aux loss: 3345.86
+Train epoch 89: [400/418 (94%)]	Loss: 1.5582 |	MSE loss: 0.0008 |	Bpp loss: 1.05 |	Aux loss: 3333.20
+Test epoch 89: Average losses:	Loss: 1.5681 |	MSE loss: 0.0009 |	Bpp loss: 0.97 |	Aux loss: 3330.40
+
+Learning rate: 0.0001
+Train epoch 90: [0/418 (0%)]	Loss: 1.5506 |	MSE loss: 0.0008 |	Bpp loss: 1.04 |	Aux loss: 3329.24
+Train epoch 90: [80/418 (19%)]	Loss: 1.5481 |	MSE loss: 0.0008 |	Bpp loss: 1.04 |	Aux loss: 3308.82
+Train epoch 90: [160/418 (38%)]	Loss: 1.5965 |	MSE loss: 0.0008 |	Bpp loss: 1.06 |	Aux loss: 3286.83
+Train epoch 90: [240/418 (57%)]	Loss: 1.3451 |	MSE loss: 0.0005 |	Bpp loss: 0.99 |	Aux loss: 3265.12
+Train epoch 90: [320/418 (75%)]	Loss: 1.3812 |	MSE loss: 0.0006 |	Bpp loss: 0.99 |	Aux loss: 3243.49
+Train epoch 90: [400/418 (94%)]	Loss: 1.7403 |	MSE loss: 0.0010 |	Bpp loss: 1.08 |	Aux loss: 3223.11
+Test epoch 90: Average losses:	Loss: 1.5164 |	MSE loss: 0.0009 |	Bpp loss: 0.95 |	Aux loss: 3219.17
+
+Learning rate: 0.0001
+Train epoch 91: [0/418 (0%)]	Loss: 1.4607 |	MSE loss: 0.0007 |	Bpp loss: 1.03 |	Aux loss: 3217.45
+Train epoch 91: [80/418 (19%)]	Loss: 1.6532 |	MSE loss: 0.0010 |	Bpp loss: 1.03 |	Aux loss: 3193.80
+Train epoch 91: [160/418 (38%)]	Loss: 1.4291 |	MSE loss: 0.0007 |	Bpp loss: 1.00 |	Aux loss: 3176.26
+Train epoch 91: [240/418 (57%)]	Loss: 1.3970 |	MSE loss: 0.0006 |	Bpp loss: 0.98 |	Aux loss: 3158.51
+Train epoch 91: [320/418 (75%)]	Loss: 1.5061 |	MSE loss: 0.0008 |	Bpp loss: 1.00 |	Aux loss: 3134.57
+Train epoch 91: [400/418 (94%)]	Loss: 1.4947 |	MSE loss: 0.0008 |	Bpp loss: 1.00 |	Aux loss: 3111.78
+Test epoch 91: Average losses:	Loss: 1.6095 |	MSE loss: 0.0011 |	Bpp loss: 0.92 |	Aux loss: 3106.74
+
+Learning rate: 0.0001
+Train epoch 92: [0/418 (0%)]	Loss: 1.4752 |	MSE loss: 0.0007 |	Bpp loss: 0.99 |	Aux loss: 3104.84
+Train epoch 92: [80/418 (19%)]	Loss: 1.4432 |	MSE loss: 0.0007 |	Bpp loss: 0.98 |	Aux loss: 3083.20
+Train epoch 92: [160/418 (38%)]	Loss: 1.4123 |	MSE loss: 0.0007 |	Bpp loss: 0.97 |	Aux loss: 3063.73
+Train epoch 92: [240/418 (57%)]	Loss: 1.3304 |	MSE loss: 0.0006 |	Bpp loss: 0.95 |	Aux loss: 3043.39
+Train epoch 92: [320/418 (75%)]	Loss: 1.6946 |	MSE loss: 0.0011 |	Bpp loss: 1.01 |	Aux loss: 3024.13
+Train epoch 92: [400/418 (94%)]	Loss: 1.4586 |	MSE loss: 0.0007 |	Bpp loss: 0.99 |	Aux loss: 3002.63
+Test epoch 92: Average losses:	Loss: 1.5384 |	MSE loss: 0.0010 |	Bpp loss: 0.90 |	Aux loss: 2997.48
+
+Learning rate: 0.0001
+Train epoch 93: [0/418 (0%)]	Loss: 1.2948 |	MSE loss: 0.0006 |	Bpp loss: 0.93 |	Aux loss: 2995.30
+Train epoch 93: [80/418 (19%)]	Loss: 1.6125 |	MSE loss: 0.0010 |	Bpp loss: 0.98 |	Aux loss: 2973.32
+Train epoch 93: [160/418 (38%)]	Loss: 1.5976 |	MSE loss: 0.0009 |	Bpp loss: 0.99 |	Aux loss: 2958.08
+Train epoch 93: [240/418 (57%)]	Loss: 1.6454 |	MSE loss: 0.0010 |	Bpp loss: 1.01 |	Aux loss: 2945.75
+Train epoch 93: [320/418 (75%)]	Loss: 1.5247 |	MSE loss: 0.0009 |	Bpp loss: 0.96 |	Aux loss: 2934.33
+Train epoch 93: [400/418 (94%)]	Loss: 1.5299 |	MSE loss: 0.0008 |	Bpp loss: 0.98 |	Aux loss: 2922.88
+Test epoch 93: Average losses:	Loss: 1.4925 |	MSE loss: 0.0009 |	Bpp loss: 0.88 |	Aux loss: 2920.25
+
+Learning rate: 0.0001
+Train epoch 94: [0/418 (0%)]	Loss: 1.3602 |	MSE loss: 0.0006 |	Bpp loss: 0.95 |	Aux loss: 2919.28
+Train epoch 94: [80/418 (19%)]	Loss: 1.5580 |	MSE loss: 0.0009 |	Bpp loss: 0.98 |	Aux loss: 2906.87
+Train epoch 94: [160/418 (38%)]	Loss: 1.5201 |	MSE loss: 0.0008 |	Bpp loss: 0.97 |	Aux loss: 2893.81
+Train epoch 94: [240/418 (57%)]	Loss: 1.3829 |	MSE loss: 0.0007 |	Bpp loss: 0.94 |	Aux loss: 2880.10
+Train epoch 94: [320/418 (75%)]	Loss: 1.3893 |	MSE loss: 0.0007 |	Bpp loss: 0.94 |	Aux loss: 2866.70
+Train epoch 94: [400/418 (94%)]	Loss: 1.4964 |	MSE loss: 0.0008 |	Bpp loss: 0.95 |	Aux loss: 2853.96
+Test epoch 94: Average losses:	Loss: 1.5748 |	MSE loss: 0.0011 |	Bpp loss: 0.87 |	Aux loss: 2851.23
+
+Learning rate: 0.0001
+Train epoch 95: [0/418 (0%)]	Loss: 1.5076 |	MSE loss: 0.0009 |	Bpp loss: 0.94 |	Aux loss: 2850.39
+Train epoch 95: [80/418 (19%)]	Loss: 1.5106 |	MSE loss: 0.0008 |	Bpp loss: 0.98 |	Aux loss: 2837.41
+Train epoch 95: [160/418 (38%)]	Loss: 1.5006 |	MSE loss: 0.0008 |	Bpp loss: 0.95 |	Aux loss: 2825.02
+Train epoch 95: [240/418 (57%)]	Loss: 1.7543 |	MSE loss: 0.0012 |	Bpp loss: 0.99 |	Aux loss: 2812.50
+Train epoch 95: [320/418 (75%)]	Loss: 1.5251 |	MSE loss: 0.0009 |	Bpp loss: 0.95 |	Aux loss: 2797.67
+Train epoch 95: [400/418 (94%)]	Loss: 1.5049 |	MSE loss: 0.0008 |	Bpp loss: 0.95 |	Aux loss: 2783.20
+Test epoch 95: Average losses:	Loss: 1.5711 |	MSE loss: 0.0011 |	Bpp loss: 0.86 |	Aux loss: 2780.05
+
+Learning rate: 0.0001
+Train epoch 96: [0/418 (0%)]	Loss: 1.4550 |	MSE loss: 0.0008 |	Bpp loss: 0.93 |	Aux loss: 2779.04
+Train epoch 96: [80/418 (19%)]	Loss: 1.5610 |	MSE loss: 0.0009 |	Bpp loss: 0.96 |	Aux loss: 2766.09
+Train epoch 96: [160/418 (38%)]	Loss: 1.2556 |	MSE loss: 0.0005 |	Bpp loss: 0.92 |	Aux loss: 2753.16
+Train epoch 96: [240/418 (57%)]	Loss: 1.3552 |	MSE loss: 0.0007 |	Bpp loss: 0.93 |	Aux loss: 2740.41
+Train epoch 96: [320/418 (75%)]	Loss: 1.5800 |	MSE loss: 0.0009 |	Bpp loss: 0.97 |	Aux loss: 2726.99
+Train epoch 96: [400/418 (94%)]	Loss: 1.2266 |	MSE loss: 0.0005 |	Bpp loss: 0.89 |	Aux loss: 2712.90
+Test epoch 96: Average losses:	Loss: 1.4054 |	MSE loss: 0.0009 |	Bpp loss: 0.85 |	Aux loss: 2709.93
+
+Learning rate: 0.0001
+Train epoch 97: [0/418 (0%)]	Loss: 1.4678 |	MSE loss: 0.0008 |	Bpp loss: 0.94 |	Aux loss: 2708.88
+Train epoch 97: [80/418 (19%)]	Loss: 1.3303 |	MSE loss: 0.0007 |	Bpp loss: 0.90 |	Aux loss: 2695.34
+Train epoch 97: [160/418 (38%)]	Loss: 1.3439 |	MSE loss: 0.0007 |	Bpp loss: 0.91 |	Aux loss: 2682.10
+Train epoch 97: [240/418 (57%)]	Loss: 1.2465 |	MSE loss: 0.0005 |	Bpp loss: 0.91 |	Aux loss: 2666.87
+Train epoch 97: [320/418 (75%)]	Loss: 1.4047 |	MSE loss: 0.0007 |	Bpp loss: 0.92 |	Aux loss: 2652.75
+Train epoch 97: [400/418 (94%)]	Loss: 1.2916 |	MSE loss: 0.0006 |	Bpp loss: 0.90 |	Aux loss: 2638.71
+Test epoch 97: Average losses:	Loss: 1.4861 |	MSE loss: 0.0010 |	Bpp loss: 0.84 |	Aux loss: 2635.45
+
+Learning rate: 0.0001
+Train epoch 98: [0/418 (0%)]	Loss: 1.3524 |	MSE loss: 0.0007 |	Bpp loss: 0.90 |	Aux loss: 2634.40
+Train epoch 98: [80/418 (19%)]	Loss: 1.4852 |	MSE loss: 0.0008 |	Bpp loss: 0.94 |	Aux loss: 2619.69
+Train epoch 98: [160/418 (38%)]	Loss: 1.4763 |	MSE loss: 0.0008 |	Bpp loss: 0.93 |	Aux loss: 2605.86
+Train epoch 98: [240/418 (57%)]	Loss: 1.4048 |	MSE loss: 0.0007 |	Bpp loss: 0.92 |	Aux loss: 2592.38
+Train epoch 98: [320/418 (75%)]	Loss: 1.2214 |	MSE loss: 0.0005 |	Bpp loss: 0.88 |	Aux loss: 2579.19
+Train epoch 98: [400/418 (94%)]	Loss: 1.4015 |	MSE loss: 0.0008 |	Bpp loss: 0.91 |	Aux loss: 2565.27
+Test epoch 98: Average losses:	Loss: 1.3771 |	MSE loss: 0.0009 |	Bpp loss: 0.82 |	Aux loss: 2562.02
+
+Learning rate: 0.0001
+Train epoch 99: [0/418 (0%)]	Loss: 1.4882 |	MSE loss: 0.0009 |	Bpp loss: 0.94 |	Aux loss: 2560.91
+Train epoch 99: [80/418 (19%)]	Loss: 1.3691 |	MSE loss: 0.0007 |	Bpp loss: 0.90 |	Aux loss: 2542.71
+Train epoch 99: [160/418 (38%)]	Loss: 1.1335 |	MSE loss: 0.0004 |	Bpp loss: 0.85 |	Aux loss: 2519.45
+Train epoch 99: [240/418 (57%)]	Loss: 1.3212 |	MSE loss: 0.0007 |	Bpp loss: 0.86 |	Aux loss: 2496.65
+Train epoch 99: [320/418 (75%)]	Loss: 1.3065 |	MSE loss: 0.0006 |	Bpp loss: 0.90 |	Aux loss: 2475.84
+Train epoch 99: [400/418 (94%)]	Loss: 1.3143 |	MSE loss: 0.0007 |	Bpp loss: 0.88 |	Aux loss: 2450.44
+Test epoch 99: Average losses:	Loss: 1.3605 |	MSE loss: 0.0009 |	Bpp loss: 0.80 |	Aux loss: 2445.05
+
+Learning rate: 0.0001
+Train epoch 100: [0/418 (0%)]	Loss: 1.1857 |	MSE loss: 0.0005 |	Bpp loss: 0.87 |	Aux loss: 2442.90
+Train epoch 100: [80/418 (19%)]	Loss: 1.3283 |	MSE loss: 0.0007 |	Bpp loss: 0.90 |	Aux loss: 2416.74
+Train epoch 100: [160/418 (38%)]	Loss: 1.5952 |	MSE loss: 0.0010 |	Bpp loss: 0.94 |	Aux loss: 2385.46
+Train epoch 100: [240/418 (57%)]	Loss: 1.2355 |	MSE loss: 0.0005 |	Bpp loss: 0.88 |	Aux loss: 2358.26
+Train epoch 100: [320/418 (75%)]	Loss: 1.2147 |	MSE loss: 0.0005 |	Bpp loss: 0.87 |	Aux loss: 2330.56
+Train epoch 100: [400/418 (94%)]	Loss: 1.3853 |	MSE loss: 0.0008 |	Bpp loss: 0.86 |	Aux loss: 2303.51
+Test epoch 100: Average losses:	Loss: 1.3920 |	MSE loss: 0.0009 |	Bpp loss: 0.77 |	Aux loss: 2298.77
+
+Learning rate: 0.0001
+Train epoch 101: [0/418 (0%)]	Loss: 1.2772 |	MSE loss: 0.0006 |	Bpp loss: 0.86 |	Aux loss: 2297.03
+Train epoch 101: [80/418 (19%)]	Loss: 1.3465 |	MSE loss: 0.0007 |	Bpp loss: 0.87 |	Aux loss: 2277.34
+Train epoch 101: [160/418 (38%)]	Loss: 1.2523 |	MSE loss: 0.0006 |	Bpp loss: 0.84 |	Aux loss: 2254.31
+Train epoch 101: [240/418 (57%)]	Loss: 1.2906 |	MSE loss: 0.0006 |	Bpp loss: 0.87 |	Aux loss: 2231.32
+Train epoch 101: [320/418 (75%)]	Loss: 1.3765 |	MSE loss: 0.0008 |	Bpp loss: 0.88 |	Aux loss: 2204.70
+Train epoch 101: [400/418 (94%)]	Loss: 1.3043 |	MSE loss: 0.0007 |	Bpp loss: 0.85 |	Aux loss: 2179.63
+Test epoch 101: Average losses:	Loss: 1.3457 |	MSE loss: 0.0009 |	Bpp loss: 0.75 |	Aux loss: 2173.90
+
+Learning rate: 0.0001
+Train epoch 102: [0/418 (0%)]	Loss: 1.2235 |	MSE loss: 0.0006 |	Bpp loss: 0.85 |	Aux loss: 2171.71
+Train epoch 102: [80/418 (19%)]	Loss: 1.3366 |	MSE loss: 0.0007 |	Bpp loss: 0.87 |	Aux loss: 2145.46
+Train epoch 102: [160/418 (38%)]	Loss: 1.2342 |	MSE loss: 0.0006 |	Bpp loss: 0.83 |	Aux loss: 2108.20
+Train epoch 102: [240/418 (57%)]	Loss: 1.2606 |	MSE loss: 0.0007 |	Bpp loss: 0.83 |	Aux loss: 2075.59
+Train epoch 102: [320/418 (75%)]	Loss: 1.2982 |	MSE loss: 0.0007 |	Bpp loss: 0.84 |	Aux loss: 2048.89
+Train epoch 102: [400/418 (94%)]	Loss: 1.3702 |	MSE loss: 0.0008 |	Bpp loss: 0.87 |	Aux loss: 2025.55
+Test epoch 102: Average losses:	Loss: 1.2892 |	MSE loss: 0.0009 |	Bpp loss: 0.73 |	Aux loss: 2020.73
+
+Learning rate: 0.0001
+Train epoch 103: [0/418 (0%)]	Loss: 1.3614 |	MSE loss: 0.0008 |	Bpp loss: 0.84 |	Aux loss: 2019.03
+Train epoch 103: [80/418 (19%)]	Loss: 1.2275 |	MSE loss: 0.0006 |	Bpp loss: 0.82 |	Aux loss: 1997.49
+Train epoch 103: [160/418 (38%)]	Loss: 1.1940 |	MSE loss: 0.0006 |	Bpp loss: 0.80 |	Aux loss: 1975.04
+Train epoch 103: [240/418 (57%)]	Loss: 1.2423 |	MSE loss: 0.0007 |	Bpp loss: 0.78 |	Aux loss: 1948.12
+Train epoch 103: [320/418 (75%)]	Loss: 1.2618 |	MSE loss: 0.0007 |	Bpp loss: 0.82 |	Aux loss: 1927.33
+Train epoch 103: [400/418 (94%)]	Loss: 1.1638 |	MSE loss: 0.0006 |	Bpp loss: 0.79 |	Aux loss: 1906.72
+Test epoch 103: Average losses:	Loss: 1.2444 |	MSE loss: 0.0008 |	Bpp loss: 0.71 |	Aux loss: 1902.15
+
+Learning rate: 0.0001
+Train epoch 104: [0/418 (0%)]	Loss: 1.2951 |	MSE loss: 0.0007 |	Bpp loss: 0.82 |	Aux loss: 1900.62
+Train epoch 104: [80/418 (19%)]	Loss: 1.3106 |	MSE loss: 0.0007 |	Bpp loss: 0.84 |	Aux loss: 1880.87
+Train epoch 104: [160/418 (38%)]	Loss: 1.2126 |	MSE loss: 0.0006 |	Bpp loss: 0.81 |	Aux loss: 1856.41
+Train epoch 104: [240/418 (57%)]	Loss: 1.3060 |	MSE loss: 0.0007 |	Bpp loss: 0.82 |	Aux loss: 1834.75
+Train epoch 104: [320/418 (75%)]	Loss: 1.3425 |	MSE loss: 0.0008 |	Bpp loss: 0.83 |	Aux loss: 1813.09
+Train epoch 104: [400/418 (94%)]	Loss: 1.2715 |	MSE loss: 0.0007 |	Bpp loss: 0.81 |	Aux loss: 1789.16
+Test epoch 104: Average losses:	Loss: 1.2305 |	MSE loss: 0.0008 |	Bpp loss: 0.69 |	Aux loss: 1783.42
+
+Learning rate: 0.0001
+Train epoch 105: [0/418 (0%)]	Loss: 1.0787 |	MSE loss: 0.0005 |	Bpp loss: 0.76 |	Aux loss: 1781.26
+Train epoch 105: [80/418 (19%)]	Loss: 1.3205 |	MSE loss: 0.0008 |	Bpp loss: 0.80 |	Aux loss: 1759.32
+Train epoch 105: [160/418 (38%)]	Loss: 1.2400 |	MSE loss: 0.0007 |	Bpp loss: 0.81 |	Aux loss: 1743.50
+Train epoch 105: [240/418 (57%)]	Loss: 1.3366 |	MSE loss: 0.0008 |	Bpp loss: 0.82 |	Aux loss: 1727.82
+Train epoch 105: [320/418 (75%)]	Loss: 1.2850 |	MSE loss: 0.0008 |	Bpp loss: 0.78 |	Aux loss: 1711.90
+Train epoch 105: [400/418 (94%)]	Loss: 1.2575 |	MSE loss: 0.0007 |	Bpp loss: 0.80 |	Aux loss: 1697.51
+Test epoch 105: Average losses:	Loss: 1.2723 |	MSE loss: 0.0009 |	Bpp loss: 0.68 |	Aux loss: 1694.51
+
+Learning rate: 0.0001
+Train epoch 106: [0/418 (0%)]	Loss: 1.0653 |	MSE loss: 0.0005 |	Bpp loss: 0.75 |	Aux loss: 1693.49
+Train epoch 106: [80/418 (19%)]	Loss: 1.1133 |	MSE loss: 0.0005 |	Bpp loss: 0.76 |	Aux loss: 1680.31
+Train epoch 106: [160/418 (38%)]	Loss: 1.1342 |	MSE loss: 0.0006 |	Bpp loss: 0.76 |	Aux loss: 1667.62
+Train epoch 106: [240/418 (57%)]	Loss: 1.0243 |	MSE loss: 0.0004 |	Bpp loss: 0.74 |	Aux loss: 1654.51
+Train epoch 106: [320/418 (75%)]	Loss: 1.2611 |	MSE loss: 0.0007 |	Bpp loss: 0.80 |	Aux loss: 1640.26
+Train epoch 106: [400/418 (94%)]	Loss: 1.2094 |	MSE loss: 0.0007 |	Bpp loss: 0.78 |	Aux loss: 1626.08
+Test epoch 106: Average losses:	Loss: 1.3792 |	MSE loss: 0.0011 |	Bpp loss: 0.67 |	Aux loss: 1622.92
+
+Learning rate: 0.0001
+Train epoch 107: [0/418 (0%)]	Loss: 1.4858 |	MSE loss: 0.0010 |	Bpp loss: 0.83 |	Aux loss: 1621.96
+Train epoch 107: [80/418 (19%)]	Loss: 1.1566 |	MSE loss: 0.0006 |	Bpp loss: 0.77 |	Aux loss: 1608.48
+Train epoch 107: [160/418 (38%)]	Loss: 1.1103 |	MSE loss: 0.0005 |	Bpp loss: 0.75 |	Aux loss: 1593.14
+Train epoch 107: [240/418 (57%)]	Loss: 1.3427 |	MSE loss: 0.0008 |	Bpp loss: 0.80 |	Aux loss: 1572.52
+Train epoch 107: [320/418 (75%)]	Loss: 1.2795 |	MSE loss: 0.0008 |	Bpp loss: 0.79 |	Aux loss: 1538.92
+Train epoch 107: [400/418 (94%)]	Loss: 1.2873 |	MSE loss: 0.0008 |	Bpp loss: 0.79 |	Aux loss: 1510.08
+Test epoch 107: Average losses:	Loss: 1.2070 |	MSE loss: 0.0008 |	Bpp loss: 0.65 |	Aux loss: 1504.42
+
+Learning rate: 0.0001
+Train epoch 108: [0/418 (0%)]	Loss: 1.1583 |	MSE loss: 0.0006 |	Bpp loss: 0.77 |	Aux loss: 1502.35
+Train epoch 108: [80/418 (19%)]	Loss: 1.1288 |	MSE loss: 0.0006 |	Bpp loss: 0.77 |	Aux loss: 1478.81
+Train epoch 108: [160/418 (38%)]	Loss: 1.1965 |	MSE loss: 0.0006 |	Bpp loss: 0.78 |	Aux loss: 1453.42
+Train epoch 108: [240/418 (57%)]	Loss: 1.2164 |	MSE loss: 0.0007 |	Bpp loss: 0.77 |	Aux loss: 1422.95
+Train epoch 108: [320/418 (75%)]	Loss: 1.2148 |	MSE loss: 0.0007 |	Bpp loss: 0.77 |	Aux loss: 1396.22
+Train epoch 108: [400/418 (94%)]	Loss: 1.1304 |	MSE loss: 0.0006 |	Bpp loss: 0.76 |	Aux loss: 1366.36
+Test epoch 108: Average losses:	Loss: 1.1688 |	MSE loss: 0.0008 |	Bpp loss: 0.63 |	Aux loss: 1359.44
+
+Learning rate: 0.0001
+Train epoch 109: [0/418 (0%)]	Loss: 1.2704 |	MSE loss: 0.0008 |	Bpp loss: 0.77 |	Aux loss: 1356.67
+Train epoch 109: [80/418 (19%)]	Loss: 1.1415 |	MSE loss: 0.0006 |	Bpp loss: 0.74 |	Aux loss: 1331.00
+Train epoch 109: [160/418 (38%)]	Loss: 1.1549 |	MSE loss: 0.0006 |	Bpp loss: 0.74 |	Aux loss: 1313.55
+Train epoch 109: [240/418 (57%)]	Loss: 1.2266 |	MSE loss: 0.0007 |	Bpp loss: 0.77 |	Aux loss: 1293.92
+Train epoch 109: [320/418 (75%)]	Loss: 1.3091 |	MSE loss: 0.0008 |	Bpp loss: 0.79 |	Aux loss: 1272.34
+Train epoch 109: [400/418 (94%)]	Loss: 1.2342 |	MSE loss: 0.0007 |	Bpp loss: 0.75 |	Aux loss: 1248.91
+Test epoch 109: Average losses:	Loss: 1.1638 |	MSE loss: 0.0008 |	Bpp loss: 0.62 |	Aux loss: 1243.87
+
+Learning rate: 0.0001
+Train epoch 110: [0/418 (0%)]	Loss: 1.2792 |	MSE loss: 0.0008 |	Bpp loss: 0.76 |	Aux loss: 1242.06
+Train epoch 110: [80/418 (19%)]	Loss: 1.1727 |	MSE loss: 0.0007 |	Bpp loss: 0.75 |	Aux loss: 1219.55
+Train epoch 110: [160/418 (38%)]	Loss: 1.1269 |	MSE loss: 0.0006 |	Bpp loss: 0.73 |	Aux loss: 1196.87
+Train epoch 110: [240/418 (57%)]	Loss: 0.9865 |	MSE loss: 0.0005 |	Bpp loss: 0.69 |	Aux loss: 1174.03
+Train epoch 110: [320/418 (75%)]	Loss: 1.0362 |	MSE loss: 0.0005 |	Bpp loss: 0.70 |	Aux loss: 1150.97
+Train epoch 110: [400/418 (94%)]	Loss: 1.2053 |	MSE loss: 0.0007 |	Bpp loss: 0.74 |	Aux loss: 1130.97
+Test epoch 110: Average losses:	Loss: 1.1561 |	MSE loss: 0.0008 |	Bpp loss: 0.61 |	Aux loss: 1126.58
+
+Learning rate: 0.0001
+Train epoch 111: [0/418 (0%)]	Loss: 0.9526 |	MSE loss: 0.0004 |	Bpp loss: 0.68 |	Aux loss: 1124.71
+Train epoch 111: [80/418 (19%)]	Loss: 1.2173 |	MSE loss: 0.0008 |	Bpp loss: 0.72 |	Aux loss: 1104.83
+Train epoch 111: [160/418 (38%)]	Loss: 0.9755 |	MSE loss: 0.0004 |	Bpp loss: 0.69 |	Aux loss: 1087.28
+Train epoch 111: [240/418 (57%)]	Loss: 1.2899 |	MSE loss: 0.0008 |	Bpp loss: 0.76 |	Aux loss: 1070.30
+Train epoch 111: [320/418 (75%)]	Loss: 1.2116 |	MSE loss: 0.0007 |	Bpp loss: 0.73 |	Aux loss: 1050.06
+Train epoch 111: [400/418 (94%)]	Loss: 1.1626 |	MSE loss: 0.0007 |	Bpp loss: 0.72 |	Aux loss: 1026.97
+Test epoch 111: Average losses:	Loss: 1.1281 |	MSE loss: 0.0008 |	Bpp loss: 0.60 |	Aux loss: 1021.91
+
+Learning rate: 0.0001
+Train epoch 112: [0/418 (0%)]	Loss: 1.0563 |	MSE loss: 0.0006 |	Bpp loss: 0.70 |	Aux loss: 1020.14
+Train epoch 112: [80/418 (19%)]	Loss: 1.0543 |	MSE loss: 0.0005 |	Bpp loss: 0.70 |	Aux loss: 991.16
+Train epoch 112: [160/418 (38%)]	Loss: 1.0663 |	MSE loss: 0.0006 |	Bpp loss: 0.70 |	Aux loss: 947.22
+Train epoch 112: [240/418 (57%)]	Loss: 1.0171 |	MSE loss: 0.0005 |	Bpp loss: 0.69 |	Aux loss: 912.19
+Train epoch 112: [320/418 (75%)]	Loss: 1.0969 |	MSE loss: 0.0006 |	Bpp loss: 0.70 |	Aux loss: 878.82
+Train epoch 112: [400/418 (94%)]	Loss: 1.3099 |	MSE loss: 0.0009 |	Bpp loss: 0.70 |	Aux loss: 852.25
+Test epoch 112: Average losses:	Loss: 1.1106 |	MSE loss: 0.0008 |	Bpp loss: 0.57 |	Aux loss: 847.68
+
+Learning rate: 0.0001
+Train epoch 113: [0/418 (0%)]	Loss: 1.1032 |	MSE loss: 0.0006 |	Bpp loss: 0.69 |	Aux loss: 846.12
+Train epoch 113: [80/418 (19%)]	Loss: 1.0616 |	MSE loss: 0.0006 |	Bpp loss: 0.69 |	Aux loss: 822.23
+Train epoch 113: [160/418 (38%)]	Loss: 1.1390 |	MSE loss: 0.0007 |	Bpp loss: 0.69 |	Aux loss: 796.15
+Train epoch 113: [240/418 (57%)]	Loss: 1.0928 |	MSE loss: 0.0006 |	Bpp loss: 0.70 |	Aux loss: 775.08
+Train epoch 113: [320/418 (75%)]	Loss: 1.3504 |	MSE loss: 0.0010 |	Bpp loss: 0.73 |	Aux loss: 747.12
+Train epoch 113: [400/418 (94%)]	Loss: 1.0365 |	MSE loss: 0.0006 |	Bpp loss: 0.67 |	Aux loss: 723.22
+Test epoch 113: Average losses:	Loss: 1.0812 |	MSE loss: 0.0008 |	Bpp loss: 0.56 |	Aux loss: 718.27
+
+Learning rate: 0.0001
+Train epoch 114: [0/418 (0%)]	Loss: 1.0441 |	MSE loss: 0.0006 |	Bpp loss: 0.69 |	Aux loss: 716.48
+Train epoch 114: [80/418 (19%)]	Loss: 1.0972 |	MSE loss: 0.0006 |	Bpp loss: 0.69 |	Aux loss: 693.96
+Train epoch 114: [160/418 (38%)]	Loss: 1.1262 |	MSE loss: 0.0007 |	Bpp loss: 0.69 |	Aux loss: 671.72
+Train epoch 114: [240/418 (57%)]	Loss: 1.0623 |	MSE loss: 0.0006 |	Bpp loss: 0.67 |	Aux loss: 648.07
+Train epoch 114: [320/418 (75%)]	Loss: 1.1635 |	MSE loss: 0.0007 |	Bpp loss: 0.70 |	Aux loss: 621.09
+Train epoch 114: [400/418 (94%)]	Loss: 1.2207 |	MSE loss: 0.0008 |	Bpp loss: 0.69 |	Aux loss: 601.12
+Test epoch 114: Average losses:	Loss: 1.0868 |	MSE loss: 0.0008 |	Bpp loss: 0.55 |	Aux loss: 597.57
+
+Learning rate: 0.0001
+Train epoch 115: [0/418 (0%)]	Loss: 1.1732 |	MSE loss: 0.0007 |	Bpp loss: 0.69 |	Aux loss: 596.51
+Train epoch 115: [80/418 (19%)]	Loss: 1.0305 |	MSE loss: 0.0006 |	Bpp loss: 0.67 |	Aux loss: 576.19
+Train epoch 115: [160/418 (38%)]	Loss: 1.0251 |	MSE loss: 0.0006 |	Bpp loss: 0.66 |	Aux loss: 557.01
+Train epoch 115: [240/418 (57%)]	Loss: 1.2018 |	MSE loss: 0.0008 |	Bpp loss: 0.70 |	Aux loss: 543.98
+Train epoch 115: [320/418 (75%)]	Loss: 1.1251 |	MSE loss: 0.0007 |	Bpp loss: 0.69 |	Aux loss: 534.81
+Train epoch 115: [400/418 (94%)]	Loss: 0.9705 |	MSE loss: 0.0005 |	Bpp loss: 0.64 |	Aux loss: 527.87
+Test epoch 115: Average losses:	Loss: 1.0964 |	MSE loss: 0.0009 |	Bpp loss: 0.53 |	Aux loss: 526.41
+
+Learning rate: 0.0001
+Train epoch 116: [0/418 (0%)]	Loss: 1.0999 |	MSE loss: 0.0007 |	Bpp loss: 0.67 |	Aux loss: 526.30
+Train epoch 116: [80/418 (19%)]	Loss: 0.9677 |	MSE loss: 0.0005 |	Bpp loss: 0.63 |	Aux loss: 522.46
+Train epoch 116: [160/418 (38%)]	Loss: 1.1514 |	MSE loss: 0.0007 |	Bpp loss: 0.69 |	Aux loss: 520.47
+Train epoch 116: [240/418 (57%)]	Loss: 0.9588 |	MSE loss: 0.0005 |	Bpp loss: 0.65 |	Aux loss: 519.62
+Train epoch 116: [320/418 (75%)]	Loss: 1.0447 |	MSE loss: 0.0006 |	Bpp loss: 0.66 |	Aux loss: 519.14
+Train epoch 116: [400/418 (94%)]	Loss: 1.1701 |	MSE loss: 0.0008 |	Bpp loss: 0.68 |	Aux loss: 518.67
+Test epoch 116: Average losses:	Loss: 1.0961 |	MSE loss: 0.0009 |	Bpp loss: 0.52 |	Aux loss: 518.25
+
+Learning rate: 0.0001
+Train epoch 117: [0/418 (0%)]	Loss: 1.0656 |	MSE loss: 0.0006 |	Bpp loss: 0.67 |	Aux loss: 518.70
+Train epoch 117: [80/418 (19%)]	Loss: 1.0830 |	MSE loss: 0.0006 |	Bpp loss: 0.68 |	Aux loss: 519.84
+Train epoch 117: [160/418 (38%)]	Loss: 1.2784 |	MSE loss: 0.0009 |	Bpp loss: 0.70 |	Aux loss: 524.97
+Train epoch 117: [240/418 (57%)]	Loss: 1.1620 |	MSE loss: 0.0007 |	Bpp loss: 0.68 |	Aux loss: 527.52
+Train epoch 117: [320/418 (75%)]	Loss: 0.9160 |	MSE loss: 0.0005 |	Bpp loss: 0.62 |	Aux loss: 529.16
+Train epoch 117: [400/418 (94%)]	Loss: 0.9585 |	MSE loss: 0.0005 |	Bpp loss: 0.61 |	Aux loss: 530.50
+Test epoch 117: Average losses:	Loss: 1.1522 |	MSE loss: 0.0010 |	Bpp loss: 0.51 |	Aux loss: 530.33
+
+Learning rate: 0.0001
+Train epoch 118: [0/418 (0%)]	Loss: 1.0882 |	MSE loss: 0.0007 |	Bpp loss: 0.65 |	Aux loss: 530.91
+Train epoch 118: [80/418 (19%)]	Loss: 1.0457 |	MSE loss: 0.0006 |	Bpp loss: 0.66 |	Aux loss: 534.75
+Train epoch 118: [160/418 (38%)]	Loss: 1.1158 |	MSE loss: 0.0007 |	Bpp loss: 0.66 |	Aux loss: 542.00
+Train epoch 118: [240/418 (57%)]	Loss: 1.2216 |	MSE loss: 0.0008 |	Bpp loss: 0.70 |	Aux loss: 550.20
+Train epoch 118: [320/418 (75%)]	Loss: 0.9505 |	MSE loss: 0.0005 |	Bpp loss: 0.63 |	Aux loss: 558.20
+Train epoch 118: [400/418 (94%)]	Loss: 1.0583 |	MSE loss: 0.0006 |	Bpp loss: 0.65 |	Aux loss: 567.78
+Test epoch 118: Average losses:	Loss: 1.0918 |	MSE loss: 0.0009 |	Bpp loss: 0.50 |	Aux loss: 569.75
+
+Learning rate: 0.0001
+Train epoch 119: [0/418 (0%)]	Loss: 1.2354 |	MSE loss: 0.0009 |	Bpp loss: 0.67 |	Aux loss: 571.58
+Train epoch 119: [80/418 (19%)]	Loss: 1.0222 |	MSE loss: 0.0006 |	Bpp loss: 0.63 |	Aux loss: 582.14
+Train epoch 119: [160/418 (38%)]	Loss: 1.0623 |	MSE loss: 0.0006 |	Bpp loss: 0.64 |	Aux loss: 593.76
+Train epoch 119: [240/418 (57%)]	Loss: 1.1291 |	MSE loss: 0.0007 |	Bpp loss: 0.65 |	Aux loss: 602.42
+Train epoch 119: [320/418 (75%)]	Loss: 1.0858 |	MSE loss: 0.0007 |	Bpp loss: 0.65 |	Aux loss: 607.01
+Train epoch 119: [400/418 (94%)]	Loss: 0.9723 |	MSE loss: 0.0005 |	Bpp loss: 0.62 |	Aux loss: 613.27
+Test epoch 119: Average losses:	Loss: 1.0224 |	MSE loss: 0.0008 |	Bpp loss: 0.49 |	Aux loss: 613.99
+
+Learning rate: 0.0001
+Train epoch 120: [0/418 (0%)]	Loss: 1.1157 |	MSE loss: 0.0007 |	Bpp loss: 0.66 |	Aux loss: 615.20
+Train epoch 120: [80/418 (19%)]	Loss: 0.9909 |	MSE loss: 0.0006 |	Bpp loss: 0.63 |	Aux loss: 622.38
+Train epoch 120: [160/418 (38%)]	Loss: 1.2534 |	MSE loss: 0.0009 |	Bpp loss: 0.68 |	Aux loss: 630.72
+Train epoch 120: [240/418 (57%)]	Loss: 0.9668 |	MSE loss: 0.0005 |	Bpp loss: 0.63 |	Aux loss: 639.18
+Train epoch 120: [320/418 (75%)]	Loss: 1.0202 |	MSE loss: 0.0006 |	Bpp loss: 0.63 |	Aux loss: 649.07
+Train epoch 120: [400/418 (94%)]	Loss: 1.0392 |	MSE loss: 0.0006 |	Bpp loss: 0.64 |	Aux loss: 659.77
+Test epoch 120: Average losses:	Loss: 1.0244 |	MSE loss: 0.0008 |	Bpp loss: 0.48 |	Aux loss: 662.04
+
+Learning rate: 0.0001
+Train epoch 121: [0/418 (0%)]	Loss: 1.0661 |	MSE loss: 0.0007 |	Bpp loss: 0.64 |	Aux loss: 663.73
+Train epoch 121: [80/418 (19%)]	Loss: 1.2362 |	MSE loss: 0.0008 |	Bpp loss: 0.68 |	Aux loss: 676.56
+Train epoch 121: [160/418 (38%)]	Loss: 0.9630 |	MSE loss: 0.0006 |	Bpp loss: 0.60 |	Aux loss: 692.43
+Train epoch 121: [240/418 (57%)]	Loss: 0.9835 |	MSE loss: 0.0006 |	Bpp loss: 0.61 |	Aux loss: 707.49
+Train epoch 121: [320/418 (75%)]	Loss: 1.0287 |	MSE loss: 0.0006 |	Bpp loss: 0.62 |	Aux loss: 716.17
+Train epoch 121: [400/418 (94%)]	Loss: 0.9569 |	MSE loss: 0.0006 |	Bpp loss: 0.59 |	Aux loss: 721.79
+Test epoch 121: Average losses:	Loss: 1.0284 |	MSE loss: 0.0009 |	Bpp loss: 0.47 |	Aux loss: 722.10
+
+Learning rate: 0.0001
+Train epoch 122: [0/418 (0%)]	Loss: 1.1290 |	MSE loss: 0.0008 |	Bpp loss: 0.64 |	Aux loss: 722.92
+Train epoch 122: [80/418 (19%)]	Loss: 1.0588 |	MSE loss: 0.0006 |	Bpp loss: 0.64 |	Aux loss: 727.04
+Train epoch 122: [160/418 (38%)]	Loss: 1.0341 |	MSE loss: 0.0006 |	Bpp loss: 0.63 |	Aux loss: 732.71
+Train epoch 122: [240/418 (57%)]	Loss: 1.1719 |	MSE loss: 0.0008 |	Bpp loss: 0.63 |	Aux loss: 738.76
+Train epoch 122: [320/418 (75%)]	Loss: 0.9030 |	MSE loss: 0.0005 |	Bpp loss: 0.60 |	Aux loss: 744.83
+Train epoch 122: [400/418 (94%)]	Loss: 0.9062 |	MSE loss: 0.0005 |	Bpp loss: 0.59 |	Aux loss: 749.81
+Test epoch 122: Average losses:	Loss: 1.0256 |	MSE loss: 0.0009 |	Bpp loss: 0.47 |	Aux loss: 750.60
+
+Learning rate: 0.0001
+Train epoch 123: [0/418 (0%)]	Loss: 0.9418 |	MSE loss: 0.0005 |	Bpp loss: 0.60 |	Aux loss: 751.78
+Train epoch 123: [80/418 (19%)]	Loss: 0.8932 |	MSE loss: 0.0005 |	Bpp loss: 0.58 |	Aux loss: 758.11
+Train epoch 123: [160/418 (38%)]	Loss: 0.9844 |	MSE loss: 0.0006 |	Bpp loss: 0.59 |	Aux loss: 764.72
+Train epoch 123: [240/418 (57%)]	Loss: 1.0177 |	MSE loss: 0.0006 |	Bpp loss: 0.62 |	Aux loss: 770.70
+Train epoch 123: [320/418 (75%)]	Loss: 1.0104 |	MSE loss: 0.0006 |	Bpp loss: 0.60 |	Aux loss: 776.63
+Train epoch 123: [400/418 (94%)]	Loss: 1.0833 |	MSE loss: 0.0007 |	Bpp loss: 0.64 |	Aux loss: 783.92
+Test epoch 123: Average losses:	Loss: 0.9806 |	MSE loss: 0.0008 |	Bpp loss: 0.46 |	Aux loss: 785.20
+
+Learning rate: 0.0001
+Train epoch 124: [0/418 (0%)]	Loss: 1.0721 |	MSE loss: 0.0007 |	Bpp loss: 0.63 |	Aux loss: 786.45
+Train epoch 124: [80/418 (19%)]	Loss: 0.9223 |	MSE loss: 0.0005 |	Bpp loss: 0.60 |	Aux loss: 793.68
+Train epoch 124: [160/418 (38%)]	Loss: 1.0661 |	MSE loss: 0.0007 |	Bpp loss: 0.62 |	Aux loss: 800.26
+Train epoch 124: [240/418 (57%)]	Loss: 1.0187 |	MSE loss: 0.0006 |	Bpp loss: 0.60 |	Aux loss: 805.67
+Train epoch 124: [320/418 (75%)]	Loss: 1.0396 |	MSE loss: 0.0007 |	Bpp loss: 0.62 |	Aux loss: 812.21
+Train epoch 124: [400/418 (94%)]	Loss: 1.0748 |	MSE loss: 0.0007 |	Bpp loss: 0.62 |	Aux loss: 820.95
+Test epoch 124: Average losses:	Loss: 0.9666 |	MSE loss: 0.0008 |	Bpp loss: 0.45 |	Aux loss: 822.71
+
+Learning rate: 0.0001
+Train epoch 125: [0/418 (0%)]	Loss: 0.9761 |	MSE loss: 0.0006 |	Bpp loss: 0.61 |	Aux loss: 824.70
+Train epoch 125: [80/418 (19%)]	Loss: 1.0507 |	MSE loss: 0.0007 |	Bpp loss: 0.60 |	Aux loss: 838.84
+Train epoch 125: [160/418 (38%)]	Loss: 1.0810 |	MSE loss: 0.0007 |	Bpp loss: 0.62 |	Aux loss: 855.29
+Train epoch 125: [240/418 (57%)]	Loss: 0.8917 |	MSE loss: 0.0005 |	Bpp loss: 0.57 |	Aux loss: 875.13
+Train epoch 125: [320/418 (75%)]	Loss: 1.0499 |	MSE loss: 0.0007 |	Bpp loss: 0.62 |	Aux loss: 891.86
+Train epoch 125: [400/418 (94%)]	Loss: 1.2213 |	MSE loss: 0.0009 |	Bpp loss: 0.62 |	Aux loss: 912.08
+Test epoch 125: Average losses:	Loss: 0.9562 |	MSE loss: 0.0008 |	Bpp loss: 0.44 |	Aux loss: 914.43
+
+Learning rate: 0.0001
+Train epoch 126: [0/418 (0%)]	Loss: 1.1922 |	MSE loss: 0.0008 |	Bpp loss: 0.64 |	Aux loss: 916.35
+Train epoch 126: [80/418 (19%)]	Loss: 0.8564 |	MSE loss: 0.0005 |	Bpp loss: 0.56 |	Aux loss: 929.61
+Train epoch 126: [160/418 (38%)]	Loss: 1.0103 |	MSE loss: 0.0006 |	Bpp loss: 0.59 |	Aux loss: 940.17
+Train epoch 126: [240/418 (57%)]	Loss: 1.3010 |	MSE loss: 0.0010 |	Bpp loss: 0.67 |	Aux loss: 949.62
+Train epoch 126: [320/418 (75%)]	Loss: 0.8855 |	MSE loss: 0.0005 |	Bpp loss: 0.58 |	Aux loss: 962.48
+Train epoch 126: [400/418 (94%)]	Loss: 0.9579 |	MSE loss: 0.0006 |	Bpp loss: 0.60 |	Aux loss: 979.76
+Test epoch 126: Average losses:	Loss: 0.9242 |	MSE loss: 0.0008 |	Bpp loss: 0.43 |	Aux loss: 982.10
+
+Learning rate: 0.0001
+Train epoch 127: [0/418 (0%)]	Loss: 1.1770 |	MSE loss: 0.0008 |	Bpp loss: 0.64 |	Aux loss: 983.87
+Train epoch 127: [80/418 (19%)]	Loss: 0.9435 |	MSE loss: 0.0005 |	Bpp loss: 0.59 |	Aux loss: 999.60
+Train epoch 127: [160/418 (38%)]	Loss: 0.8240 |	MSE loss: 0.0004 |	Bpp loss: 0.55 |	Aux loss: 1012.07
+Train epoch 127: [240/418 (57%)]	Loss: 0.9284 |	MSE loss: 0.0006 |	Bpp loss: 0.57 |	Aux loss: 1021.40
+Train epoch 127: [320/418 (75%)]	Loss: 0.8701 |	MSE loss: 0.0005 |	Bpp loss: 0.55 |	Aux loss: 1029.83
+Train epoch 127: [400/418 (94%)]	Loss: 1.0528 |	MSE loss: 0.0007 |	Bpp loss: 0.59 |	Aux loss: 1036.56
+Test epoch 127: Average losses:	Loss: 0.9461 |	MSE loss: 0.0008 |	Bpp loss: 0.43 |	Aux loss: 1037.79
+
+Learning rate: 0.0001
+Train epoch 128: [0/418 (0%)]	Loss: 0.9613 |	MSE loss: 0.0006 |	Bpp loss: 0.59 |	Aux loss: 1039.63
+Train epoch 128: [80/418 (19%)]	Loss: 0.9334 |	MSE loss: 0.0006 |	Bpp loss: 0.57 |	Aux loss: 1048.13
+Train epoch 128: [160/418 (38%)]	Loss: 1.0918 |	MSE loss: 0.0007 |	Bpp loss: 0.62 |	Aux loss: 1055.14
+Train epoch 128: [240/418 (57%)]	Loss: 1.0380 |	MSE loss: 0.0007 |	Bpp loss: 0.60 |	Aux loss: 1063.80
+Train epoch 128: [320/418 (75%)]	Loss: 1.0975 |	MSE loss: 0.0008 |	Bpp loss: 0.60 |	Aux loss: 1076.22
+Train epoch 128: [400/418 (94%)]	Loss: 1.0473 |	MSE loss: 0.0007 |	Bpp loss: 0.60 |	Aux loss: 1090.14
+Test epoch 128: Average losses:	Loss: 0.9279 |	MSE loss: 0.0008 |	Bpp loss: 0.42 |	Aux loss: 1092.58
+
+Learning rate: 0.0001
+Train epoch 129: [0/418 (0%)]	Loss: 0.8978 |	MSE loss: 0.0005 |	Bpp loss: 0.56 |	Aux loss: 1094.69
+Train epoch 129: [80/418 (19%)]	Loss: 1.0278 |	MSE loss: 0.0007 |	Bpp loss: 0.60 |	Aux loss: 1110.31
+Train epoch 129: [160/418 (38%)]	Loss: 0.9756 |	MSE loss: 0.0006 |	Bpp loss: 0.57 |	Aux loss: 1123.90
+Train epoch 129: [240/418 (57%)]	Loss: 0.8742 |	MSE loss: 0.0005 |	Bpp loss: 0.55 |	Aux loss: 1135.28
+Train epoch 129: [320/418 (75%)]	Loss: 0.9423 |	MSE loss: 0.0006 |	Bpp loss: 0.57 |	Aux loss: 1148.13
+Train epoch 129: [400/418 (94%)]	Loss: 0.8837 |	MSE loss: 0.0005 |	Bpp loss: 0.57 |	Aux loss: 1160.89
+Test epoch 129: Average losses:	Loss: 0.8992 |	MSE loss: 0.0007 |	Bpp loss: 0.41 |	Aux loss: 1163.59
+
+Learning rate: 0.0001
+Train epoch 130: [0/418 (0%)]	Loss: 0.8546 |	MSE loss: 0.0005 |	Bpp loss: 0.54 |	Aux loss: 1166.12
+Train epoch 130: [80/418 (19%)]	Loss: 1.1596 |	MSE loss: 0.0008 |	Bpp loss: 0.63 |	Aux loss: 1189.82
+Train epoch 130: [160/418 (38%)]	Loss: 0.8719 |	MSE loss: 0.0005 |	Bpp loss: 0.55 |	Aux loss: 1216.99
+Train epoch 130: [240/418 (57%)]	Loss: 1.0533 |	MSE loss: 0.0007 |	Bpp loss: 0.60 |	Aux loss: 1242.89
+Train epoch 130: [320/418 (75%)]	Loss: 0.8109 |	MSE loss: 0.0004 |	Bpp loss: 0.52 |	Aux loss: 1268.91
+Train epoch 130: [400/418 (94%)]	Loss: 0.9111 |	MSE loss: 0.0005 |	Bpp loss: 0.55 |	Aux loss: 1289.64
+Test epoch 130: Average losses:	Loss: 0.9034 |	MSE loss: 0.0008 |	Bpp loss: 0.40 |	Aux loss: 1292.47
+
+Learning rate: 0.0001
+Train epoch 131: [0/418 (0%)]	Loss: 0.9660 |	MSE loss: 0.0006 |	Bpp loss: 0.57 |	Aux loss: 1294.47
+Train epoch 131: [80/418 (19%)]	Loss: 0.7800 |	MSE loss: 0.0004 |	Bpp loss: 0.51 |	Aux loss: 1310.84
+Train epoch 131: [160/418 (38%)]	Loss: 0.8775 |	MSE loss: 0.0005 |	Bpp loss: 0.55 |	Aux loss: 1325.34
+Train epoch 131: [240/418 (57%)]	Loss: 0.8441 |	MSE loss: 0.0005 |	Bpp loss: 0.53 |	Aux loss: 1339.71
+Train epoch 131: [320/418 (75%)]	Loss: 1.0189 |	MSE loss: 0.0007 |	Bpp loss: 0.58 |	Aux loss: 1354.56
+Train epoch 131: [400/418 (94%)]	Loss: 0.8244 |	MSE loss: 0.0005 |	Bpp loss: 0.52 |	Aux loss: 1372.35
+Test epoch 131: Average losses:	Loss: 0.9067 |	MSE loss: 0.0008 |	Bpp loss: 0.39 |	Aux loss: 1375.41
+
+Learning rate: 0.0001
+Train epoch 132: [0/418 (0%)]	Loss: 0.9705 |	MSE loss: 0.0006 |	Bpp loss: 0.57 |	Aux loss: 1377.64
+Train epoch 132: [80/418 (19%)]	Loss: 1.0065 |	MSE loss: 0.0007 |	Bpp loss: 0.57 |	Aux loss: 1394.27
+Train epoch 132: [160/418 (38%)]	Loss: 0.9064 |	MSE loss: 0.0005 |	Bpp loss: 0.55 |	Aux loss: 1408.29
+Train epoch 132: [240/418 (57%)]	Loss: 0.9658 |	MSE loss: 0.0006 |	Bpp loss: 0.56 |	Aux loss: 1421.48
+Train epoch 132: [320/418 (75%)]	Loss: 0.9288 |	MSE loss: 0.0006 |	Bpp loss: 0.54 |	Aux loss: 1436.07
+Train epoch 132: [400/418 (94%)]	Loss: 0.9127 |	MSE loss: 0.0006 |	Bpp loss: 0.54 |	Aux loss: 1452.26
+Test epoch 132: Average losses:	Loss: 0.8785 |	MSE loss: 0.0008 |	Bpp loss: 0.39 |	Aux loss: 1454.66
+
+Learning rate: 0.0001
+Train epoch 133: [0/418 (0%)]	Loss: 0.9904 |	MSE loss: 0.0006 |	Bpp loss: 0.57 |	Aux loss: 1456.61
+Train epoch 133: [80/418 (19%)]	Loss: 0.9478 |	MSE loss: 0.0006 |	Bpp loss: 0.55 |	Aux loss: 1480.06
+Train epoch 133: [160/418 (38%)]	Loss: 0.8882 |	MSE loss: 0.0006 |	Bpp loss: 0.52 |	Aux loss: 1502.78
+Train epoch 133: [240/418 (57%)]	Loss: 0.9512 |	MSE loss: 0.0006 |	Bpp loss: 0.55 |	Aux loss: 1517.91
+Train epoch 133: [320/418 (75%)]	Loss: 1.1883 |	MSE loss: 0.0009 |	Bpp loss: 0.61 |	Aux loss: 1532.22
+Train epoch 133: [400/418 (94%)]	Loss: 0.9046 |	MSE loss: 0.0005 |	Bpp loss: 0.55 |	Aux loss: 1544.79
+Test epoch 133: Average losses:	Loss: 0.8845 |	MSE loss: 0.0008 |	Bpp loss: 0.38 |	Aux loss: 1547.81
+
+Learning rate: 0.0001
+Train epoch 134: [0/418 (0%)]	Loss: 0.9878 |	MSE loss: 0.0007 |	Bpp loss: 0.56 |	Aux loss: 1550.30
+Train epoch 134: [80/418 (19%)]	Loss: 0.9069 |	MSE loss: 0.0006 |	Bpp loss: 0.54 |	Aux loss: 1566.37
+Train epoch 134: [160/418 (38%)]	Loss: 0.9510 |	MSE loss: 0.0006 |	Bpp loss: 0.55 |	Aux loss: 1578.82
+Train epoch 134: [240/418 (57%)]	Loss: 1.0498 |	MSE loss: 0.0007 |	Bpp loss: 0.57 |	Aux loss: 1595.29
+Train epoch 134: [320/418 (75%)]	Loss: 0.8445 |	MSE loss: 0.0005 |	Bpp loss: 0.52 |	Aux loss: 1612.08
+Train epoch 134: [400/418 (94%)]	Loss: 0.8495 |	MSE loss: 0.0005 |	Bpp loss: 0.53 |	Aux loss: 1627.75
+Test epoch 134: Average losses:	Loss: 0.9433 |	MSE loss: 0.0009 |	Bpp loss: 0.37 |	Aux loss: 1629.94
+
+Learning rate: 0.0001
+Train epoch 135: [0/418 (0%)]	Loss: 0.9876 |	MSE loss: 0.0007 |	Bpp loss: 0.54 |	Aux loss: 1631.70
+Train epoch 135: [80/418 (19%)]	Loss: 0.8625 |	MSE loss: 0.0005 |	Bpp loss: 0.52 |	Aux loss: 1640.41
+Train epoch 135: [160/418 (38%)]	Loss: 0.8972 |	MSE loss: 0.0006 |	Bpp loss: 0.52 |	Aux loss: 1646.65
+Train epoch 135: [240/418 (57%)]	Loss: 0.8116 |	MSE loss: 0.0005 |	Bpp loss: 0.51 |	Aux loss: 1652.00
+Train epoch 135: [320/418 (75%)]	Loss: 0.9544 |	MSE loss: 0.0006 |	Bpp loss: 0.54 |	Aux loss: 1657.46
+Train epoch 135: [400/418 (94%)]	Loss: 0.8004 |	MSE loss: 0.0004 |	Bpp loss: 0.51 |	Aux loss: 1665.21
+Test epoch 135: Average losses:	Loss: 0.8717 |	MSE loss: 0.0008 |	Bpp loss: 0.37 |	Aux loss: 1669.11
+
+Learning rate: 0.0001
+Train epoch 136: [0/418 (0%)]	Loss: 1.0060 |	MSE loss: 0.0007 |	Bpp loss: 0.56 |	Aux loss: 1671.80
+Train epoch 136: [80/418 (19%)]	Loss: 0.9523 |	MSE loss: 0.0006 |	Bpp loss: 0.54 |	Aux loss: 1687.35
+Train epoch 136: [160/418 (38%)]	Loss: 1.1741 |	MSE loss: 0.0009 |	Bpp loss: 0.60 |	Aux loss: 1701.10
+Train epoch 136: [240/418 (57%)]	Loss: 0.9920 |	MSE loss: 0.0007 |	Bpp loss: 0.55 |	Aux loss: 1713.72
+Train epoch 136: [320/418 (75%)]	Loss: 0.8695 |	MSE loss: 0.0005 |	Bpp loss: 0.53 |	Aux loss: 1728.22
+Train epoch 136: [400/418 (94%)]	Loss: 0.8625 |	MSE loss: 0.0005 |	Bpp loss: 0.53 |	Aux loss: 1742.57
+Test epoch 136: Average losses:	Loss: 0.8493 |	MSE loss: 0.0007 |	Bpp loss: 0.36 |	Aux loss: 1744.70
+
+Learning rate: 0.0001
+Train epoch 137: [0/418 (0%)]	Loss: 1.0372 |	MSE loss: 0.0007 |	Bpp loss: 0.57 |	Aux loss: 1746.54
+Train epoch 137: [80/418 (19%)]	Loss: 0.7828 |	MSE loss: 0.0004 |	Bpp loss: 0.49 |	Aux loss: 1759.67
+Train epoch 137: [160/418 (38%)]	Loss: 0.9967 |	MSE loss: 0.0007 |	Bpp loss: 0.56 |	Aux loss: 1776.55
+Train epoch 137: [240/418 (57%)]	Loss: 0.8698 |	MSE loss: 0.0005 |	Bpp loss: 0.52 |	Aux loss: 1800.52
+Train epoch 137: [320/418 (75%)]	Loss: 0.8871 |	MSE loss: 0.0006 |	Bpp loss: 0.52 |	Aux loss: 1824.21
+Train epoch 137: [400/418 (94%)]	Loss: 0.9243 |	MSE loss: 0.0006 |	Bpp loss: 0.52 |	Aux loss: 1852.38
+Test epoch 137: Average losses:	Loss: 0.8357 |	MSE loss: 0.0007 |	Bpp loss: 0.35 |	Aux loss: 1856.82
+
+Learning rate: 0.0001
+Train epoch 138: [0/418 (0%)]	Loss: 0.9912 |	MSE loss: 0.0007 |	Bpp loss: 0.55 |	Aux loss: 1859.83
+Train epoch 138: [80/418 (19%)]	Loss: 0.8869 |	MSE loss: 0.0006 |	Bpp loss: 0.53 |	Aux loss: 1889.32
+Train epoch 138: [160/418 (38%)]	Loss: 0.9340 |	MSE loss: 0.0006 |	Bpp loss: 0.51 |	Aux loss: 1918.97
+Train epoch 138: [240/418 (57%)]	Loss: 0.8778 |	MSE loss: 0.0006 |	Bpp loss: 0.51 |	Aux loss: 1937.42
+Train epoch 138: [320/418 (75%)]	Loss: 0.9051 |	MSE loss: 0.0006 |	Bpp loss: 0.51 |	Aux loss: 1952.24
+Train epoch 138: [400/418 (94%)]	Loss: 0.9306 |	MSE loss: 0.0006 |	Bpp loss: 0.53 |	Aux loss: 1965.72
+Test epoch 138: Average losses:	Loss: 0.8236 |	MSE loss: 0.0007 |	Bpp loss: 0.35 |	Aux loss: 1967.96
+
+Learning rate: 0.0001
+Train epoch 139: [0/418 (0%)]	Loss: 0.9410 |	MSE loss: 0.0006 |	Bpp loss: 0.53 |	Aux loss: 1970.03
+Train epoch 139: [80/418 (19%)]	Loss: 1.0763 |	MSE loss: 0.0008 |	Bpp loss: 0.56 |	Aux loss: 1984.44
+Train epoch 139: [160/418 (38%)]	Loss: 0.8247 |	MSE loss: 0.0005 |	Bpp loss: 0.51 |	Aux loss: 2002.37
+Train epoch 139: [240/418 (57%)]	Loss: 0.8541 |	MSE loss: 0.0005 |	Bpp loss: 0.51 |	Aux loss: 2025.94
+Train epoch 139: [320/418 (75%)]	Loss: 0.9957 |	MSE loss: 0.0007 |	Bpp loss: 0.53 |	Aux loss: 2042.83
+Train epoch 139: [400/418 (94%)]	Loss: 0.9945 |	MSE loss: 0.0007 |	Bpp loss: 0.54 |	Aux loss: 2056.35
+Test epoch 139: Average losses:	Loss: 0.8263 |	MSE loss: 0.0007 |	Bpp loss: 0.34 |	Aux loss: 2060.59
+
+Learning rate: 0.0001
+Train epoch 140: [0/418 (0%)]	Loss: 0.9153 |	MSE loss: 0.0006 |	Bpp loss: 0.51 |	Aux loss: 2063.60
+Train epoch 140: [80/418 (19%)]	Loss: 0.8190 |	MSE loss: 0.0005 |	Bpp loss: 0.50 |	Aux loss: 2086.15
+Train epoch 140: [160/418 (38%)]	Loss: 0.9526 |	MSE loss: 0.0007 |	Bpp loss: 0.52 |	Aux loss: 2105.90
+Train epoch 140: [240/418 (57%)]	Loss: 1.0196 |	MSE loss: 0.0008 |	Bpp loss: 0.53 |	Aux loss: 2124.04
+Train epoch 140: [320/418 (75%)]	Loss: 0.7263 |	MSE loss: 0.0004 |	Bpp loss: 0.46 |	Aux loss: 2135.88
+Train epoch 140: [400/418 (94%)]	Loss: 0.7939 |	MSE loss: 0.0005 |	Bpp loss: 0.47 |	Aux loss: 2141.87
+Test epoch 140: Average losses:	Loss: 0.8765 |	MSE loss: 0.0008 |	Bpp loss: 0.33 |	Aux loss: 2142.11
+
+Learning rate: 0.0001
+Train epoch 141: [0/418 (0%)]	Loss: 0.8805 |	MSE loss: 0.0006 |	Bpp loss: 0.50 |	Aux loss: 2143.24
+Train epoch 141: [80/418 (19%)]	Loss: 1.0318 |	MSE loss: 0.0008 |	Bpp loss: 0.52 |	Aux loss: 2148.17
+Train epoch 141: [160/418 (38%)]	Loss: 0.9430 |	MSE loss: 0.0007 |	Bpp loss: 0.52 |	Aux loss: 2155.04
+Train epoch 141: [240/418 (57%)]	Loss: 0.8579 |	MSE loss: 0.0005 |	Bpp loss: 0.50 |	Aux loss: 2163.99
+Train epoch 141: [320/418 (75%)]	Loss: 0.8853 |	MSE loss: 0.0006 |	Bpp loss: 0.51 |	Aux loss: 2173.88
+Train epoch 141: [400/418 (94%)]	Loss: 0.9561 |	MSE loss: 0.0007 |	Bpp loss: 0.53 |	Aux loss: 2184.24
+Test epoch 141: Average losses:	Loss: 0.8066 |	MSE loss: 0.0007 |	Bpp loss: 0.33 |	Aux loss: 2185.38
+
+Learning rate: 0.0001
+Train epoch 142: [0/418 (0%)]	Loss: 0.7684 |	MSE loss: 0.0005 |	Bpp loss: 0.47 |	Aux loss: 2187.16
+Train epoch 142: [80/418 (19%)]	Loss: 1.0250 |	MSE loss: 0.0008 |	Bpp loss: 0.52 |	Aux loss: 2198.25
+Train epoch 142: [160/418 (38%)]	Loss: 0.9105 |	MSE loss: 0.0006 |	Bpp loss: 0.51 |	Aux loss: 2206.85
+Train epoch 142: [240/418 (57%)]	Loss: 0.9250 |	MSE loss: 0.0007 |	Bpp loss: 0.49 |	Aux loss: 2213.79
+Train epoch 142: [320/418 (75%)]	Loss: 0.8027 |	MSE loss: 0.0005 |	Bpp loss: 0.49 |	Aux loss: 2228.14
+Train epoch 142: [400/418 (94%)]	Loss: 0.9447 |	MSE loss: 0.0007 |	Bpp loss: 0.51 |	Aux loss: 2248.07
+Test epoch 142: Average losses:	Loss: 0.8041 |	MSE loss: 0.0007 |	Bpp loss: 0.33 |	Aux loss: 2250.79
+
+Learning rate: 0.0001
+Train epoch 143: [0/418 (0%)]	Loss: 0.7392 |	MSE loss: 0.0004 |	Bpp loss: 0.46 |	Aux loss: 2253.05
+Train epoch 143: [80/418 (19%)]	Loss: 0.9234 |	MSE loss: 0.0006 |	Bpp loss: 0.50 |	Aux loss: 2270.13
+Train epoch 143: [160/418 (38%)]	Loss: 0.8681 |	MSE loss: 0.0006 |	Bpp loss: 0.50 |	Aux loss: 2288.82
+Train epoch 143: [240/418 (57%)]	Loss: 0.8303 |	MSE loss: 0.0005 |	Bpp loss: 0.48 |	Aux loss: 2307.28
+Train epoch 143: [320/418 (75%)]	Loss: 0.7886 |	MSE loss: 0.0005 |	Bpp loss: 0.48 |	Aux loss: 2321.56
+Train epoch 143: [400/418 (94%)]	Loss: 0.7673 |	MSE loss: 0.0005 |	Bpp loss: 0.47 |	Aux loss: 2335.43
+Test epoch 143: Average losses:	Loss: 0.8214 |	MSE loss: 0.0008 |	Bpp loss: 0.32 |	Aux loss: 2338.10
+
+Learning rate: 0.0001
+Train epoch 144: [0/418 (0%)]	Loss: 0.7665 |	MSE loss: 0.0005 |	Bpp loss: 0.47 |	Aux loss: 2340.59
+Train epoch 144: [80/418 (19%)]	Loss: 0.8196 |	MSE loss: 0.0005 |	Bpp loss: 0.49 |	Aux loss: 2357.39
+Train epoch 144: [160/418 (38%)]	Loss: 0.7874 |	MSE loss: 0.0005 |	Bpp loss: 0.48 |	Aux loss: 2376.53
+Train epoch 144: [240/418 (57%)]	Loss: 0.9326 |	MSE loss: 0.0007 |	Bpp loss: 0.51 |	Aux loss: 2393.96
+Train epoch 144: [320/418 (75%)]	Loss: 0.9367 |	MSE loss: 0.0007 |	Bpp loss: 0.51 |	Aux loss: 2407.64
+Train epoch 144: [400/418 (94%)]	Loss: 0.8609 |	MSE loss: 0.0006 |	Bpp loss: 0.50 |	Aux loss: 2420.54
+Test epoch 144: Average losses:	Loss: 0.8012 |	MSE loss: 0.0007 |	Bpp loss: 0.32 |	Aux loss: 2422.71
+
+Learning rate: 0.0001
+Train epoch 145: [0/418 (0%)]	Loss: 0.9740 |	MSE loss: 0.0007 |	Bpp loss: 0.52 |	Aux loss: 2424.52
+Train epoch 145: [80/418 (19%)]	Loss: 0.7943 |	MSE loss: 0.0005 |	Bpp loss: 0.47 |	Aux loss: 2439.39
+Train epoch 145: [160/418 (38%)]	Loss: 0.7984 |	MSE loss: 0.0005 |	Bpp loss: 0.47 |	Aux loss: 2453.52
+Train epoch 145: [240/418 (57%)]	Loss: 0.9348 |	MSE loss: 0.0006 |	Bpp loss: 0.51 |	Aux loss: 2472.70
+Train epoch 145: [320/418 (75%)]	Loss: 0.6706 |	MSE loss: 0.0004 |	Bpp loss: 0.44 |	Aux loss: 2494.64
+Train epoch 145: [400/418 (94%)]	Loss: 0.9213 |	MSE loss: 0.0007 |	Bpp loss: 0.50 |	Aux loss: 2515.14
+Test epoch 145: Average losses:	Loss: 0.8115 |	MSE loss: 0.0008 |	Bpp loss: 0.31 |	Aux loss: 2517.81
+
+Learning rate: 0.0001
+Train epoch 146: [0/418 (0%)]	Loss: 0.8450 |	MSE loss: 0.0006 |	Bpp loss: 0.48 |	Aux loss: 2520.01
+Train epoch 146: [80/418 (19%)]	Loss: 0.7736 |	MSE loss: 0.0005 |	Bpp loss: 0.46 |	Aux loss: 2533.43
+Train epoch 146: [160/418 (38%)]	Loss: 0.8737 |	MSE loss: 0.0006 |	Bpp loss: 0.48 |	Aux loss: 2547.27
+Train epoch 146: [240/418 (57%)]	Loss: 0.7273 |	MSE loss: 0.0004 |	Bpp loss: 0.45 |	Aux loss: 2561.93
+Train epoch 146: [320/418 (75%)]	Loss: 0.7834 |	MSE loss: 0.0005 |	Bpp loss: 0.46 |	Aux loss: 2579.73
+Train epoch 146: [400/418 (94%)]	Loss: 0.7635 |	MSE loss: 0.0005 |	Bpp loss: 0.46 |	Aux loss: 2595.65
+Test epoch 146: Average losses:	Loss: 0.8219 |	MSE loss: 0.0008 |	Bpp loss: 0.31 |	Aux loss: 2597.87
+
+Learning rate: 0.0001
+Train epoch 147: [0/418 (0%)]	Loss: 0.8363 |	MSE loss: 0.0006 |	Bpp loss: 0.47 |	Aux loss: 2599.92
+Train epoch 147: [80/418 (19%)]	Loss: 0.7602 |	MSE loss: 0.0005 |	Bpp loss: 0.46 |	Aux loss: 2621.54
+Train epoch 147: [160/418 (38%)]	Loss: 0.7404 |	MSE loss: 0.0004 |	Bpp loss: 0.45 |	Aux loss: 2635.85
+Train epoch 147: [240/418 (57%)]	Loss: 0.7284 |	MSE loss: 0.0004 |	Bpp loss: 0.45 |	Aux loss: 2650.59
+Train epoch 147: [320/418 (75%)]	Loss: 1.0036 |	MSE loss: 0.0007 |	Bpp loss: 0.52 |	Aux loss: 2665.06
+Train epoch 147: [400/418 (94%)]	Loss: 0.8565 |	MSE loss: 0.0006 |	Bpp loss: 0.47 |	Aux loss: 2678.49
+Test epoch 147: Average losses:	Loss: 0.8197 |	MSE loss: 0.0008 |	Bpp loss: 0.30 |	Aux loss: 2681.06
+
+Learning rate: 0.0001
+Train epoch 148: [0/418 (0%)]	Loss: 0.8225 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 2683.10
+Train epoch 148: [80/418 (19%)]	Loss: 1.0969 |	MSE loss: 0.0009 |	Bpp loss: 0.54 |	Aux loss: 2696.45
+Train epoch 148: [160/418 (38%)]	Loss: 0.7406 |	MSE loss: 0.0005 |	Bpp loss: 0.45 |	Aux loss: 2711.01
+Train epoch 148: [240/418 (57%)]	Loss: 0.6828 |	MSE loss: 0.0004 |	Bpp loss: 0.43 |	Aux loss: 2726.03
+Train epoch 148: [320/418 (75%)]	Loss: 0.9852 |	MSE loss: 0.0007 |	Bpp loss: 0.52 |	Aux loss: 2735.90
+Train epoch 148: [400/418 (94%)]	Loss: 0.7281 |	MSE loss: 0.0004 |	Bpp loss: 0.45 |	Aux loss: 2747.82
+Test epoch 148: Average losses:	Loss: 0.7924 |	MSE loss: 0.0008 |	Bpp loss: 0.30 |	Aux loss: 2749.89
+
+Learning rate: 0.0001
+Train epoch 149: [0/418 (0%)]	Loss: 0.7958 |	MSE loss: 0.0005 |	Bpp loss: 0.47 |	Aux loss: 2752.09
+Train epoch 149: [80/418 (19%)]	Loss: 0.8439 |	MSE loss: 0.0006 |	Bpp loss: 0.47 |	Aux loss: 2767.35
+Train epoch 149: [160/418 (38%)]	Loss: 0.7746 |	MSE loss: 0.0005 |	Bpp loss: 0.44 |	Aux loss: 2780.76
+Train epoch 149: [240/418 (57%)]	Loss: 0.9461 |	MSE loss: 0.0007 |	Bpp loss: 0.50 |	Aux loss: 2792.46
+Train epoch 149: [320/418 (75%)]	Loss: 1.0103 |	MSE loss: 0.0008 |	Bpp loss: 0.49 |	Aux loss: 2805.28
+Train epoch 149: [400/418 (94%)]	Loss: 0.8412 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 2815.28
+Test epoch 149: Average losses:	Loss: 0.8129 |	MSE loss: 0.0008 |	Bpp loss: 0.30 |	Aux loss: 2816.72
+
+Learning rate: 0.0001
+Train epoch 150: [0/418 (0%)]	Loss: 0.6945 |	MSE loss: 0.0004 |	Bpp loss: 0.43 |	Aux loss: 2818.65
+Train epoch 150: [80/418 (19%)]	Loss: 1.0447 |	MSE loss: 0.0008 |	Bpp loss: 0.51 |	Aux loss: 2826.41
+Train epoch 150: [160/418 (38%)]	Loss: 0.8514 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 2831.33
+Train epoch 150: [240/418 (57%)]	Loss: 1.0813 |	MSE loss: 0.0009 |	Bpp loss: 0.51 |	Aux loss: 2835.78
+Train epoch 150: [320/418 (75%)]	Loss: 0.7308 |	MSE loss: 0.0004 |	Bpp loss: 0.45 |	Aux loss: 2852.15
+Train epoch 150: [400/418 (94%)]	Loss: 0.7246 |	MSE loss: 0.0004 |	Bpp loss: 0.44 |	Aux loss: 2880.36
+Test epoch 150: Average losses:	Loss: 0.7658 |	MSE loss: 0.0007 |	Bpp loss: 0.30 |	Aux loss: 2884.54
+
+Learning rate: 0.0001
+Train epoch 151: [0/418 (0%)]	Loss: 0.7187 |	MSE loss: 0.0004 |	Bpp loss: 0.44 |	Aux loss: 2887.75
+Train epoch 151: [80/418 (19%)]	Loss: 0.8457 |	MSE loss: 0.0006 |	Bpp loss: 0.48 |	Aux loss: 2910.60
+Train epoch 151: [160/418 (38%)]	Loss: 0.8572 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 2931.92
+Train epoch 151: [240/418 (57%)]	Loss: 0.9896 |	MSE loss: 0.0007 |	Bpp loss: 0.51 |	Aux loss: 2948.90
+Train epoch 151: [320/418 (75%)]	Loss: 0.8439 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 2963.68
+Train epoch 151: [400/418 (94%)]	Loss: 0.7667 |	MSE loss: 0.0005 |	Bpp loss: 0.44 |	Aux loss: 2979.23
+Test epoch 151: Average losses:	Loss: 0.7966 |	MSE loss: 0.0008 |	Bpp loss: 0.29 |	Aux loss: 2981.76
+
+Learning rate: 0.0001
+Train epoch 152: [0/418 (0%)]	Loss: 0.7945 |	MSE loss: 0.0006 |	Bpp loss: 0.43 |	Aux loss: 2983.94
+Train epoch 152: [80/418 (19%)]	Loss: 0.7711 |	MSE loss: 0.0005 |	Bpp loss: 0.46 |	Aux loss: 2995.67
+Train epoch 152: [160/418 (38%)]	Loss: 0.7579 |	MSE loss: 0.0005 |	Bpp loss: 0.44 |	Aux loss: 3003.27
+Train epoch 152: [240/418 (57%)]	Loss: 0.8103 |	MSE loss: 0.0006 |	Bpp loss: 0.44 |	Aux loss: 3008.33
+Train epoch 152: [320/418 (75%)]	Loss: 0.7686 |	MSE loss: 0.0005 |	Bpp loss: 0.45 |	Aux loss: 3013.36
+Train epoch 152: [400/418 (94%)]	Loss: 0.6980 |	MSE loss: 0.0004 |	Bpp loss: 0.42 |	Aux loss: 3018.10
+Test epoch 152: Average losses:	Loss: 0.7851 |	MSE loss: 0.0008 |	Bpp loss: 0.29 |	Aux loss: 3018.34
+
+Learning rate: 0.0001
+Train epoch 153: [0/418 (0%)]	Loss: 0.7695 |	MSE loss: 0.0005 |	Bpp loss: 0.44 |	Aux loss: 3019.39
+Train epoch 153: [80/418 (19%)]	Loss: 0.8979 |	MSE loss: 0.0007 |	Bpp loss: 0.46 |	Aux loss: 3023.54
+Train epoch 153: [160/418 (38%)]	Loss: 0.6969 |	MSE loss: 0.0004 |	Bpp loss: 0.42 |	Aux loss: 3027.57
+Train epoch 153: [240/418 (57%)]	Loss: 0.7106 |	MSE loss: 0.0004 |	Bpp loss: 0.43 |	Aux loss: 3033.33
+Train epoch 153: [320/418 (75%)]	Loss: 0.7467 |	MSE loss: 0.0005 |	Bpp loss: 0.42 |	Aux loss: 3039.72
+Train epoch 153: [400/418 (94%)]	Loss: 1.0570 |	MSE loss: 0.0008 |	Bpp loss: 0.51 |	Aux loss: 3045.51
+Test epoch 153: Average losses:	Loss: 0.7507 |	MSE loss: 0.0007 |	Bpp loss: 0.29 |	Aux loss: 3046.12
+
+Learning rate: 0.0001
+Train epoch 154: [0/418 (0%)]	Loss: 0.7459 |	MSE loss: 0.0005 |	Bpp loss: 0.44 |	Aux loss: 3047.53
+Train epoch 154: [80/418 (19%)]	Loss: 0.8071 |	MSE loss: 0.0006 |	Bpp loss: 0.45 |	Aux loss: 3055.22
+Train epoch 154: [160/418 (38%)]	Loss: 0.7329 |	MSE loss: 0.0005 |	Bpp loss: 0.42 |	Aux loss: 3062.47
+Train epoch 154: [240/418 (57%)]	Loss: 0.8337 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 3068.36
+Train epoch 154: [320/418 (75%)]	Loss: 0.8802 |	MSE loss: 0.0006 |	Bpp loss: 0.47 |	Aux loss: 3074.02
+Train epoch 154: [400/418 (94%)]	Loss: 0.7583 |	MSE loss: 0.0005 |	Bpp loss: 0.42 |	Aux loss: 3079.78
+Test epoch 154: Average losses:	Loss: 0.7722 |	MSE loss: 0.0007 |	Bpp loss: 0.29 |	Aux loss: 3080.69
+
+Learning rate: 0.0001
+Train epoch 155: [0/418 (0%)]	Loss: 0.7713 |	MSE loss: 0.0005 |	Bpp loss: 0.43 |	Aux loss: 3082.04
+Train epoch 155: [80/418 (19%)]	Loss: 0.8678 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 3093.50
+Train epoch 155: [160/418 (38%)]	Loss: 1.0394 |	MSE loss: 0.0008 |	Bpp loss: 0.50 |	Aux loss: 3106.68
+Train epoch 155: [240/418 (57%)]	Loss: 0.7758 |	MSE loss: 0.0005 |	Bpp loss: 0.44 |	Aux loss: 3121.65
+Train epoch 155: [320/418 (75%)]	Loss: 0.9127 |	MSE loss: 0.0007 |	Bpp loss: 0.47 |	Aux loss: 3135.96
+Train epoch 155: [400/418 (94%)]	Loss: 0.8877 |	MSE loss: 0.0006 |	Bpp loss: 0.47 |	Aux loss: 3149.27
+Test epoch 155: Average losses:	Loss: 0.7579 |	MSE loss: 0.0007 |	Bpp loss: 0.28 |	Aux loss: 3151.55
+
+Learning rate: 0.0001
+Train epoch 156: [0/418 (0%)]	Loss: 0.7359 |	MSE loss: 0.0005 |	Bpp loss: 0.43 |	Aux loss: 3153.62
+Train epoch 156: [80/418 (19%)]	Loss: 0.8385 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 3171.64
+Train epoch 156: [160/418 (38%)]	Loss: 0.9865 |	MSE loss: 0.0008 |	Bpp loss: 0.50 |	Aux loss: 3188.90
+Train epoch 156: [240/418 (57%)]	Loss: 0.7964 |	MSE loss: 0.0005 |	Bpp loss: 0.45 |	Aux loss: 3203.83
+Train epoch 156: [320/418 (75%)]	Loss: 0.6382 |	MSE loss: 0.0004 |	Bpp loss: 0.40 |	Aux loss: 3218.10
+Train epoch 156: [400/418 (94%)]	Loss: 0.9834 |	MSE loss: 0.0008 |	Bpp loss: 0.49 |	Aux loss: 3236.31
+Test epoch 156: Average losses:	Loss: 0.7671 |	MSE loss: 0.0008 |	Bpp loss: 0.28 |	Aux loss: 3239.07
+
+Learning rate: 0.0001
+Train epoch 157: [0/418 (0%)]	Loss: 0.7749 |	MSE loss: 0.0005 |	Bpp loss: 0.44 |	Aux loss: 3241.32
+Train epoch 157: [80/418 (19%)]	Loss: 0.8451 |	MSE loss: 0.0006 |	Bpp loss: 0.45 |	Aux loss: 3255.39
+Train epoch 157: [160/418 (38%)]	Loss: 0.7596 |	MSE loss: 0.0005 |	Bpp loss: 0.44 |	Aux loss: 3266.70
+Train epoch 157: [240/418 (57%)]	Loss: 0.6984 |	MSE loss: 0.0004 |	Bpp loss: 0.42 |	Aux loss: 3278.33
+Train epoch 157: [320/418 (75%)]	Loss: 0.7319 |	MSE loss: 0.0005 |	Bpp loss: 0.43 |	Aux loss: 3292.98
+Train epoch 157: [400/418 (94%)]	Loss: 0.8570 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 3307.55
+Test epoch 157: Average losses:	Loss: 0.7489 |	MSE loss: 0.0007 |	Bpp loss: 0.28 |	Aux loss: 3309.64
+
+Learning rate: 0.0001
+Train epoch 158: [0/418 (0%)]	Loss: 0.7772 |	MSE loss: 0.0005 |	Bpp loss: 0.44 |	Aux loss: 3311.64
+Train epoch 158: [80/418 (19%)]	Loss: 0.7573 |	MSE loss: 0.0005 |	Bpp loss: 0.43 |	Aux loss: 3325.16
+Train epoch 158: [160/418 (38%)]	Loss: 1.0287 |	MSE loss: 0.0008 |	Bpp loss: 0.51 |	Aux loss: 3340.67
+Train epoch 158: [240/418 (57%)]	Loss: 0.6492 |	MSE loss: 0.0004 |	Bpp loss: 0.40 |	Aux loss: 3357.93
+Train epoch 158: [320/418 (75%)]	Loss: 0.8854 |	MSE loss: 0.0007 |	Bpp loss: 0.46 |	Aux loss: 3375.01
+Train epoch 158: [400/418 (94%)]	Loss: 0.7739 |	MSE loss: 0.0005 |	Bpp loss: 0.43 |	Aux loss: 3389.41
+Test epoch 158: Average losses:	Loss: 0.7759 |	MSE loss: 0.0008 |	Bpp loss: 0.27 |	Aux loss: 3391.89
+
+Learning rate: 0.0001
+Train epoch 159: [0/418 (0%)]	Loss: 0.9645 |	MSE loss: 0.0008 |	Bpp loss: 0.47 |	Aux loss: 3394.17
+Train epoch 159: [80/418 (19%)]	Loss: 0.8535 |	MSE loss: 0.0006 |	Bpp loss: 0.44 |	Aux loss: 3406.85
+Train epoch 159: [160/418 (38%)]	Loss: 0.8466 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 3422.04
+Train epoch 159: [240/418 (57%)]	Loss: 0.9939 |	MSE loss: 0.0008 |	Bpp loss: 0.49 |	Aux loss: 3440.35
+Train epoch 159: [320/418 (75%)]	Loss: 0.6484 |	MSE loss: 0.0004 |	Bpp loss: 0.39 |	Aux loss: 3453.88
+Train epoch 159: [400/418 (94%)]	Loss: 0.9422 |	MSE loss: 0.0007 |	Bpp loss: 0.47 |	Aux loss: 3467.37
+Test epoch 159: Average losses:	Loss: 0.7303 |	MSE loss: 0.0007 |	Bpp loss: 0.27 |	Aux loss: 3469.50
+
+Learning rate: 0.0001
+Train epoch 160: [0/418 (0%)]	Loss: 0.7576 |	MSE loss: 0.0005 |	Bpp loss: 0.44 |	Aux loss: 3471.88
+Train epoch 160: [80/418 (19%)]	Loss: 0.8611 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 3487.39
+Train epoch 160: [160/418 (38%)]	Loss: 0.6944 |	MSE loss: 0.0004 |	Bpp loss: 0.41 |	Aux loss: 3503.36
+Train epoch 160: [240/418 (57%)]	Loss: 0.7846 |	MSE loss: 0.0005 |	Bpp loss: 0.43 |	Aux loss: 3517.89
+Train epoch 160: [320/418 (75%)]	Loss: 0.5994 |	MSE loss: 0.0003 |	Bpp loss: 0.38 |	Aux loss: 3537.04
+Train epoch 160: [400/418 (94%)]	Loss: 0.6648 |	MSE loss: 0.0004 |	Bpp loss: 0.40 |	Aux loss: 3566.03
+Test epoch 160: Average losses:	Loss: 0.7693 |	MSE loss: 0.0008 |	Bpp loss: 0.27 |	Aux loss: 3570.57
+
+Learning rate: 0.0001
+Train epoch 161: [0/418 (0%)]	Loss: 0.9197 |	MSE loss: 0.0007 |	Bpp loss: 0.46 |	Aux loss: 3573.53
+Train epoch 161: [80/418 (19%)]	Loss: 0.8755 |	MSE loss: 0.0007 |	Bpp loss: 0.45 |	Aux loss: 3590.47
+Train epoch 161: [160/418 (38%)]	Loss: 0.7020 |	MSE loss: 0.0005 |	Bpp loss: 0.40 |	Aux loss: 3601.98
+Train epoch 161: [240/418 (57%)]	Loss: 0.8122 |	MSE loss: 0.0006 |	Bpp loss: 0.44 |	Aux loss: 3615.25
+Train epoch 161: [320/418 (75%)]	Loss: 0.8656 |	MSE loss: 0.0006 |	Bpp loss: 0.45 |	Aux loss: 3627.54
+Train epoch 161: [400/418 (94%)]	Loss: 0.6782 |	MSE loss: 0.0004 |	Bpp loss: 0.40 |	Aux loss: 3639.68
+Test epoch 161: Average losses:	Loss: 0.7448 |	MSE loss: 0.0007 |	Bpp loss: 0.26 |	Aux loss: 3641.46
+
+Learning rate: 0.0001
+Train epoch 162: [0/418 (0%)]	Loss: 0.8336 |	MSE loss: 0.0006 |	Bpp loss: 0.46 |	Aux loss: 3643.38
+Train epoch 162: [80/418 (19%)]	Loss: 1.0252 |	MSE loss: 0.0008 |	Bpp loss: 0.48 |	Aux loss: 3657.21
+Train epoch 162: [160/418 (38%)]	Loss: 0.7226 |	MSE loss: 0.0005 |	Bpp loss: 0.42 |	Aux loss: 3674.06
+Train epoch 162: [240/418 (57%)]	Loss: 0.7551 |	MSE loss: 0.0005 |	Bpp loss: 0.43 |	Aux loss: 3692.90
+Train epoch 162: [320/418 (75%)]	Loss: 0.9728 |	MSE loss: 0.0008 |	Bpp loss: 0.47 |	Aux loss: 3707.76
+Train epoch 162: [400/418 (94%)]	Loss: 0.7161 |	MSE loss: 0.0005 |	Bpp loss: 0.41 |	Aux loss: 3720.27
+Test epoch 162: Average losses:	Loss: 0.7337 |	MSE loss: 0.0007 |	Bpp loss: 0.26 |	Aux loss: 3721.68
+
+Learning rate: 0.0001
+Train epoch 163: [0/418 (0%)]	Loss: 0.9220 |	MSE loss: 0.0007 |	Bpp loss: 0.47 |	Aux loss: 3723.64
+Train epoch 163: [80/418 (19%)]	Loss: 0.7546 |	MSE loss: 0.0005 |	Bpp loss: 0.43 |	Aux loss: 3736.11
+Train epoch 163: [160/418 (38%)]	Loss: 0.5978 |	MSE loss: 0.0003 |	Bpp loss: 0.38 |	Aux loss: 3747.83
+Train epoch 163: [240/418 (57%)]	Loss: 0.9419 |	MSE loss: 0.0008 |	Bpp loss: 0.41 |	Aux loss: 3762.48
+Train epoch 163: [320/418 (75%)]	Loss: 0.8729 |	MSE loss: 0.0007 |	Bpp loss: 0.43 |	Aux loss: 3769.84
+Train epoch 163: [400/418 (94%)]	Loss: 0.8109 |	MSE loss: 0.0006 |	Bpp loss: 0.44 |	Aux loss: 3776.27
+Test epoch 163: Average losses:	Loss: 0.7516 |	MSE loss: 0.0008 |	Bpp loss: 0.26 |	Aux loss: 3777.80
+
+Learning rate: 0.0001
+Train epoch 164: [0/418 (0%)]	Loss: 0.9270 |	MSE loss: 0.0007 |	Bpp loss: 0.46 |	Aux loss: 3780.21
+Train epoch 164: [80/418 (19%)]	Loss: 0.7656 |	MSE loss: 0.0005 |	Bpp loss: 0.42 |	Aux loss: 3791.35
+Train epoch 164: [160/418 (38%)]	Loss: 0.8384 |	MSE loss: 0.0006 |	Bpp loss: 0.42 |	Aux loss: 3794.21
+Train epoch 164: [240/418 (57%)]	Loss: 0.7326 |	MSE loss: 0.0005 |	Bpp loss: 0.41 |	Aux loss: 3797.28
+Train epoch 164: [320/418 (75%)]	Loss: 0.8609 |	MSE loss: 0.0007 |	Bpp loss: 0.43 |	Aux loss: 3800.44
+Train epoch 164: [400/418 (94%)]	Loss: 0.7298 |	MSE loss: 0.0005 |	Bpp loss: 0.40 |	Aux loss: 3804.49
+Test epoch 164: Average losses:	Loss: 0.7957 |	MSE loss: 0.0008 |	Bpp loss: 0.26 |	Aux loss: 3805.04
+
+Learning rate: 0.0001
+Train epoch 165: [0/418 (0%)]	Loss: 1.0380 |	MSE loss: 0.0009 |	Bpp loss: 0.47 |	Aux loss: 3806.32
+Train epoch 165: [80/418 (19%)]	Loss: 0.6867 |	MSE loss: 0.0004 |	Bpp loss: 0.40 |	Aux loss: 3811.40
+Train epoch 165: [160/418 (38%)]	Loss: 0.8088 |	MSE loss: 0.0006 |	Bpp loss: 0.43 |	Aux loss: 3817.44
+Train epoch 165: [240/418 (57%)]	Loss: 0.9018 |	MSE loss: 0.0007 |	Bpp loss: 0.44 |	Aux loss: 3825.56
+Train epoch 165: [320/418 (75%)]	Loss: 0.6611 |	MSE loss: 0.0004 |	Bpp loss: 0.39 |	Aux loss: 3833.01
+Train epoch 165: [400/418 (94%)]	Loss: 0.8757 |	MSE loss: 0.0007 |	Bpp loss: 0.43 |	Aux loss: 3838.61
+Test epoch 165: Average losses:	Loss: 0.8162 |	MSE loss: 0.0009 |	Bpp loss: 0.26 |	Aux loss: 3839.36
+
+Learning rate: 0.0001
+Train epoch 166: [0/418 (0%)]	Loss: 0.8626 |	MSE loss: 0.0007 |	Bpp loss: 0.41 |	Aux loss: 3840.79
+Train epoch 166: [80/418 (19%)]	Loss: 0.8836 |	MSE loss: 0.0007 |	Bpp loss: 0.45 |	Aux loss: 3846.32
+Train epoch 166: [160/418 (38%)]	Loss: 0.8047 |	MSE loss: 0.0006 |	Bpp loss: 0.43 |	Aux loss: 3853.10
+Train epoch 166: [240/418 (57%)]	Loss: 0.7382 |	MSE loss: 0.0005 |	Bpp loss: 0.41 |	Aux loss: 3858.77
+Train epoch 166: [320/418 (75%)]	Loss: 0.8285 |	MSE loss: 0.0006 |	Bpp loss: 0.43 |	Aux loss: 3868.35
+Train epoch 166: [400/418 (94%)]	Loss: 0.7024 |	MSE loss: 0.0005 |	Bpp loss: 0.40 |	Aux loss: 3881.06
+Test epoch 166: Average losses:	Loss: 0.7323 |	MSE loss: 0.0007 |	Bpp loss: 0.26 |	Aux loss: 3883.96
+
+Learning rate: 0.0001
+Train epoch 167: [0/418 (0%)]	Loss: 0.6197 |	MSE loss: 0.0004 |	Bpp loss: 0.38 |	Aux loss: 3886.81
+Train epoch 167: [80/418 (19%)]	Loss: 0.8138 |	MSE loss: 0.0006 |	Bpp loss: 0.44 |	Aux loss: 3905.96
+Train epoch 167: [160/418 (38%)]	Loss: 0.6892 |	MSE loss: 0.0004 |	Bpp loss: 0.40 |	Aux loss: 3933.48
+Train epoch 167: [240/418 (57%)]	Loss: 0.9018 |	MSE loss: 0.0007 |	Bpp loss: 0.44 |	Aux loss: 3959.70
+Train epoch 167: [320/418 (75%)]	Loss: 0.7414 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 3977.87
+Train epoch 167: [400/418 (94%)]	Loss: 0.8664 |	MSE loss: 0.0007 |	Bpp loss: 0.44 |	Aux loss: 3988.42
+Test epoch 167: Average losses:	Loss: 0.8574 |	MSE loss: 0.0009 |	Bpp loss: 0.25 |	Aux loss: 3989.58
+
+Learning rate: 0.0001
+Train epoch 168: [0/418 (0%)]	Loss: 0.8288 |	MSE loss: 0.0007 |	Bpp loss: 0.40 |	Aux loss: 3991.13
+Train epoch 168: [80/418 (19%)]	Loss: 0.6871 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 4003.83
+Train epoch 168: [160/418 (38%)]	Loss: 0.7486 |	MSE loss: 0.0005 |	Bpp loss: 0.41 |	Aux loss: 4016.49
+Train epoch 168: [240/418 (57%)]	Loss: 0.7180 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 4030.02
+Train epoch 168: [320/418 (75%)]	Loss: 0.7835 |	MSE loss: 0.0006 |	Bpp loss: 0.42 |	Aux loss: 4043.61
+Train epoch 168: [400/418 (94%)]	Loss: 0.8250 |	MSE loss: 0.0006 |	Bpp loss: 0.42 |	Aux loss: 4056.74
+Test epoch 168: Average losses:	Loss: 0.7078 |	MSE loss: 0.0007 |	Bpp loss: 0.25 |	Aux loss: 4058.78
+
+Learning rate: 0.0001
+Train epoch 169: [0/418 (0%)]	Loss: 0.7336 |	MSE loss: 0.0005 |	Bpp loss: 0.41 |	Aux loss: 4061.38
+Train epoch 169: [80/418 (19%)]	Loss: 0.7117 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 4078.78
+Train epoch 169: [160/418 (38%)]	Loss: 0.7602 |	MSE loss: 0.0005 |	Bpp loss: 0.42 |	Aux loss: 4092.32
+Train epoch 169: [240/418 (57%)]	Loss: 0.7302 |	MSE loss: 0.0005 |	Bpp loss: 0.41 |	Aux loss: 4105.01
+Train epoch 169: [320/418 (75%)]	Loss: 0.7125 |	MSE loss: 0.0005 |	Bpp loss: 0.40 |	Aux loss: 4117.43
+Train epoch 169: [400/418 (94%)]	Loss: 0.7977 |	MSE loss: 0.0006 |	Bpp loss: 0.42 |	Aux loss: 4133.18
+Test epoch 169: Average losses:	Loss: 0.7235 |	MSE loss: 0.0007 |	Bpp loss: 0.25 |	Aux loss: 4136.46
+
+Learning rate: 0.0001
+Train epoch 170: [0/418 (0%)]	Loss: 0.8568 |	MSE loss: 0.0007 |	Bpp loss: 0.43 |	Aux loss: 4139.33
+Train epoch 170: [80/418 (19%)]	Loss: 0.7178 |	MSE loss: 0.0005 |	Bpp loss: 0.41 |	Aux loss: 4157.62
+Train epoch 170: [160/418 (38%)]	Loss: 0.7792 |	MSE loss: 0.0006 |	Bpp loss: 0.40 |	Aux loss: 4175.92
+Train epoch 170: [240/418 (57%)]	Loss: 0.7931 |	MSE loss: 0.0006 |	Bpp loss: 0.42 |	Aux loss: 4192.35
+Train epoch 170: [320/418 (75%)]	Loss: 0.7907 |	MSE loss: 0.0006 |	Bpp loss: 0.41 |	Aux loss: 4203.42
+Train epoch 170: [400/418 (94%)]	Loss: 0.8139 |	MSE loss: 0.0006 |	Bpp loss: 0.41 |	Aux loss: 4215.38
+Test epoch 170: Average losses:	Loss: 0.7289 |	MSE loss: 0.0007 |	Bpp loss: 0.25 |	Aux loss: 4217.04
+
+Learning rate: 0.0001
+Train epoch 171: [0/418 (0%)]	Loss: 0.8456 |	MSE loss: 0.0006 |	Bpp loss: 0.43 |	Aux loss: 4219.29
+Train epoch 171: [80/418 (19%)]	Loss: 0.7222 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 4230.67
+Train epoch 171: [160/418 (38%)]	Loss: 0.8997 |	MSE loss: 0.0007 |	Bpp loss: 0.44 |	Aux loss: 4242.85
+Train epoch 171: [240/418 (57%)]	Loss: 0.7629 |	MSE loss: 0.0006 |	Bpp loss: 0.40 |	Aux loss: 4254.67
+Train epoch 171: [320/418 (75%)]	Loss: 0.7671 |	MSE loss: 0.0005 |	Bpp loss: 0.41 |	Aux loss: 4267.71
+Train epoch 171: [400/418 (94%)]	Loss: 0.7987 |	MSE loss: 0.0006 |	Bpp loss: 0.41 |	Aux loss: 4282.22
+Test epoch 171: Average losses:	Loss: 0.7143 |	MSE loss: 0.0007 |	Bpp loss: 0.25 |	Aux loss: 4284.95
+
+Learning rate: 0.0001
+Train epoch 172: [0/418 (0%)]	Loss: 0.8292 |	MSE loss: 0.0006 |	Bpp loss: 0.42 |	Aux loss: 4287.31
+Train epoch 172: [80/418 (19%)]	Loss: 0.9452 |	MSE loss: 0.0008 |	Bpp loss: 0.45 |	Aux loss: 4301.49
+Train epoch 172: [160/418 (38%)]	Loss: 0.7997 |	MSE loss: 0.0006 |	Bpp loss: 0.41 |	Aux loss: 4316.36
+Train epoch 172: [240/418 (57%)]	Loss: 0.6469 |	MSE loss: 0.0004 |	Bpp loss: 0.38 |	Aux loss: 4331.14
+Train epoch 172: [320/418 (75%)]	Loss: 0.6263 |	MSE loss: 0.0004 |	Bpp loss: 0.36 |	Aux loss: 4350.39
+Train epoch 172: [400/418 (94%)]	Loss: 0.9250 |	MSE loss: 0.0007 |	Bpp loss: 0.45 |	Aux loss: 4364.93
+Test epoch 172: Average losses:	Loss: 0.7370 |	MSE loss: 0.0008 |	Bpp loss: 0.25 |	Aux loss: 4366.13
+
+Learning rate: 0.0001
+Train epoch 173: [0/418 (0%)]	Loss: 0.6818 |	MSE loss: 0.0004 |	Bpp loss: 0.39 |	Aux loss: 4367.86
+Train epoch 173: [80/418 (19%)]	Loss: 0.7343 |	MSE loss: 0.0005 |	Bpp loss: 0.40 |	Aux loss: 4378.91
+Train epoch 173: [160/418 (38%)]	Loss: 0.8646 |	MSE loss: 0.0007 |	Bpp loss: 0.43 |	Aux loss: 4400.77
+Train epoch 173: [240/418 (57%)]	Loss: 0.8237 |	MSE loss: 0.0006 |	Bpp loss: 0.42 |	Aux loss: 4427.01
+Train epoch 173: [320/418 (75%)]	Loss: 0.9661 |	MSE loss: 0.0008 |	Bpp loss: 0.46 |	Aux loss: 4452.42
+Train epoch 173: [400/418 (94%)]	Loss: 0.6261 |	MSE loss: 0.0004 |	Bpp loss: 0.36 |	Aux loss: 4471.71
+Test epoch 173: Average losses:	Loss: 0.7249 |	MSE loss: 0.0007 |	Bpp loss: 0.24 |	Aux loss: 4473.90
+
+Learning rate: 0.0001
+Train epoch 174: [0/418 (0%)]	Loss: 0.8496 |	MSE loss: 0.0007 |	Bpp loss: 0.42 |	Aux loss: 4476.32
+Train epoch 174: [80/418 (19%)]	Loss: 0.6914 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 4490.71
+Train epoch 174: [160/418 (38%)]	Loss: 0.7280 |	MSE loss: 0.0005 |	Bpp loss: 0.38 |	Aux loss: 4503.00
+Train epoch 174: [240/418 (57%)]	Loss: 0.9066 |	MSE loss: 0.0007 |	Bpp loss: 0.42 |	Aux loss: 4517.81
+Train epoch 174: [320/418 (75%)]	Loss: 0.8546 |	MSE loss: 0.0007 |	Bpp loss: 0.43 |	Aux loss: 4536.34
+Train epoch 174: [400/418 (94%)]	Loss: 0.7002 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 4554.93
+Test epoch 174: Average losses:	Loss: 0.7248 |	MSE loss: 0.0007 |	Bpp loss: 0.24 |	Aux loss: 4558.23
+
+Learning rate: 0.0001
+Train epoch 175: [0/418 (0%)]	Loss: 0.7437 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 4561.07
+Train epoch 175: [80/418 (19%)]	Loss: 0.7812 |	MSE loss: 0.0006 |	Bpp loss: 0.39 |	Aux loss: 4578.73
+Train epoch 175: [160/418 (38%)]	Loss: 0.5988 |	MSE loss: 0.0004 |	Bpp loss: 0.35 |	Aux loss: 4595.43
+Train epoch 175: [240/418 (57%)]	Loss: 0.7671 |	MSE loss: 0.0006 |	Bpp loss: 0.40 |	Aux loss: 4608.59
+Train epoch 175: [320/418 (75%)]	Loss: 0.6867 |	MSE loss: 0.0005 |	Bpp loss: 0.38 |	Aux loss: 4619.81
+Train epoch 175: [400/418 (94%)]	Loss: 0.6619 |	MSE loss: 0.0004 |	Bpp loss: 0.38 |	Aux loss: 4634.24
+Test epoch 175: Average losses:	Loss: 0.7194 |	MSE loss: 0.0007 |	Bpp loss: 0.24 |	Aux loss: 4636.95
+
+Learning rate: 0.0001
+Train epoch 176: [0/418 (0%)]	Loss: 0.6342 |	MSE loss: 0.0004 |	Bpp loss: 0.36 |	Aux loss: 4639.46
+Train epoch 176: [80/418 (19%)]	Loss: 0.7104 |	MSE loss: 0.0005 |	Bpp loss: 0.38 |	Aux loss: 4660.01
+Train epoch 176: [160/418 (38%)]	Loss: 0.6335 |	MSE loss: 0.0004 |	Bpp loss: 0.36 |	Aux loss: 4676.53
+Train epoch 176: [240/418 (57%)]	Loss: 0.6534 |	MSE loss: 0.0004 |	Bpp loss: 0.37 |	Aux loss: 4691.20
+Train epoch 176: [320/418 (75%)]	Loss: 0.8240 |	MSE loss: 0.0006 |	Bpp loss: 0.42 |	Aux loss: 4707.07
+Train epoch 176: [400/418 (94%)]	Loss: 0.8000 |	MSE loss: 0.0006 |	Bpp loss: 0.40 |	Aux loss: 4724.72
+Test epoch 176: Average losses:	Loss: 0.7306 |	MSE loss: 0.0008 |	Bpp loss: 0.24 |	Aux loss: 4728.38
+
+Learning rate: 0.0001
+Train epoch 177: [0/418 (0%)]	Loss: 0.7475 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 4731.44
+Train epoch 177: [80/418 (19%)]	Loss: 0.7385 |	MSE loss: 0.0005 |	Bpp loss: 0.40 |	Aux loss: 4755.26
+Train epoch 177: [160/418 (38%)]	Loss: 0.7314 |	MSE loss: 0.0005 |	Bpp loss: 0.38 |	Aux loss: 4775.60
+Train epoch 177: [240/418 (57%)]	Loss: 0.6728 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 4799.68
+Train epoch 177: [320/418 (75%)]	Loss: 0.7332 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 4820.45
+Train epoch 177: [400/418 (94%)]	Loss: 0.7139 |	MSE loss: 0.0005 |	Bpp loss: 0.38 |	Aux loss: 4835.25
+Test epoch 177: Average losses:	Loss: 0.6971 |	MSE loss: 0.0007 |	Bpp loss: 0.24 |	Aux loss: 4837.87
+
+Learning rate: 0.0001
+Train epoch 178: [0/418 (0%)]	Loss: 0.8182 |	MSE loss: 0.0006 |	Bpp loss: 0.40 |	Aux loss: 4840.84
+Train epoch 178: [80/418 (19%)]	Loss: 0.8669 |	MSE loss: 0.0007 |	Bpp loss: 0.41 |	Aux loss: 4860.72
+Train epoch 178: [160/418 (38%)]	Loss: 0.7621 |	MSE loss: 0.0006 |	Bpp loss: 0.37 |	Aux loss: 4889.31
+Train epoch 178: [240/418 (57%)]	Loss: 0.5860 |	MSE loss: 0.0004 |	Bpp loss: 0.32 |	Aux loss: 4903.57
+Train epoch 178: [320/418 (75%)]	Loss: 0.6883 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 4910.74
+Train epoch 178: [400/418 (94%)]	Loss: 0.8982 |	MSE loss: 0.0007 |	Bpp loss: 0.43 |	Aux loss: 4919.80
+Test epoch 178: Average losses:	Loss: 0.7177 |	MSE loss: 0.0007 |	Bpp loss: 0.24 |	Aux loss: 4922.38
+
+Learning rate: 0.0001
+Train epoch 179: [0/418 (0%)]	Loss: 0.6671 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 4924.89
+Train epoch 179: [80/418 (19%)]	Loss: 0.8304 |	MSE loss: 0.0007 |	Bpp loss: 0.41 |	Aux loss: 4937.43
+Train epoch 179: [160/418 (38%)]	Loss: 0.7454 |	MSE loss: 0.0006 |	Bpp loss: 0.39 |	Aux loss: 4953.22
+Train epoch 179: [240/418 (57%)]	Loss: 0.6014 |	MSE loss: 0.0004 |	Bpp loss: 0.35 |	Aux loss: 4967.11
+Train epoch 179: [320/418 (75%)]	Loss: 0.5939 |	MSE loss: 0.0004 |	Bpp loss: 0.34 |	Aux loss: 4981.74
+Train epoch 179: [400/418 (94%)]	Loss: 0.6994 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5000.68
+Test epoch 179: Average losses:	Loss: 0.7157 |	MSE loss: 0.0007 |	Bpp loss: 0.23 |	Aux loss: 5003.04
+
+Learning rate: 0.0001
+Train epoch 180: [0/418 (0%)]	Loss: 0.8327 |	MSE loss: 0.0007 |	Bpp loss: 0.40 |	Aux loss: 5005.47
+Train epoch 180: [80/418 (19%)]	Loss: 0.8258 |	MSE loss: 0.0006 |	Bpp loss: 0.40 |	Aux loss: 5016.80
+Train epoch 180: [160/418 (38%)]	Loss: 0.5777 |	MSE loss: 0.0004 |	Bpp loss: 0.33 |	Aux loss: 5028.49
+Train epoch 180: [240/418 (57%)]	Loss: 0.6499 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5052.14
+Train epoch 180: [320/418 (75%)]	Loss: 0.6963 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5072.87
+Train epoch 180: [400/418 (94%)]	Loss: 0.7117 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5090.48
+Test epoch 180: Average losses:	Loss: 0.7356 |	MSE loss: 0.0008 |	Bpp loss: 0.23 |	Aux loss: 5091.86
+
+Learning rate: 0.0001
+Train epoch 181: [0/418 (0%)]	Loss: 0.8116 |	MSE loss: 0.0006 |	Bpp loss: 0.39 |	Aux loss: 5093.85
+Train epoch 181: [80/418 (19%)]	Loss: 0.6999 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5102.79
+Train epoch 181: [160/418 (38%)]	Loss: 0.8950 |	MSE loss: 0.0007 |	Bpp loss: 0.43 |	Aux loss: 5111.06
+Train epoch 181: [240/418 (57%)]	Loss: 0.6648 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5118.51
+Train epoch 181: [320/418 (75%)]	Loss: 0.6950 |	MSE loss: 0.0005 |	Bpp loss: 0.38 |	Aux loss: 5130.76
+Train epoch 181: [400/418 (94%)]	Loss: 0.7222 |	MSE loss: 0.0005 |	Bpp loss: 0.38 |	Aux loss: 5142.98
+Test epoch 181: Average losses:	Loss: 0.6998 |	MSE loss: 0.0007 |	Bpp loss: 0.23 |	Aux loss: 5144.66
+
+Learning rate: 0.0001
+Train epoch 182: [0/418 (0%)]	Loss: 0.6667 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5146.82
+Train epoch 182: [80/418 (19%)]	Loss: 0.6829 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5161.79
+Train epoch 182: [160/418 (38%)]	Loss: 0.7250 |	MSE loss: 0.0005 |	Bpp loss: 0.38 |	Aux loss: 5177.52
+Train epoch 182: [240/418 (57%)]	Loss: 0.7018 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5189.92
+Train epoch 182: [320/418 (75%)]	Loss: 0.7976 |	MSE loss: 0.0006 |	Bpp loss: 0.40 |	Aux loss: 5200.90
+Train epoch 182: [400/418 (94%)]	Loss: 0.7498 |	MSE loss: 0.0006 |	Bpp loss: 0.37 |	Aux loss: 5207.73
+Test epoch 182: Average losses:	Loss: 0.7607 |	MSE loss: 0.0008 |	Bpp loss: 0.23 |	Aux loss: 5207.63
+
+Learning rate: 0.0001
+Train epoch 183: [0/418 (0%)]	Loss: 0.7490 |	MSE loss: 0.0006 |	Bpp loss: 0.38 |	Aux loss: 5208.94
+Train epoch 183: [80/418 (19%)]	Loss: 0.7126 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5211.59
+Train epoch 183: [160/418 (38%)]	Loss: 0.6614 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5214.85
+Train epoch 183: [240/418 (57%)]	Loss: 0.6299 |	MSE loss: 0.0004 |	Bpp loss: 0.34 |	Aux loss: 5219.81
+Train epoch 183: [320/418 (75%)]	Loss: 0.7205 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5225.97
+Train epoch 183: [400/418 (94%)]	Loss: 0.7416 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 5229.90
+Test epoch 183: Average losses:	Loss: 0.6963 |	MSE loss: 0.0007 |	Bpp loss: 0.23 |	Aux loss: 5229.65
+
+Learning rate: 0.0001
+Train epoch 184: [0/418 (0%)]	Loss: 0.7564 |	MSE loss: 0.0006 |	Bpp loss: 0.39 |	Aux loss: 5230.75
+Train epoch 184: [80/418 (19%)]	Loss: 0.7685 |	MSE loss: 0.0006 |	Bpp loss: 0.38 |	Aux loss: 5233.32
+Train epoch 184: [160/418 (38%)]	Loss: 0.7153 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5236.01
+Train epoch 184: [240/418 (57%)]	Loss: 0.9007 |	MSE loss: 0.0007 |	Bpp loss: 0.42 |	Aux loss: 5240.32
+Train epoch 184: [320/418 (75%)]	Loss: 0.7211 |	MSE loss: 0.0005 |	Bpp loss: 0.39 |	Aux loss: 5244.15
+Train epoch 184: [400/418 (94%)]	Loss: 0.7998 |	MSE loss: 0.0006 |	Bpp loss: 0.38 |	Aux loss: 5249.73
+Test epoch 184: Average losses:	Loss: 0.7282 |	MSE loss: 0.0008 |	Bpp loss: 0.23 |	Aux loss: 5250.15
+
+Learning rate: 0.0001
+Train epoch 185: [0/418 (0%)]	Loss: 0.7739 |	MSE loss: 0.0006 |	Bpp loss: 0.37 |	Aux loss: 5251.63
+Train epoch 185: [80/418 (19%)]	Loss: 0.6703 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5258.14
+Train epoch 185: [160/418 (38%)]	Loss: 0.6583 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5263.05
+Train epoch 185: [240/418 (57%)]	Loss: 0.6697 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5266.46
+Train epoch 185: [320/418 (75%)]	Loss: 0.8551 |	MSE loss: 0.0007 |	Bpp loss: 0.41 |	Aux loss: 5270.94
+Train epoch 185: [400/418 (94%)]	Loss: 0.7164 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5275.04
+Test epoch 185: Average losses:	Loss: 0.6993 |	MSE loss: 0.0007 |	Bpp loss: 0.23 |	Aux loss: 5275.22
+
+Learning rate: 0.0001
+Train epoch 186: [0/418 (0%)]	Loss: 0.6461 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5276.50
+Train epoch 186: [80/418 (19%)]	Loss: 0.6817 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5280.75
+Train epoch 186: [160/418 (38%)]	Loss: 0.7164 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5285.83
+Train epoch 186: [240/418 (57%)]	Loss: 0.6063 |	MSE loss: 0.0004 |	Bpp loss: 0.34 |	Aux loss: 5290.66
+Train epoch 186: [320/418 (75%)]	Loss: 0.7396 |	MSE loss: 0.0006 |	Bpp loss: 0.37 |	Aux loss: 5293.47
+Train epoch 186: [400/418 (94%)]	Loss: 0.6991 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5297.54
+Test epoch 186: Average losses:	Loss: 0.6918 |	MSE loss: 0.0007 |	Bpp loss: 0.23 |	Aux loss: 5297.73
+
+Learning rate: 0.0001
+Train epoch 187: [0/418 (0%)]	Loss: 0.7093 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5299.27
+Train epoch 187: [80/418 (19%)]	Loss: 0.7873 |	MSE loss: 0.0006 |	Bpp loss: 0.39 |	Aux loss: 5304.26
+Train epoch 187: [160/418 (38%)]	Loss: 0.7482 |	MSE loss: 0.0006 |	Bpp loss: 0.38 |	Aux loss: 5308.28
+Train epoch 187: [240/418 (57%)]	Loss: 0.5962 |	MSE loss: 0.0004 |	Bpp loss: 0.34 |	Aux loss: 5313.82
+Train epoch 187: [320/418 (75%)]	Loss: 0.6504 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5322.61
+Train epoch 187: [400/418 (94%)]	Loss: 0.6522 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5338.48
+Test epoch 187: Average losses:	Loss: 0.6878 |	MSE loss: 0.0007 |	Bpp loss: 0.23 |	Aux loss: 5341.21
+
+Learning rate: 0.0001
+Train epoch 188: [0/418 (0%)]	Loss: 0.7222 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5344.28
+Train epoch 188: [80/418 (19%)]	Loss: 0.5762 |	MSE loss: 0.0004 |	Bpp loss: 0.33 |	Aux loss: 5370.68
+Train epoch 188: [160/418 (38%)]	Loss: 0.6969 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5391.06
+Train epoch 188: [240/418 (57%)]	Loss: 0.6539 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5408.71
+Train epoch 188: [320/418 (75%)]	Loss: 0.6085 |	MSE loss: 0.0004 |	Bpp loss: 0.34 |	Aux loss: 5424.47
+Train epoch 188: [400/418 (94%)]	Loss: 0.7528 |	MSE loss: 0.0006 |	Bpp loss: 0.38 |	Aux loss: 5437.33
+Test epoch 188: Average losses:	Loss: 0.6794 |	MSE loss: 0.0007 |	Bpp loss: 0.23 |	Aux loss: 5438.49
+
+Learning rate: 0.0001
+Train epoch 189: [0/418 (0%)]	Loss: 0.5677 |	MSE loss: 0.0004 |	Bpp loss: 0.33 |	Aux loss: 5440.69
+Train epoch 189: [80/418 (19%)]	Loss: 0.7343 |	MSE loss: 0.0006 |	Bpp loss: 0.37 |	Aux loss: 5455.73
+Train epoch 189: [160/418 (38%)]	Loss: 0.7614 |	MSE loss: 0.0006 |	Bpp loss: 0.38 |	Aux loss: 5470.62
+Train epoch 189: [240/418 (57%)]	Loss: 0.7177 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5489.07
+Train epoch 189: [320/418 (75%)]	Loss: 0.7113 |	MSE loss: 0.0005 |	Bpp loss: 0.37 |	Aux loss: 5504.67
+Train epoch 189: [400/418 (94%)]	Loss: 0.6765 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5518.80
+Test epoch 189: Average losses:	Loss: 0.6819 |	MSE loss: 0.0007 |	Bpp loss: 0.22 |	Aux loss: 5520.61
+
+Learning rate: 0.0001
+Train epoch 190: [0/418 (0%)]	Loss: 0.7289 |	MSE loss: 0.0006 |	Bpp loss: 0.37 |	Aux loss: 5523.31
+Train epoch 190: [80/418 (19%)]	Loss: 0.6971 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5548.68
+Train epoch 190: [160/418 (38%)]	Loss: 0.7046 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5571.15
+Train epoch 190: [240/418 (57%)]	Loss: 0.7547 |	MSE loss: 0.0006 |	Bpp loss: 0.38 |	Aux loss: 5598.71
+Train epoch 190: [320/418 (75%)]	Loss: 0.6393 |	MSE loss: 0.0005 |	Bpp loss: 0.34 |	Aux loss: 5619.51
+Train epoch 190: [400/418 (94%)]	Loss: 0.8631 |	MSE loss: 0.0007 |	Bpp loss: 0.40 |	Aux loss: 5632.17
+Test epoch 190: Average losses:	Loss: 0.6950 |	MSE loss: 0.0007 |	Bpp loss: 0.22 |	Aux loss: 5633.78
+
+Learning rate: 0.0001
+Train epoch 191: [0/418 (0%)]	Loss: 0.8294 |	MSE loss: 0.0007 |	Bpp loss: 0.39 |	Aux loss: 5636.00
+Train epoch 191: [80/418 (19%)]	Loss: 0.6917 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5651.75
+Train epoch 191: [160/418 (38%)]	Loss: 0.8123 |	MSE loss: 0.0007 |	Bpp loss: 0.38 |	Aux loss: 5665.10
+Train epoch 191: [240/418 (57%)]	Loss: 0.6475 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5673.06
+Train epoch 191: [320/418 (75%)]	Loss: 0.6181 |	MSE loss: 0.0004 |	Bpp loss: 0.34 |	Aux loss: 5676.86
+Train epoch 191: [400/418 (94%)]	Loss: 0.8128 |	MSE loss: 0.0007 |	Bpp loss: 0.37 |	Aux loss: 5679.70
+Test epoch 191: Average losses:	Loss: 0.7317 |	MSE loss: 0.0008 |	Bpp loss: 0.22 |	Aux loss: 5679.33
+
+Learning rate: 0.0001
+Train epoch 192: [0/418 (0%)]	Loss: 0.7105 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5680.46
+Train epoch 192: [80/418 (19%)]	Loss: 0.6648 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5684.10
+Train epoch 192: [160/418 (38%)]	Loss: 0.6824 |	MSE loss: 0.0005 |	Bpp loss: 0.36 |	Aux loss: 5686.83
+Train epoch 192: [240/418 (57%)]	Loss: 0.7520 |	MSE loss: 0.0006 |	Bpp loss: 0.36 |	Aux loss: 5689.59
+Train epoch 192: [320/418 (75%)]	Loss: 0.5878 |	MSE loss: 0.0004 |	Bpp loss: 0.33 |	Aux loss: 5693.20
+Train epoch 192: [400/418 (94%)]	Loss: 0.6699 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5696.18
+Test epoch 192: Average losses:	Loss: 0.6977 |	MSE loss: 0.0007 |	Bpp loss: 0.22 |	Aux loss: 5695.69
+
+Learning rate: 0.0001
+Train epoch 193: [0/418 (0%)]	Loss: 0.7265 |	MSE loss: 0.0006 |	Bpp loss: 0.37 |	Aux loss: 5696.70
+Train epoch 193: [80/418 (19%)]	Loss: 0.7838 |	MSE loss: 0.0007 |	Bpp loss: 0.36 |	Aux loss: 5700.00
+Train epoch 193: [160/418 (38%)]	Loss: 0.9224 |	MSE loss: 0.0008 |	Bpp loss: 0.40 |	Aux loss: 5705.29
+Train epoch 193: [240/418 (57%)]	Loss: 0.7095 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5710.60
+Train epoch 193: [320/418 (75%)]	Loss: 0.6669 |	MSE loss: 0.0005 |	Bpp loss: 0.34 |	Aux loss: 5716.39
+Train epoch 193: [400/418 (94%)]	Loss: 0.5487 |	MSE loss: 0.0003 |	Bpp loss: 0.32 |	Aux loss: 5721.50
+Test epoch 193: Average losses:	Loss: 0.6842 |	MSE loss: 0.0007 |	Bpp loss: 0.22 |	Aux loss: 5721.73
+
+Learning rate: 0.0001
+Train epoch 194: [0/418 (0%)]	Loss: 0.6077 |	MSE loss: 0.0004 |	Bpp loss: 0.33 |	Aux loss: 5723.16
+Train epoch 194: [80/418 (19%)]	Loss: 0.7661 |	MSE loss: 0.0006 |	Bpp loss: 0.36 |	Aux loss: 5729.43
+Train epoch 194: [160/418 (38%)]	Loss: 1.0297 |	MSE loss: 0.0010 |	Bpp loss: 0.40 |	Aux loss: 5734.07
+Train epoch 194: [240/418 (57%)]	Loss: 0.6603 |	MSE loss: 0.0005 |	Bpp loss: 0.34 |	Aux loss: 5741.31
+Train epoch 194: [320/418 (75%)]	Loss: 0.6826 |	MSE loss: 0.0005 |	Bpp loss: 0.34 |	Aux loss: 5753.33
+Train epoch 194: [400/418 (94%)]	Loss: 0.7228 |	MSE loss: 0.0006 |	Bpp loss: 0.36 |	Aux loss: 5761.13
+Test epoch 194: Average losses:	Loss: 0.7482 |	MSE loss: 0.0008 |	Bpp loss: 0.22 |	Aux loss: 5762.35
+
+Learning rate: 0.0001
+Train epoch 195: [0/418 (0%)]	Loss: 0.7003 |	MSE loss: 0.0006 |	Bpp loss: 0.34 |	Aux loss: 5764.38
+Train epoch 195: [80/418 (19%)]	Loss: 0.7441 |	MSE loss: 0.0006 |	Bpp loss: 0.36 |	Aux loss: 5775.90
+Train epoch 195: [160/418 (38%)]	Loss: 0.6618 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5789.89
+Train epoch 195: [240/418 (57%)]	Loss: 0.5771 |	MSE loss: 0.0004 |	Bpp loss: 0.32 |	Aux loss: 5801.80
+Train epoch 195: [320/418 (75%)]	Loss: 0.8957 |	MSE loss: 0.0007 |	Bpp loss: 0.41 |	Aux loss: 5819.79
+Train epoch 195: [400/418 (94%)]	Loss: 0.5381 |	MSE loss: 0.0003 |	Bpp loss: 0.31 |	Aux loss: 5836.28
+Test epoch 195: Average losses:	Loss: 0.6931 |	MSE loss: 0.0007 |	Bpp loss: 0.22 |	Aux loss: 5838.42
+
+Learning rate: 0.0001
+Train epoch 196: [0/418 (0%)]	Loss: 0.6673 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5840.74
+Train epoch 196: [80/418 (19%)]	Loss: 0.6749 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5857.49
+Train epoch 196: [160/418 (38%)]	Loss: 0.6655 |	MSE loss: 0.0005 |	Bpp loss: 0.34 |	Aux loss: 5877.00
+Train epoch 196: [240/418 (57%)]	Loss: 0.7489 |	MSE loss: 0.0006 |	Bpp loss: 0.37 |	Aux loss: 5896.36
+Train epoch 196: [320/418 (75%)]	Loss: 0.5787 |	MSE loss: 0.0004 |	Bpp loss: 0.31 |	Aux loss: 5916.00
+Train epoch 196: [400/418 (94%)]	Loss: 0.6693 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5934.57
+Test epoch 196: Average losses:	Loss: 0.6780 |	MSE loss: 0.0007 |	Bpp loss: 0.22 |	Aux loss: 5937.40
+
+Learning rate: 0.0001
+Train epoch 197: [0/418 (0%)]	Loss: 0.6730 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 5940.12
+Train epoch 197: [80/418 (19%)]	Loss: 0.8078 |	MSE loss: 0.0007 |	Bpp loss: 0.38 |	Aux loss: 5958.61
+Train epoch 197: [160/418 (38%)]	Loss: 0.5551 |	MSE loss: 0.0004 |	Bpp loss: 0.32 |	Aux loss: 5975.17
+Train epoch 197: [240/418 (57%)]	Loss: 0.7514 |	MSE loss: 0.0006 |	Bpp loss: 0.37 |	Aux loss: 5989.83
+Train epoch 197: [320/418 (75%)]	Loss: 0.8087 |	MSE loss: 0.0006 |	Bpp loss: 0.39 |	Aux loss: 6002.90
+Train epoch 197: [400/418 (94%)]	Loss: 0.6919 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 6012.98
+Test epoch 197: Average losses:	Loss: 0.7108 |	MSE loss: 0.0008 |	Bpp loss: 0.22 |	Aux loss: 6012.71
+
+Learning rate: 0.0001
+Train epoch 198: [0/418 (0%)]	Loss: 0.6706 |	MSE loss: 0.0005 |	Bpp loss: 0.34 |	Aux loss: 6014.15
+Train epoch 198: [80/418 (19%)]	Loss: 0.5560 |	MSE loss: 0.0004 |	Bpp loss: 0.32 |	Aux loss: 6020.57
+Train epoch 198: [160/418 (38%)]	Loss: 0.5679 |	MSE loss: 0.0004 |	Bpp loss: 0.32 |	Aux loss: 6031.37
+Train epoch 198: [240/418 (57%)]	Loss: 0.7272 |	MSE loss: 0.0006 |	Bpp loss: 0.35 |	Aux loss: 6045.07
+Train epoch 198: [320/418 (75%)]	Loss: 0.5973 |	MSE loss: 0.0004 |	Bpp loss: 0.33 |	Aux loss: 6060.64
+Train epoch 198: [400/418 (94%)]	Loss: 0.6772 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 6080.01
+Test epoch 198: Average losses:	Loss: 0.6950 |	MSE loss: 0.0007 |	Bpp loss: 0.22 |	Aux loss: 6082.72
+
+Learning rate: 0.0001
+Train epoch 199: [0/418 (0%)]	Loss: 0.7524 |	MSE loss: 0.0006 |	Bpp loss: 0.36 |	Aux loss: 6085.28
+Train epoch 199: [80/418 (19%)]	Loss: 0.6679 |	MSE loss: 0.0005 |	Bpp loss: 0.33 |	Aux loss: 6102.39
+Train epoch 199: [160/418 (38%)]	Loss: 0.6760 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 6117.89
+Train epoch 199: [240/418 (57%)]	Loss: 0.5732 |	MSE loss: 0.0004 |	Bpp loss: 0.32 |	Aux loss: 6131.13
+Train epoch 199: [320/418 (75%)]	Loss: 0.6866 |	MSE loss: 0.0005 |	Bpp loss: 0.35 |	Aux loss: 6143.60
+Train epoch 199: [400/418 (94%)]	Loss: 0.5761 |	MSE loss: 0.0004 |	Bpp loss: 0.32 |	Aux loss: 6158.19
+Test epoch 199: Average losses:	Loss: 0.6887 |	MSE loss: 0.0007 |	Bpp loss: 0.22 |	Aux loss: 6161.01
+

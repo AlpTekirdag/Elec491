@@ -217,10 +217,11 @@ def read_image(filepath: str) -> torch.Tensor:
     assert filepath.is_file()
     img_ori = Image.open(filepath).convert("RGB")
     ## ALP
+    ## ALP
     head_img = os.path.split(filepath)
     head_sal = os.path.split(head_img[0])
-    sal_path = os.path.join(head_sal[0],"Saliency",head_img[1].split(".")[0]+".jpg")
-
+    sal_path = os.path.join(head_sal[0],"test_saliency",head_img[1])
+    
     img_ori = Image.open(filepath).convert("RGB")
     sal = Image.open(sal_path).convert("L")
 
