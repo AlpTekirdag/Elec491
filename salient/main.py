@@ -24,7 +24,7 @@ def repackage_hidden(h):
 
 
 def load_model(pt_model, new_model):
-    temp = torch.load('./weight/'pt_model+'.pt')['state_dict']
+    temp = torch.load('./weight/'+pt_model+'.pt')['state_dict']
     new_model.load_state_dict(temp)
     return new_model
 

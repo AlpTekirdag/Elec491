@@ -18,7 +18,7 @@ class Test_dataset(data.Dataset):
           
             if i=='.ipynb_checkpoints':
               continue
-            frame_files = [os.path.join(self.root_path, str(i), file) for file in os.listdir(os.path.join(self.root_path, str(i))) if file.endswith('.png')]
+            frame_files = [os.path.join(self.root_path, str(i), file) for file in os.listdir(os.path.join(self.root_path, str(i))) if file.endswith('.jpg')]
             frame_files_sorted = sorted(frame_files)
             self.video_list.append(frame_files_sorted)
             self.video_name_list.append(i)

@@ -1,3 +1,7 @@
 input/
 output/
 convert.py
+salient/weight/*.pt
+salient/Eval/
+salient/__pycache__/
+salient/*.out
