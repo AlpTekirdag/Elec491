@@ -90,7 +90,7 @@ def test(path_to_vid, path_output_maps, model_to_test=None):
                 second_stream = (projection_methods.c2e(out_predict, h=320, w=640, mode='bilinear',cube_format='dict')).reshape(320,640)
                 second_stream= second_stream/255
                 count+=1
-                saliency_map = first_stream*second_stream
+                saliency_map = first_stream#*second_stream
                 print("elapsed time : --- %s ms ---" % (1000*(time.time() - start_time)))
                 cv2.imwrite(os.path.join(video_dst,str(count).zfill(4)+'.png'),(255*saliency_map/saliency_map.max()).astype(np.uint8))
                 print('complete :',os.path.join(video_dst,str(count).zfill(4)+'.png'))

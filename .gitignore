@@ -1,7 +1,8 @@
 input/
 output/
 convert.py
-salient/weight/*.pt
-salient/Eval/
-salient/__pycache__/
-salient/*.out
+atsal/weight/*.pt
+atsal/Eval/
+atsal/__pycache__/
+atsal/*.out
+atsal/result/
