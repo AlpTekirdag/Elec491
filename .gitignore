@@ -6,3 +6,6 @@ atsal/Eval/
 atsal/__pycache__/
 atsal/*.out
 atsal/result/
+salient/Eval/
+salient/weight/
+salient/result/
