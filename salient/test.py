@@ -24,7 +24,7 @@ model.load_state_dict(weight['model'], strict=True)
 
 model.cuda()
 
-IMG_Path = "Eval/normal/test/"
+IMG_Path = "Eval/test/"
 
 image_list = os.listdir(IMG_Path)
 
@@ -41,9 +41,8 @@ print(image_list)
 for img in image_list:
     image_path = IMG_Path + img
     print(img)
-    ori = cv2.imread(image_path)
-    #inpt = cv2.resize(ori,(320, 160))
-    inpt = ori 
+    inpt = cv2.imread(image_path)
+    inpt = cv2.resize(inpt,(320,160))# 320,160
     inpt = np.float32(inpt)
     #inpt-=[0.485, 0.456, 0.406]
     inpt = torch.cuda.FloatTensor(inpt)
@@ -53,9 +52,8 @@ for img in image_list:
     inpt = torch.cuda.FloatTensor(inpt)
 
     with torch.no_grad():
-        saliency_map = model(inpt.unsqueeze(0))
+        Output = model(inpt.unsqueeze(0))
 
-    Output = saliency_map
     Output = (Output.cpu()).detach().numpy()
     Output = Output.squeeze()
     Output = resize(Output, (1024,2048))

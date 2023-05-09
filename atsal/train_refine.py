@@ -4,11 +4,15 @@ from tqdm import tqdm
 import cv2
 from model import Sal_based_Attention_module, SalEMA
 import projection_methods
+
 from refinenet import RefineNet
+from losses.saloss import Saloss
+
 import datetime
 import time
 from PIL import Image
 from data_loader import Test_dataset
+from train_loader import Static_dataset
 from sys import argv
 import torch
 from torchvision import transforms, utils
@@ -30,17 +34,25 @@ def load_model(pt_model, new_model):
     return new_model
 
 
-def test(path_to_vid, path_output_maps, model_to_test=None):
+def train(path_to_vid, path_output_maps, model_to_test=None):
 
-    dataset = Test_dataset(
+    dataset = tatic_dataset(
         root_path = path_to_vid)
     video_name_list = dataset.video_names() 
-    loader = data.DataLoader(dataset, batch_size = 1,num_workers = 4,pin_memory = True)
+    loader = data.DataLoader(dataset, batch_size = 4,num_workers = 4,pin_memory = True)
 
     os.makedirs(path_output_maps, exist_ok=True)
 
-    for i, video  in enumerate(loader):
+    # REfine net parameter
+    BACT_SIZE = 4
+    LR = 1.3e-06
+    EPOCH = 50
+    refine_lossfc = Saloss()
+    refine_optim = torch.optim.Adam(model_to_test['refine'].parameters(), lr=LR, weight_decay=5e-07)
 
+    for i, batch in enumerate(loader):
+
+        video, gtruth = batch
         count = 0
         out_state = {'F':None, 'R':None, 'B':None, 'L':None, 'U':None, 'D':None}
         state = None 
@@ -94,15 +106,16 @@ def test(path_to_vid, path_output_maps, model_to_test=None):
                 second_stream = (projection_methods.c2e(out_predict, h=320, w=640, mode='bilinear',cube_format='dict')).reshape(320,640)
                 second_stream= second_stream/255
                 count+=1
-
-                saliency_map = first_stream*second_stream
-
-                # OR
-                """
+                
                 ## REfine net test
                 saliency_map = model_to_test['refine'](first_stream, second_stream)
-                """
-
+                
+                saliency_clone = saliency_map
+                
+                refine_loss = refine_lossfc(saliency_clone, gtruth)
+                refine_optim.zero_grad()
+                refine_loss.backward()
+                refine_optim.step()
                 """
                 ## Enhance to the map
                 saliency_map = saliency_map.reshape(640,320)
@@ -142,7 +155,12 @@ def main(path_to_vid,output_path):
     # Create networks
     att_model = Sal_based_Attention_module()
     salema_copie = SalEMA()
+
+    #Refine net
     refine_model = RefineNet()
+    device = torch.device('cuda:0')
+    refine_model.to(device)
+
     # load weight
     att_model = load_model("attention", att_model).cuda()
     Poles  = load_model("poles", salema_copie).cuda()
@@ -153,7 +171,7 @@ def main(path_to_vid,output_path):
     print(os.listdir(path_to_vid))
     model = {"attention":att_model,"poles":Poles,"equator":Equator,"refine":refine_model}
     with torch.no_grad():
-        test(path_to_vid, output_path,model)
+        train(path_to_vid, output_path,model)
 
 if __name__ == "__main__":
     path_to_vid = argv[1]

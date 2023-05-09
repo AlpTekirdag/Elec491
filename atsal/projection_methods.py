@@ -130,10 +130,8 @@ def e2c(e_img, face_w=256, mode='bilinear', cube_format='dict'):
         sample_equirec(e_img[..., i], coor_xy, order=order)
         for i in range(e_img.shape[2])
     ], axis=-1)
-
-    
-        
     return cube_h2dict(cubemap)
+
 def sample_equirec(e_img, coor_xy, order):
     w = e_img.shape[1]
     coor_x, coor_y = np.split(coor_xy, 2, axis=-1)
