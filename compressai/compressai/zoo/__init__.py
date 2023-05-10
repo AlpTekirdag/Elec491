@@ -1,5 +1,6 @@
 from .image import (
     bmshj2018_saliency,
+    bmshj2018_saliency_modulate,
     bmshj2018_factorized,
     bmshj2018_factorized_relu,
     bmshj2018_hyperprior,
@@ -13,6 +14,7 @@ from .video import ssf2020
 
 image_models = {
     "bmshj2018-saliency": bmshj2018_saliency,
+    "bmshj2018-saliency-modulate": bmshj2018_saliency_modulate,
     "bmshj2018-factorized": bmshj2018_factorized,
     "bmshj2018-factorized-relu": bmshj2018_factorized_relu,
     "bmshj2018-hyperprior": bmshj2018_hyperprior,

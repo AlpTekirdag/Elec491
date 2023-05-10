@@ -21,6 +21,7 @@ from .utils import conv, deconv
 __all__ = [
     "CompressionModel",
     "FactorizedPriorSaliency",
+    "FactorizedPriorSaliencyModulate",
     "FactorizedPrior",
     "FactorizedPriorReLU",
     "ScaleHyperprior",
@@ -31,6 +32,133 @@ __all__ = [
     "SCALES_MAX",
     "SCALES_LEVELS",
 ]
+
+##  ALP
+class mySeq_Lin(nn.Sequential):
+    def __init__(self, input, output, inter, **kwargs):
+        super().__init__()
+        self.lin = nn.Linear(input,inter)
+        self.relu = nn.Relu()
+        self.lin2 = nn.Linear(inter,output)
+
+
+    def forward(self, x):
+        x = self.lin(x)
+        x = self.relu(x)
+        x = self.lin2(x)
+        x = torch.exp(x)
+        return x
+
+    
+@register_model("bmshj2018-saliency-modulate")
+class FactorizedPriorSaliencyModulate(CompressionModel):
+    """
+        N (int): Number of channels
+        M (int): Number of channels in the expansion layers (last layer of the
+            encoder and last layer of the hyperprior decoder)
+    """
+    def __init__(self, N, M, **kwargs):
+        super().__init__(**kwargs)
+
+        self.entropy_bottleneck = EntropyBottleneck(M)
+
+        self.ga_1 = conv(3,N)
+        self.mod_ga_1 = conv(1,1,stride=2)
+        self.ga_2 = nn.Sequential(
+            GDN(N),
+            conv(N, N),
+        )
+        self.mod_ga_2 = conv(1,1,stride=4)
+        self.ga_3 = nn.Sequential(
+            GDN(N),
+            conv(N, N),
+        )
+        self.mod_ga_3 = conv(1,1,stride=8)
+        self.ga_4 = nn.Sequential(
+            GDN(N),
+            conv(N, M),
+        )
+        
+        self.g_s = nn.Sequential(
+            deconv(M, N),
+            GDN(N, inverse=True),
+            deconv(N, N),
+            GDN(N, inverse=True),
+            deconv(N, N),
+            GDN(N, inverse=True),
+            deconv(N, 3),
+        )
+            
+
+        self.N = N
+        self.M = M
+
+    @property
+    def downsampling_factor(self) -> int:
+        return 2**4
+
+    def forward(self, x):
+        sal = x[:,-1,:,:]
+        x = x[:,:3,:,:]
+        sal = sal.unsqueeze(1)
+        x = self.ga_1(x)
+        sal_mul = self.mod_ga_1(sal)
+        x = x * sal_mul
+        x = self.ga_2(x)
+        sal_mul = self.mod_ga_2(sal)
+        x = x * sal_mul
+        x = self.ga_3(x)
+        sal_mul = self.mod_ga_3(sal)
+        x = x * sal_mul
+        y = self.ga_4(x)
+
+        y_hat, y_likelihoods = self.entropy_bottleneck(y)
+
+        x_hat = self.g_s(y_hat)
+       
+
+
+        return {
+            "x_hat": x_hat,
+            "likelihoods": {
+                "y": y_likelihoods,
+            },
+        }
+
+    @classmethod
+    def from_state_dict(cls, state_dict):
+        """Return a new model instance from `state_dict`."""
+        N = state_dict["ga_1.weight"].size(0)
+        M = state_dict["ga_4.1.weight"].size(0)
+        net = cls(N, M)
+        net.load_state_dict(state_dict)
+        return net
+
+    def compress(self, x):
+        sal = x[:,-1,:,:]
+        x = x[:,:3,:,:]
+
+        x = self.ga_1(x)
+        sal = sal.unsqueeze(1)
+        sal_mul = self.mod_ga_1(sal)
+        x = x * sal_mul
+        x = self.ga_2(x)
+        sal_mul = self.mod_ga_2(sal)
+        x = x * sal_mul
+        x = self.ga_3(x)
+        sal_mul = self.mod_ga_3(sal)
+        x = x * sal_mul
+        y = self.ga_4(x)
+
+        y_strings = self.entropy_bottleneck.compress(y)
+        return {"strings": [y_strings], "shape": y.size()[-2:]}
+
+    def decompress(self, strings, shape):
+        assert isinstance(strings, list) and len(strings) == 1
+        y_hat = self.entropy_bottleneck.decompress(strings[0], shape)
+        x_hat = self.g_s(y_hat).clamp_(0, 1)
+        return {"x_hat": x_hat}
+
 
 ##  ALP
 @register_model("bmshj2018-saliency")
@@ -46,7 +174,7 @@ class FactorizedPriorSaliency(CompressionModel):
         self.entropy_bottleneck = EntropyBottleneck(M)
 
         self.g_a = nn.Sequential(
-            conv(4, N),
+            conv(3, N),
             GDN(N),
             conv(N, N),
             GDN(N),
@@ -73,6 +201,9 @@ class FactorizedPriorSaliency(CompressionModel):
         return 2**4
 
     def forward(self, x):
+        x = x[:,:3,:,:]
+        
+
         y = self.g_a(x)
         y_hat, y_likelihoods = self.entropy_bottleneck(y)
         x_hat = self.g_s(y_hat)
@@ -94,6 +225,10 @@ class FactorizedPriorSaliency(CompressionModel):
         return net
 
     def compress(self, x):
+        #sal = x[:, 3 ,:,:]
+        x = x[:,:3,:,:]
+        # sal = sal.unsqueeze(1)
+        # x = x * sal
         y = self.g_a(x)
         y_strings = self.entropy_bottleneck.compress(y)
         return {"strings": [y_strings], "shape": y.size()[-2:]}
@@ -474,7 +609,7 @@ class MeanScaleHyperprior(ScaleHyperprior):
         x_hat = self.g_s(y_hat).clamp_(0, 1)
         return {"x_hat": x_hat}
 
-
+## Oguzhan ROI Latent Masking implementation
 @register_model("mbt2018")
 class JointAutoregressiveHierarchicalPriors(MeanScaleHyperprior):
     r"""Joint Autoregressive Hierarchical Priors model from D.
@@ -577,7 +712,23 @@ class JointAutoregressiveHierarchicalPriors(MeanScaleHyperprior):
         return 2 ** (4 + 2)
 
     def forward(self, x):
+        #print(x[:,-1,:,:].min(),x[:,-1,:,:].max())
+
+        alpha = 1.0
+        #roi = x[:,-1,:,:]/255.
+        roi = x[:,-1,:,:]
+        mask_2d = nn.Sigmoid()(roi)
+        #mask_2d = roi
+        rm_latent = nn.AvgPool2d(kernel_size=16, stride=16)(mask_2d)
+        rm_latent = (rm_latent + alpha)/alpha
+        rm_latent = rm_latent.unsqueeze(1)
+        rm_latent = rm_latent.repeat(1, self.N-48, 1, 1)
+
+        x = x[:,:3,:,:]
+
         y = self.g_a(x)
+        #print(rm_latent.size(),y.size())
+        y[:,48:self.N,:,:] = y[:,48:self.N,:,:] * rm_latent
         z = self.h_a(y)
         z_hat, z_likelihoods = self.entropy_bottleneck(z)
         params = self.h_s(z_hat)
@@ -614,8 +765,20 @@ class JointAutoregressiveHierarchicalPriors(MeanScaleHyperprior):
                 "models (the entropy coder is run sequentially on CPU).",
                 stacklevel=2,
             )
+        alpha = 1.0
+        #roi = x[:,-1,:,:]/255.
+        roi = x[:,-1,:,:]
+        mask_2d = nn.Sigmoid()(roi)
+        #mask_2d = roi
+        rm_latent = nn.AvgPool2d(kernel_size=16, stride=16)(mask_2d)
+        rm_latent = (rm_latent + alpha)/alpha
+        rm_latent = rm_latent.unsqueeze(1)
+        rm_latent = rm_latent.repeat(1, self.N-48, 1, 1)
 
+        x = x[:,:3,:,:]
+        
         y = self.g_a(x)
+        y[:,48:self.N,:,:] = y[:,48:self.N,:,:] * rm_latent
         z = self.h_a(y)
 
         z_strings = self.entropy_bottleneck.compress(z)
