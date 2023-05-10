@@ -45,7 +45,7 @@ class RefineNet(nn.Module):
 
     def forward(self, x, y):
 
-        fusion = torch.cat([x, y], dim=1) # [4, 1, 240, 320] [4, 1, 240, 320] cat-> [4, 3, 240, 320]
+        fusion = torch.cat([x, y], dim=1) # [4, 1, 320, 640] [4, 1, 320, 640] cat-> [4, 2, 320, 640]
         fusion = self.maxpool1(self.act1(self.conv1(fusion)))
         fusion = self.act2(self.conv2(fusion))
         fusion = self.act3(self.conv3(fusion))

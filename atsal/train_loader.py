@@ -1,89 +1,50 @@
 import torch
 import os
+from pathlib import Path
 import datetime
 import numpy as np
 import cv2
+from PIL import Image, ImageOps
+from torchvision import transforms
+
 from torch.utils import data
 from torchvision import utils
 
 # The DataLoader for our specific datataset with extracted frames
-class Static_dataset(data.Dataset):
+class Train_dataset(data.Dataset):
 
-  def __init__(self, root_path, number_of_frames=1, load_gt = True):
-        # augmented frames
-        self.frames_path = os.path.join(root_path,'image') 
+    def __init__(self, root_path, number_of_frames=1):
         
-        self.load_gt = load_gt
-
-        if load_gt:
-          #ground truth        
-          self.gt_path = os.path.join(root_path, "saliency")
-
-        self.frames_list = []
-        self.gt_list = []
+        # augmented frames
+        self.frames_path = Path(os.path.join(root_path,'train')) 
+        self.gt_path = Path(os.path.join(root_path, "train_saliency"))
 
         # Gives accurate human readable time, rounded down not to include too many decimals
-        print('start load data')
-        frame_files = os.listdir(os.path.join(self.frames_path))
-        self.frames_list = sorted(frame_files, key = lambda x: int(x.split(".")[0]) )
-        self.frames_list = self.frames_list[:number_of_frames]
-        print(' load images data')
-        if load_gt:
-           gt_files = os.listdir(os.path.join(self.gt_path))
+        self.samplesImg= sorted(f for f in self.frames_path.iterdir() if f.is_file())
+        self.samplesSal  = sorted(f for f in self.gt_path.iterdir() if f.is_file())
 
-           self.gt_list = sorted(gt_files, key = lambda x: int(x.split(".")[0]) )
-
-           print(' load groundtruth data')
-           self.gt_list = self.gt_list[:number_of_frames]
-
+        print(len(self.samplesImg))
 
         print('data loaded')
-        
-  def __len__(self):
-        'Denotes the total number of samples'
-        return len(self.frames_list)
 
-  def __getitem__(self, frame_index):
+    def __len__(self):
+        'Denotes the total number of samples'
+        return len(self.samplesImg)
+    
+    def __getitem__(self, index):
 
         'Generates one sample of data'
+        width = 320
+        height = 640
+        img_ori = Image.open(self.samplesImg[index]).convert("RGB")
+        img_ori = img_ori.resize((width, height))
+
+        sal = Image.open(self.samplesSal[index]).convert("L")
+        sal_res = sal.resize((width, height))
+
+        sal_res = transforms.PILToTensor()(sal_res)
+        img_tensor = transforms.PILToTensor()(img_ori)
         
-        frame = self.frames_list[frame_index]
-        
-        if self.load_gt:
-          gt = self.gt_list[frame_index]
-          
-        path_to_frame = os.path.join(self.frames_path, frame)
-      
-        X = cv2.imread(path_to_frame)
-
-        X = X.astype(np.float32)
-        
-        X = X - [0.485, 0.456, 0.406]
-        X = torch.cuda.FloatTensor(X)
-        X = X.permute(2,0,1)
-
-        # add batch dim
-        data = X.unsqueeze(0)
-        data = X
-
-        # Load and preprocess ground truth (saliency maps)
-        if self.load_gt:
-
-            path_to_gt = os.path.join(self.gt_path , gt)
-
-            # Load as grayscale
-            
-            y = np.load(path_to_gt) 
-                
-        if self.load_gt:
-            y = y.astype(np.float32)
-            y = (y-np.min(y))/(np.max(y)-np.min(y))
-            y = torch.cuda.FloatTensor(y)
-            #y = y.permute(2,0,1)
-            gt = y.unsqueeze(0)
-
-            packed = (data,gt) # pack data with the corresponding  ground truths
-        else:
-            packed = (data, "_")
+        packed = (img_tensor,sal_res)
 
         return packed
