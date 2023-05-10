@@ -13,15 +13,20 @@ from torchvision import utils
 # The DataLoader for our specific datataset with extracted frames
 class Train_dataset(data.Dataset):
 
-    def __init__(self, root_path, number_of_frames=1):
+    def __init__(self, root, split="train"):
         
-        # augmented frames
-        self.frames_path = Path(os.path.join(root_path,'train')) 
-        self.gt_path = Path(os.path.join(root_path, "train_saliency"))
+        if(split == "train"):
+            splitroot = Path(root) / "Train"
+            splitdir = Path(splitroot) / "train"
+            splitsal = Path(splitroot) / "train_saliency"
+        else:
+            splitroot = Path(root) / "Test"
+            splitdir = Path(splitroot) / "test"
+            splitsal = Path(splitroot) / "test_saliency"
 
         # Gives accurate human readable time, rounded down not to include too many decimals
-        self.samplesImg= sorted(f for f in self.frames_path.iterdir() if f.is_file())
-        self.samplesSal  = sorted(f for f in self.gt_path.iterdir() if f.is_file())
+        self.samplesImg= sorted(f for f in splitdir.iterdir() if f.is_file())
+        self.samplesSal  = sorted(f for f in splitsal.iterdir() if f.is_file())
 
         print(len(self.samplesImg))
 
