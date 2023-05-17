@@ -36,14 +36,14 @@ if __name__ == '__main__':
     # print train start time
     print('start time -->', time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
     # define super parameters
-    BACT_SIZE = 4
-    #LR = 1.30208333333e-07
-    LR = 1.3e-06
-    EPOCH = 50  
-    root = "datalar/Train/"
+    BACT_SIZE = 1
+
+    root = "datalar/"
+    result_dst = "result/final"
+    os.makedirs(result_dst, exist_ok=True)
 
     # load datset
-    test_dataset = Train_dataset(root_path=root,split="test")
+    test_dataset = Train_dataset(root=root,split="test")
 
     # data loader
     test_loader = DataLoader(dataset=test_dataset, batch_size=BACT_SIZE, shuffle=True, num_workers=4)
@@ -60,7 +60,10 @@ if __name__ == '__main__':
     att_model = load_model("attention", att_model).cuda()
     Poles  = load_model("poles", salema_copie).cuda()
     Equator  = load_model("equator", salema_copie).cuda()
-    refine_model = load_model("refine",refine_model).cuda()
+    temp = torch.load('./weight/refine.pth')['refinemodel_state_dict']
+    refine_model.load_state_dict(temp)
+    refine_model = refine_model.cuda()
+    #refine_model = load_model("refine",refine_model).cuda()
 
     refine_lossfc = Saloss()
     # nss_lossfc = NSS()
@@ -99,7 +102,7 @@ if __name__ == '__main__':
 
             first_stream = ((att_model(img))).permute(0,1,3,2)
 
-            img = img.squeeze()
+            #img = img.squeeze()
             img = img.permute(0,3,2,1)
             img = img.cpu().numpy()
             B,w,h,c = img.shape
@@ -146,7 +149,9 @@ if __name__ == '__main__':
 
             saliency_map = refine_model(first_stream, second_stream)
             saliency_clone = saliency_map
-
+            saliency_map = saliency_map.cpu().numpy()
+            saliency_map = saliency_map.squeeze()
+            cv2.imwrite(os.path.join(result_dst,str(count).zfill(4)+'.png'),(255*saliency_map/saliency_map.max()).astype(np.uint8))
             val_refine_loss += refine_lossfc(saliency_clone, sal).detach().item()
             count+=1
 
