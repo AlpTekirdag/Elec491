@@ -129,6 +129,7 @@ def test(path_to_vid, path_output_maps, model_to_test=None):
                 
                 ## End Enhance
                 """
+                #print(saliency_map.shape) 320 640
                 print("elapsed time : --- %s ms ---" % (1000*(time.time() - start_time)))
                 cv2.imwrite(os.path.join(video_dst,str(count).zfill(4)+'.png'),(255*saliency_map/saliency_map.max()).astype(np.uint8))
                 print('complete :',os.path.join(video_dst,str(count).zfill(4)+'.png'))
@@ -156,6 +157,10 @@ def main(path_to_vid,output_path):
         test(path_to_vid, output_path,model)
 
 if __name__ == "__main__":
+    """
+    Run code
+    python main.py datalar/Eval/trial/ result/delete
+    """
     path_to_vid = argv[1]
     output_path = argv[2]
     main(path_to_vid,output_path)

@@ -40,10 +40,10 @@ if __name__ == '__main__':
     #LR = 1.30208333333e-07
     LR = 1.3e-06
     EPOCH = 50  
-    root = "datalar/Train/"
+    root = "datalar/"
 
     # load datset
-    train_dataset = Train_dataset(root_path=root)
+    train_dataset = Train_dataset(root=root)
 
     # Train & Val
     train_db, val_db = torch.utils.data.random_split(train_dataset, [0.8, 0.2])
@@ -176,7 +176,7 @@ if __name__ == '__main__':
                 
                 ################################  refine info ###################################
                 print('REFINE Train EPOCH:{}, iteration:{}, train_refine_loss:{:.8f}'.format(epoch, iter, refine_loss))
-                refine_save_path = model_path + '/' + 'refine' + '/' + str(epoch) + '_' + 'iter' + str(iter) + '.pth'
+                refine_save_path = model_path + '/' + 'refine' + '/' + str(epoch) + '_' + 'iter' + str(iter) + '.pt'
                 # Save model
                 refine_state = {'refine_model': refine_model,
                                 'refinemodel_state_dict': refine_model.state_dict(),
