@@ -60,10 +60,13 @@ if __name__ == '__main__':
     att_model = load_model("attention", att_model).cuda()
     Poles  = load_model("poles", salema_copie).cuda()
     Equator  = load_model("equator", salema_copie).cuda()
+    refine_model = load_model("refine",refine_model).cuda()
+    """
     temp = torch.load('./weight/refine.pth')['refinemodel_state_dict']
     refine_model.load_state_dict(temp)
     refine_model = refine_model.cuda()
-    #refine_model = load_model("refine",refine_model).cuda()
+    #"""
+    
 
     refine_lossfc = Saloss()
     # nss_lossfc = NSS()

@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=L2_sal # Job name
+#SBATCH --job-name=L2_cc # Job name
 #SBATCH --nodes=1 # Run on a single node
 #SBATCH --ntasks-per-node=1
 #SBATCH --partition=ai # Run in ai queue
@@ -22,5 +22,5 @@ module load anaconda/3.6
 module load gcc/9.3.0
 source activate elec491
 
-python main.py Eval/test Out/
+python train_salnet.py 
 conda deactivate

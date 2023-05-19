@@ -75,7 +75,7 @@ if __name__ == '__main__':
 
     refine_optim = torch.optim.Adam(refine_model.parameters(), lr=LR, weight_decay=5e-07)
 
-    path = 'weight/basenet_saloss_refinenet_saloss_9+5_lr_' + str(LR) + '_' + str(EPOCH)
+    path = 'weight/refine_cc' + str(LR) + '_' + str(EPOCH)
     model_path = path
 
     os.makedirs(model_path, exist_ok=True)
@@ -179,7 +179,7 @@ if __name__ == '__main__':
                 refine_save_path = model_path + '/' + 'refine' + '/' + str(epoch) + '_' + 'iter' + str(iter) + '.pt'
                 # Save model
                 refine_state = {'refine_model': refine_model,
-                                'refinemodel_state_dict': refine_model.state_dict(),
+                                'state_dict': refine_model.state_dict(),
                                 'refine_optim_state_dict': refine_optim.state_dict(),
                                 'epoch': epoch,
                                 'refine_loss': refine_loss.detach().item()}

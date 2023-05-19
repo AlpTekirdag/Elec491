@@ -11,7 +11,7 @@ class Saloss(torch.nn.Module):
 
     def forward(self, output, target):
 
-        train_err = KL_div(output, target)
+        train_err = CC(output, target)
         #train_err = KL_div(output, target)
         return train_err
 
@@ -33,6 +33,8 @@ def KL_div(output, target):
     return kl
 
 def CC(output, target):
+    output = output.type(torch.float32)
+    target = target.type(torch.float32)
     output = (output - output.mean()) / output.std()
     target = (target - target.mean()) / target.std()
     num = (output - output.mean()) * (target - target.mean())
